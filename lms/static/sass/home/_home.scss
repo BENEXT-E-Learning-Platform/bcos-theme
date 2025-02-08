@@ -1,0 +1,285 @@
+// Define color variables
+$primary: #3498db; // Blue
+$primary-light: #ecf5fa; // Light Blue
+$primary-d: #2c3e50; // Dark Blue
+$text-color-d: #2c3e50; // Dark Text Color
+$btn-color-d: #ffffff; // Dark Button Text Color
+$text-color-primary: #515661; // Primary Text Color
+$green: #2ecc71; // Green
+$green-light: #d5f5e3; // Light Green
+
+// Custom Home Styles
+section.home {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.home > header .title {
+    background: none !important;
+}
+
+.home > header .outer-wrapper {
+    max-width: 100%;
+}
+
+// Global Header Navigation Styles
+.global-header .nav-links .secondary {
+    .btn-holder {
+        letter-spacing: -0.32em;
+        margin: 0 -7px;
+
+        .nav-item {
+            letter-spacing: normal;
+            margin: 0 7px;
+            padding: 12px 0;
+
+            .btn {
+                line-height: 20px;
+                padding: 9px 17px;
+                font-size: 14px;
+                border-radius: 6px;
+                font-weight: 500;
+                display: block;
+                background: $primary; // Blue background
+                color: #fff; // White text
+
+                &:hover {
+                    background: darken($primary, 10%); // Darker blue on hover
+                }
+
+                &.sign-in-btn {
+                    background: $green; // Green background
+                    color: #fff; // White text
+
+                    &:hover {
+                        background: darken($green, 10%); // Darker green on hover
+                    }
+                }
+
+                &.register-btn {
+                    background: none;
+                    border: 2px solid $primary; // Blue border
+                    color: $primary; // Blue text
+
+                    &:hover {
+                        background: $primary; // Blue background on hover
+                        color: #fff; // White text on hover
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Logout-Specific Home Styles
+#main .home.style-logout {
+    header {
+        background: none;
+
+        .outer-wrapper {
+            .title {
+                width: 100%;
+                float: none;
+                margin: 0;
+                padding: 30px 0 0;
+                min-height: 20px;
+
+                @include media-breakpoint-up(sm) {
+                    padding: 50px 0 0;
+                }
+
+                .heading-group {
+                    margin: 0 0 25px;
+                    text-align: left;
+                    padding: 0;
+
+                    @include media-breakpoint-up(sm) {
+                        margin: 0 0 45px;
+                    }
+
+                    h1 {
+                        color: #111827;
+                        font-size: 20px;
+                        font-weight: 700;
+                        line-height: 30px;
+                        margin: 0 0 8px;
+                        text-align: left;
+
+                        @include media-breakpoint-up(md) {
+                            font-size: 24px;
+                            margin: 0 0 12px;
+                        }
+                    }
+
+                    p {
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #515661;
+                        font-style: normal;
+                        margin: 0;
+                    }
+                }
+
+                .course-search {
+                    padding: 0;
+
+                    .search-field-wrapper {
+                        &:after {
+                            clear: both;
+                            content: "";
+                            display: block;
+                        }
+
+                        .button-holder {
+                            float: right;
+
+                            button {
+                                position: static;
+                                margin: 0 0 0 16px;
+                                min-width: 90px;
+                                color: #fff;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 26px;
+                                text-align: center;
+                                padding: 6px;
+                                height: 38px;
+                                border-radius: 6px;
+                                background: $primary; // Blue background
+                                font-family: $font-family-title;
+                                border: none;
+
+                                @include media-breakpoint-up(sm) {
+                                    min-width: 100px;
+                                }
+
+                                &:hover {
+                                    background: darken($primary, 10%); // Darker blue on hover
+                                }
+                            }
+                        }
+
+                        .input-holder {
+                            overflow: hidden;
+                            border-radius: 6px;
+                            background: $primary-light; // Light blue background
+                            padding: 0 0 0 33px;
+                            position: relative;
+                            display: block;
+
+                            svg {
+                                position: absolute;
+                                left: 12px;
+                                font-size: 20px;
+                                top: 10px;
+                            }
+
+                            input {
+                                border: none;
+                                box-shadow: none;
+                                height: 38px;
+                                width: 100%;
+                                background: none;
+                                outline: none;
+                                font-size: 14px;
+                                line-height: 20px;
+                                padding: 9px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Dark Theme Styles
+body.indigo-dark-theme {
+    h1 {
+        color: $text-color-d;
+    }
+
+    p a:not(.btn),
+    a:not(.btn) {
+        color: $primary-d;
+
+        &:hover,
+        &:focus,
+        &:active,
+        a:visited:not(.btn):focus {
+            color: $primary-d;
+        }
+    }
+
+    .global-header .nav-links .secondary {
+        .btn-holder {
+            .nav-item {
+                .btn {
+                    &.sign-in-btn {
+                        background: $green; // Green background
+                        color: $btn-color-d; // White text
+                        border-color: $green; // Green border
+                    }
+
+                    &.register-btn {
+                        color: $text-color-d; // Dark text
+                        border-color: $text-color-d; // Dark border
+                        background: none;
+                    }
+                }
+            }
+        }
+    }
+
+    #main .home.style-logout {
+        header {
+            background: none;
+
+            .outer-wrapper {
+                .title {
+                    .heading-group {
+                        h1 {
+                            color: $text-color-d;
+                        }
+
+                        p {
+                            color: $text-color-primary;
+                        }
+                    }
+
+                    .course-search {
+                        .search-field-wrapper {
+                            .button-holder {
+                                button {
+                                    color: $btn-color-d; // White text
+                                    background: $primary-d; // Dark blue background
+                                    border: none;
+
+                                    &:hover {
+                                        color: $btn-color-d; // White text
+                                        background: darken($primary-d, 10%); // Darker blue on hover
+                                    }
+                                }
+                            }
+
+                            .input-holder {
+                                background: $primary-light-d; // Light dark blue background
+
+                                svg {
+                                    path {
+                                        fill: $text-color-primary;
+                                    }
+                                }
+
+                                input {
+                                    color: $text-color-d;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

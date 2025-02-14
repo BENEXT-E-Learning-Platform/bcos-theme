@@ -10,9 +10,558 @@
 %>
 
 <%namespace name='static' file='../static_content.html'/>
+
+<%block name="css">
+  <style>
+    /* Import Expo Arabic font */
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+    /* Course List Centering */
+    .courses-container {
+        max-width: 1400px !important;
+        margin: 0 auto !important;
+        padding: 20px !important;
+    }
+
+    .courses-listing {
+        display: grid !important;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+        gap: 25px !important;
+        padding: 0 !important;
+        list-style: none !important;
+        margin: 0 auto !important;
+        max-width: calc(100% - 40px) !important;
+    }
+
+    /* Hero Section CSS-only Animation */
+    .hero-slider {
+        position: relative !important;
+        width: 100% !important;
+        max-width: 1200px !important;
+        margin: 0 auto !important;
+        height: 500px !important;
+        overflow: hidden !important;
+    }
+
+    .slide {
+        position: absolute !important;
+        width: 100% !important;
+        height: 100% !important;
+        opacity: 0 !important;
+        display: block !important;
+        animation: slideAnimation 15s infinite !important;
+    }
+
+    .slide:nth-child(1) {
+        animation-delay: -0s !important;
+    }
+
+    .slide:nth-child(2) {
+        animation-delay: -5s !important;
+    }
+
+    .slide:nth-child(3) {
+        animation-delay: -10s !important;
+    }
+
+    @keyframes slideAnimation {
+        0%, 26.66% {
+            opacity: 1 !important;
+            transform: scale(1) !important;
+        }
+        33.33%, 100% {
+            opacity: 0 !important;
+            transform: scale(1.1) !important;
+        }
+    }
+
+    /* Dots Animation */
+    .slider-dots {
+        position: absolute !important;
+        bottom: 30px !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+        display: flex !important;
+        gap: 12px !important;
+        z-index: 3 !important;
+    }
+
+    .slider-dot {
+        width: 12px !important;
+        height: 12px !important;
+        background-color: rgba(255, 255, 255, 0.4) !important;
+        border-radius: 50% !important;
+        animation: dotAnimation 15s infinite !important;
+    }
+
+    .slider-dot:nth-child(1) {
+        animation-delay: -0s !important;
+    }
+
+    .slider-dot:nth-child(2) {
+        animation-delay: -5s !important;
+    }
+
+    .slider-dot:nth-child(3) {
+        animation-delay: -10s !important;
+    }
+
+    @keyframes dotAnimation {
+        0%, 26.66% {
+            background-color: #91be3f !important;
+            transform: scale(1.2) !important;
+            border: 2px solid rgba(255, 255, 255, 0.8) !important;
+        }
+        33.33%, 100% {
+            background-color: rgba(255, 255, 255, 0.4) !important;
+            transform: scale(1) !important;
+            border: 2px solid transparent !important;
+        }
+    }
+
+    /* Updated Responsive Grid */
+    @media (max-width: 1400px) {
+        .courses-listing {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+            max-width: 1000px !important;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .courses-listing {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+            max-width: 700px !important;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .courses-listing {
+            grid-template-columns: 1fr !important;
+            max-width: 350px !important;
+        }
+    }
+
+    /* Enhanced Hero Section Styles */
+    .hero-section {
+        width: 100% !important;
+        background: linear-gradient(135deg, rgba(37, 59, 116, 0.95), rgba(27, 117, 188, 0.95)) !important;
+        padding: 0 !important;
+        text-align: center !important;
+        color: white !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+        position: relative !important;
+        overflow: hidden !important;
+        height: 500px !important;
+    }
+
+    .hero-content {
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        text-align: center !important;
+        color: #fff !important;
+        width: 90% !important;
+        max-width: 800px !important;
+        z-index: 2 !important;
+        font-family: 'Cairo', sans-serif !important;
+    }
+
+    .hero-content h1 {
+        font-size: 3.5rem !important;
+        margin-bottom: 20px !important;
+        font-weight: 700 !important;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
+        animation: fadeInDown 1s ease-in-out !important;
+        line-height: 1.2 !important;
+    }
+
+    .hero-content p {
+        font-size: 1.4rem !important;
+        margin-bottom: 30px !important;
+        animation: fadeInUp 1s ease-in-out !important;
+        font-weight: 400 !important;
+        line-height: 1.6 !important;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) !important;
+    }
+
+    .hero-button {
+        background: linear-gradient(45deg, #91be3f, #7aa32c) !important;
+        color: white !important;
+        padding: 15px 35px !important;
+        border-radius: 30px !important;
+        text-decoration: none !important;
+        font-weight: 600 !important;
+        font-size: 1.2rem !important;
+        transition: all 0.3s ease !important;
+        display: inline-block !important;
+        box-shadow: 0 4px 15px rgba(145, 190, 63, 0.3) !important;
+    }
+
+    .hero-button:hover {
+        transform: translateY(-2px) scale(1.05) !important;
+        box-shadow: 0 6px 20px rgba(145, 190, 63, 0.4) !important;
+    }
+
+    /* Course Discovery Section Styles */
+    .find-courses {
+        padding: 40px 20px !important;
+        background: transparent !important;
+    }
+
+    /* Heading Area */
+    .course-heading-area {
+        text-align: center !important;
+        margin-bottom: 40px !important;
+        animation: fadeInUp 0.8s ease-out !important;
+    }
+
+    .course-heading-area h2 {
+        font-family: 'Cairo', sans-serif !important;
+        font-size: 2.5rem !important;
+        color: #253b74 !important;
+        margin-bottom: 15px !important;
+        font-weight: 700 !important;
+        text-shadow: 0 2px 4px rgba(37, 59, 116, 0.1) !important;
+    }
+
+    .course-heading-area p {
+        font-family: 'Cairo', sans-serif !important;
+        font-size: 1.2rem !important;
+        color: #1b75bc !important;
+        max-width: 800px !important;
+        margin: 0 auto !important;
+        line-height: 1.6 !important;
+    }
+
+    /* Search Bar and Filters */
+    .saerch-bar-discover {
+        background: transparent !important;
+        border-radius: 15px !important;
+        padding: 20px !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08) !important;
+        margin-bottom: 30px !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 20px !important;
+        animation: slideInDown 0.5s ease-out !important;
+    }
+
+    /* Filter Block */
+    .filter-block {
+        flex: 0 0 auto !important;
+    }
+
+    .dropdown-toggle {
+        display: flex !important;
+        align-items: center !important;
+        gap: 8px !important;
+        padding: 12px 20px !important;
+        background: #f8f9fa !important;
+        border-radius: 10px !important;
+        color: #253b74 !important;
+        text-decoration: none !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .dropdown-toggle:hover {
+        background: #edf2ff !important;
+        transform: translateY(-2px) !important;
+    }
+
+    .filter-icon {
+        transition: transform 0.3s ease !important;
+    }
+
+    .dropdown-toggle[aria-expanded="true"] .filter-icon {
+        transform: rotate(180deg) !important;
+    }
+
+    /* Search Form */
+    .discover-search {
+        flex: 1 !important;
+    }
+
+    .wrapper-search-input {
+        display: flex !important;
+        gap: 10px !important;
+        background: #f8f9fa !important;
+        border-radius: 10px !important;
+        padding: 5px !important;
+        border: 2px solid transparent !important;
+        transition: all 0.3s ease !important;
+    }
+
+    .wrapper-search-input:focus-within {
+        border-color: #91be3f !important;
+        box-shadow: 0 0 0 4px rgba(145, 190, 63, 0.1) !important;
+    }
+
+    .input-holder {
+        flex: 1 !important;
+        display: flex !important;
+        align-items: center !important;
+        gap: 10px !important;
+        padding: 0 15px !important;
+    }
+
+    .discovery-input {
+        width: 100% !important;
+        margin-left: 10px !important;
+        border: none !important;
+        background: transparent !important;
+        font-family: 'Cairo', sans-serif !important;
+        font-size: 1rem !important;
+        color: #253b74 !important;
+    }
+
+    .discovery-input::placeholder {
+        color: #9CA3AF !important;
+        margin-left: 10px;
+    }
+
+    .button-holder {
+        padding-right: 5px !important;
+    }
+
+    .discovery-submit {
+        background: linear-gradient(45deg, #91be3f, #7aa32c) !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 8px !important;
+        font-family: 'Cairo', sans-serif !important;
+        font-weight: 600 !important;
+        cursor: pointer !important;
+        transition: all 0.3s ease !important;
+        margin: 0 !important;
+    }
+
+    .discovery-submit:hover {
+        transform: translateY(-2px) !important;
+        box-shadow: 0 4px 12px rgba(145, 190, 63, 0.2) !important;
+    }
+
+    /* Updated Course List with larger card sizes */
+    .courses-listing-item {
+        background: white !important;
+        border-radius: 15px !important;
+        overflow: hidden !important;
+        transition: all 0.3s ease !important;
+        animation: fadeInUp 0.5s ease-out !important;
+        animation-fill-mode: both !important;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05) !important;
+        min-width: 300px !important;
+    }
+
+    .courses-listing-item:hover {
+        transform: translateY(-5px) !important;
+        box-shadow: 0 8px 25px rgba(37, 59, 116, 0.1) !important;
+    }
+
+    /* Course Card Specific Styles */
+    .course {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 100% !important;
+    }
+
+    .course-image {
+        width: 100% !important;
+        height: 200px !important;
+        object-fit: cover !important;
+    }
+
+    .course-info {
+        padding: 20px !important;
+        flex: 1 !important;
+    }
+
+    /* Dropdown Menu */
+    .dropdown-menu {
+        border: none !important;
+        border-radius: 12px !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+        padding: 15px !important;
+        margin-top: 10px !important;
+        min-width: 250px !important;
+        animation: fadeIn 0.3s ease-out !important;
+    }
+
+    .header-search-facets {
+        font-family: 'Cairo', sans-serif !important;
+        color: #253b74 !important;
+        font-size: 1.2rem !important;
+        margin-bottom: 15px !important;
+        padding-bottom: 10px !important;
+        border-bottom: 2px solid #f0f0f0 !important;
+    }
+
+    /* Animations */
+    @keyframes slideScale {
+        0% {
+            transform: scale(1.1) !important;
+            opacity: 0 !important;
+        }
+        100% {
+            transform: scale(1) !important;
+            opacity: 1 !important;
+        }
+    }
+
+    @keyframes fadeInDown {
+        from {
+            opacity: 0 !important;
+            transform: translateY(-30px) !important;
+        }
+        to {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0 !important;
+            transform: translateY(20px) !important;
+        }
+        to {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    }
+
+    @keyframes slideInDown {
+        from {
+            opacity: 0 !important;
+            transform: translateY(-20px) !important;
+        }
+        to {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    }
+
+    /* Enhanced Responsive Adjustments */
+    @media (max-width: 1400px) {
+        .courses-listing {
+            grid-template-columns: repeat(3, minmax(300px, 1fr)) !important;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .courses-listing {
+            grid-template-columns: repeat(2, minmax(300px, 1fr)) !important;
+        }
+        
+        .hero-content h1 {
+            font-size: 2.5rem !important;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .saerch-bar-discover {
+            flex-direction: column !important;
+        }
+        
+        .course-heading-area h2 {
+            font-size: 2rem !important;
+        }
+        
+        .hero-content h1 {
+            font-size: 2rem !important;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .courses-listing {
+            grid-template-columns: 1fr !important;
+        }
+        
+        .hero-content h1 {
+            font-size: 1.8rem !important;
+        }
+        
+        .hero-button {
+            padding: 12px 25px !important;
+            font-size: 1rem !important;
+        }
+    }
+  </style>
+</%block>
+
 <%block name="js_extra">
   <script type="text/javascript" src="${static.url('common/js/vendor/bootstrap.bundle.js')}"></script>
+  <script type="text/javascript">
+   document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    let currentSlide = 0;
+    let isAnimating = false;
+    
+    function showSlide(index) {
+        if (isAnimating) return;
+        isAnimating = true;
+        
+        // Remove active class from all slides and dots
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+            slide.classList.remove('active');
+        });
+        
+        dots.forEach(dot => dot.classList.remove('active'));
+        
+        // Show and activate new slide
+        if (slides[index]) {
+            slides[index].style.display = 'block';
+            // Trigger reflow
+            slides[index].offsetHeight;
+            slides[index].classList.add('active');
+        }
+        
+        // Activate corresponding dot
+        if (dots[index]) {
+            dots[index].classList.add('active');
+        }
+        
+        // Reset animation lock after transition
+        setTimeout(() => {
+            isAnimating = false;
+        }, 800);
+    }
+    
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+    
+    // Add click handlers to dots
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            if (!isAnimating && currentSlide !== index) {
+                currentSlide = index;
+                showSlide(currentSlide);
+            }
+        });
+    });
+    
+    // Initialize first slide
+    showSlide(0);
+    
+    // Set up auto-rotation
+    const slideInterval = setInterval(nextSlide, 5000);
+    
+    // Pause on hover (optional)
+    const slider = document.querySelector('.hero-slider');
+    slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
+    slider.addEventListener('mouseleave', () => setInterval(nextSlide, 5000));
+});
+  </script>
 </%block>
+
 % if course_discovery_enabled:
 <%block name="header_extras">
   % for template_name in ["course_card", "filter_bar", "filter", "facet", "facet_option"]:
@@ -32,15 +581,39 @@
 </%block>
 % endif
 
-<%block name="pagetitle">${_("Courses")}</%block>
+<%block name="pagetitle">${_("الدورات")}</%block>
 
 <main id="main" aria-label="Content" tabindex="-1">
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-slider">
+            <div class="slide">
+                <img src="image1.jpg" alt="Slide 1">
+            </div>
+            <div class="slide">
+                <img src="image2.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="image3.jpg" alt="Slide 3">
+            </div>
+            <div class="slide">
+                <img src="image4.jpg" alt="Slide 4">
+            </div>
+        </div>
+        <!-- Slider Dots -->
+        <div class="slider-dots">
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+        </div>
+    </section>
     <section class="find-courses">
       <section class="courses-container">
         <!-- NEW IN INDIGO Heading was added. -->
         <div class="course-heading-area">
-          <h2>Unlock Your Potential: Discover New Courses Today!</h2>
-          <p>Explore a world of knowledge and enhance your skills with our diverse range of courses</p>
+          <h2>افتح إمكانياتك: اكتشف دورات جديدة اليوم!</h2>
+          <p>استكشف عالمًا من المعرفة وقم بتنمية مهاراتك مع مجموعة متنوعة من الدورات</p>
         </div>
         <!-- NEW IN INDIGO Modified search bar and filters. -->
         % if course_discovery_enabled:
@@ -50,14 +623,14 @@
                 <svg class="filter-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M2 3C2 2.44772 2.44772 2 3 2H13C13.5523 2 14 2.44772 14 3V4.25245C14 4.51767 13.8946 4.77202 13.7071 4.95956L9.62623 9.04044C9.43869 9.22798 9.33333 9.48233 9.33333 9.74755V11.3333L6.66667 14V9.74755C6.66667 9.48233 6.56131 9.22798 6.37377 9.04044L2.29289 4.95956C2.10536 4.77202 2 4.51767 2 4.25245V3Z" stroke="#9CA3AF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-                <span>Filters</span>
+                <span>الفلاتر</span>
                 <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 7.29289C5.68342 6.90237 6.31658 6.90237 6.7071 7.29289L9.99999 10.5858L13.2929 7.29289C13.6834 6.90237 14.3166 6.90237 14.7071 7.29289C15.0976 7.68342 15.0976 8.31658 14.7071 8.70711L10.7071 12.7071C10.3166 13.0976 9.68341 13.0976 9.29289 12.7071L5.29289 8.70711C4.90237 8.31658 4.90237 7.68342 5.29289 7.29289Z" fill="#9CA3AF"/>
                   </svg>
               </a>
               <div class="dropdown-menu search-facets-lists" aria-labelledby="dropdownMenuLink">
-                  <aside aria-label="${_('Refine Your Search')}" class="search-facets phone-menu">
-                    <h2 class="header-search-facets">${_('Refine Your Search')}</h2>
+                  <aside aria-label="${_('صقل بحثك')}" class="search-facets phone-menu">
+                    <h2 class="header-search-facets">${_('صقل بحثك')}</h2>
                     <section class="search-facets-lists">
                     </section>
                   </aside>
@@ -66,17 +639,17 @@
             <div class="discover-search">
             <div id="discovery-form" role="search" aria-label="course" class="wrapper-search-context">
               <form class="wrapper-search-input">
-                <label for="discovery-input" class="sr">${_('Search for a course')}</label>
+                <label for="discovery-input" class="sr">${_('ابحث عن دورة')}</label>
                 <div class="button-holder">
-                  <button type="submit" class="button postfix discovery-submit" title="${_('Search')}">
-                    Search
+                  <button type="submit" class="button postfix discovery-submit" title="${_('بحث')}">
+                    بحث
                   </button>
                 </div>
                 <div class="input-holder">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4C5.79086 4 4 5.79086 4 8C4 10.2091 5.79086 12 8 12C10.2091 12 12 10.2091 12 8C12 5.79086 10.2091 4 8 4ZM2 8C2 4.68629 4.68629 2 8 2C11.3137 2 14 4.68629 14 8C14 9.29583 13.5892 10.4957 12.8907 11.4765L17.7071 16.2929C18.0976 16.6834 18.0976 17.3166 17.7071 17.7071C17.3166 18.0976 16.6834 18.0976 16.2929 17.7071L11.4765 12.8907C10.4957 13.5892 9.29583 14 8 14C4.68629 14 2 11.3137 2 8Z" fill="#9CA3AF"/>
                     </svg>
-                  <input id="discovery-input" class="discovery-input" placeholder="${_('Explore course')}" type="text"/>
+                  <input id="discovery-input" class="discovery-input" placeholder="${_('استكشف الدورات')}" type="text"/>
                 </div>
               </form>
               <div id="discovery-message" class="search-status-label"></div>
@@ -87,7 +660,7 @@
         </div>
       % endif
 
-        <div class="course-holder courses${'' if course_discovery_enabled else ' no-course-discovery'}" role="region" aria-label="${_('List of Courses')}">
+        <div class="course-holder courses${'' if course_discovery_enabled else ' no-course-discovery'}" role="region" aria-label="${_('قائمة الدورات')}">
           <ul class="courses-listing courses-list">
             %for course in courses:
             <li class="courses-listing-item">

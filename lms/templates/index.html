@@ -4,11 +4,11 @@
 <%!
 from django.utils.translation import gettext as _
 from django.urls import reverse
-
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
 <main id="main" aria-label="Content" tabindex="-1">
+    <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-container">
             <div class="hero-content">
@@ -24,15 +24,132 @@ from openedx.core.djangolib.markup import HTML, Text
             </div>
         </div>
     </section>
+
+    <!-- Stats Section -->
+    <div class="stats-wrapper">
+        <div class="stats-container">
+            <div class="stats-item">
+                <h2 class="count" data-target="2000">0</h2>
+                <h3>مشارك في دورات BCOS.</h3>
+            </div>
+            <div class="stats-item">
+                <h2 class="count" data-target="1100">0</h2>
+                <h3>عدد الدورات و البرامج</h3>
+            </div>
+            <div class="stats-item">
+                <h2 class="count" data-target="700">0</h2>
+                <h3>شركة استفادت من خدماتنا</h3>
+            </div>
+            <div class="stats-item">
+                <h2 class="count" data-target="18">0</h2>
+                <h3>سنوات الخبرة</h3>    
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-section">
+        <div class="about-text">
+            <h1 class="hero-title">من هي BCOS!</h1>
+            <p class="hero-description">مؤسسة تكوين واستشارات في مجال تسيير وإدارة الشركات.
+            منذ 2006 على دعم وتطوير أداء BCOS تعمل الشركات الاقتصادية بغية الرفع من أدائها لضمان قوتها ونجاعتها في السوق.</p>
+        </div>
+        <div class="about-video">
+            <iframe src="https://www.youtube.com/embed/Ns_sBz-DfOc" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <!-- Original Cards -->
+            <div class="card">
+                <img src="https://via.placeholder.com/60" alt="Profile" class="profile-img">
+                <h3>با محمد دادي نونو</h3>
+                <p>ماستر اقتصاد كمي، محلل بيانات بمؤسسة BCOS للتكوين و الاستشارات، مكون في برنامج Excel وتحليل البيانات</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/60" alt="Profile" class="profile-img">
+                <h3>عمر بورورو</h3>
+                <p>ماستر إدارة وريادة أعمال - HEC، القليعة. قائد مسير مشروع BCOS Online</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/60" alt="Profile" class="profile-img">
+                <h3>رضوان بوسنان</h3>
+                <p>المسؤول التجاري بمؤسسة Bcos. خبرة 6 سنوات في المبيعات</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/60" alt="Profile" class="profile-img">
+                <h3>أحمد سليمان</h3>
+                <p>خبير في تطوير الأعمال والتسويق الرقمي</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/60" alt="Profile" class="profile-img">
+                <h3>فاطمة الزهراء</h3>
+                <p>محللة بيانات واستشارية في مجال الأعمال</p>
+            </div>
+            <!-- Duplicate Cards for Seamless Looping -->
+            <div class="card">
+                <img src="https://via.placeholder.com/60" alt="Profile" class="profile-img">
+                <h3>با محمد دادي نونو</h3>
+                <p>ماستر اقتصاد كمي، محلل بيانات بمؤسسة BCOS للتكوين و الاستشارات، مكون في برنامج Excel وتحليل البيانات</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/60" alt="Profile" class="profile-img">
+                <h3>عمر بورورو</h3>
+                <p>ماستر إدارة وريادة أعمال - HEC، القليعة. قائد مسير مشروع BCOS Online</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/60" alt="Profile" class="profile-img">
+                <h3>رضوان بوسنان</h3>
+                <p>المسؤول التجاري بمؤسسة Bcos. خبرة 6 سنوات في المبيعات</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/60" alt="Profile" class="profile-img">
+                <h3>أحمد سليمان</h3>
+                <p>خبير في تطوير الأعمال والتسويق الرقمي</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/60" alt="Profile" class="profile-img">
+                <h3>فاطمة الزهراء</h3>
+                <p>محللة بيانات واستشارية في مجال الأعمال</p>
+            </div>
+        </div>
+    </div>
 </main>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll(".count");
+      counters.forEach(counter => {
+          let target = +counter.dataset.target;
+          let count = 0;
+          let speed = target / 50;
+          function update() {
+              count += speed;
+              counter.textContent = Math.floor(count);
+              if (count < target) setTimeout(update, 30);
+              else counter.textContent = target;
+          }
+          update();
+      });
+  });
+</script>
 
 <style>
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Expo+Arabic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
-/* Apply Fonts to Main Only */
+/* Global Styles */
+body {
+    font-family: 'Tajawal', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+}
+
 main {
-    font-family: 'Tajawal', 'Expo Arabic', sans-serif;
+    font-family: 'Tajawal', sans-serif !important;
 }
 
 /* Hero Section */
@@ -41,6 +158,8 @@ main {
     align-items: center;
     justify-content: center;
     padding: 80px 20px;
+    margin: 60px 0;
+    background: transparent;
 }
 
 .hero-container {
@@ -51,10 +170,9 @@ main {
     max-width: 1200px;
     width: 100%;
     text-align: right;
-    gap: 80px; /* Increased spacing between text and image */
+    gap: 80px;
 }
 
-/* Hero Text */
 .hero-content {
     flex: 1;
     max-width: 500px;
@@ -85,85 +203,218 @@ main {
     font-weight: bold;
 }
 
-/* CTA Button with Proper Font Color */
 .cta-button {
-    display: inline-block;
-    padding: 15px 35px;
-    background: linear-gradient(45deg, #253B74, #1d2f60);
-    color: white; /* Ensuring the text is always visible */
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-    font-family: 'Tajawal', 'Expo Arabic', sans-serif;
-    text-align: center;
+    display: inline-block !important;
+    padding: 15px 35px !important;
+    background: linear-gradient(45deg, #253B74, #1d2f60) !important;
+    color: white !important;
+    text-decoration: none !important;
+    border-radius: 50px !important;
+    font-size: 1.3rem !important;
+    font-weight: bold !important;
+    transition: all 0.3s ease-in-out !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2) !important;
 }
 
-/* Button Hover Effect (Green) */
 .cta-button:hover {
-    transform: scale(1.05);
-    background: linear-gradient(45deg, #91BE3F, #7CA32F); /* Green hover effect restored */
-    color: white; /* Ensuring text stays visible */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05) !important;
+    background: linear-gradient(45deg, #91BE3F, #7CA32F) !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
 }
 
-/* Button Click Effect */
 .cta-button:active {
-    transform: scale(0.95);
+    transform: scale(0.95) !important;
 }
-
-/* Hero Image */
 .hero-image {
     flex: 1;
     text-align: center;
 }
 
 .hero-image img {
-    max-width: 450px; /* Increased image size */
+    max-width: 450px;
     border-radius: 50%;
     border: 5px solid #91BE3F;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     animation: fadeIn 1s ease-in-out;
 }
 
+/* Stats Section */
+.stats-wrapper {
+    display: flex;
+    justify-content: center;
+    background: transparent;
+    padding: 40px 0;
+}
+
+.stats-container {
+    padding: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    min-width: 1100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.stats-item {
+    flex: 1;
+    min-width: fit-content;
+}
+
+.stats-item h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    color: #91BE3F;
+    margin: 0;
+}
+
+.stats-item h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #253B74;
+    margin-top: 5px;
+}
+
+/* About Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 8%;
+    gap: 60px;
+    direction: rtl;
+    background:transparent;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    margin: 64px auto;
+    max-width: 1200px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: right;
+}
+
+.about-text .hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #253B74;
+    margin-bottom: 20px;
+}
+
+.about-text .hero-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-video {
+    flex: 1;
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-video:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about-video iframe {
+    width: 100%;
+    height: 350px;
+    border: none;
+    border-radius: 15px;
+}
+
+/* Carousel Section */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 60px 0;
+    background: transparent;
+}
+
+.carousel {
+    display: flex;
+    width: max-content;
+    animation: scroll 40s linear infinite;
+}
+
+.card {
+    flex: 0 0 320px;
+    height: 280px;
+    margin: 0 20px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    text-align: right;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.profile-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -40px;
+    right: 25px;
+    border: 5px solid #fff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    color: #91BE3F;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #555;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
 /* Animations */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 @keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
-/* Responsive */
-@media (max-width: 900px) {
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
     .hero-container {
         flex-direction: column;
         text-align: center;
@@ -175,73 +426,55 @@ main {
     .hero-image img {
         max-width: 320px;
     }
-}
-</style>
-<!--Main Section IS done -->
-
-<!-- Second section NOW -->
-
-
-
-
-<style>
-    @import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400&display=swap);
-  
-    /* ABOUT SECTION */
     .about-section {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 80px 8%;
-      gap: 80px;
-      direction: rtl;
-    }
-  
-    .about-video {
-      flex: 1;
-      position: relative;
-    }
-  
-    .about-video iframe {
-      width: 100%;
-      height: 350px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    }
-  
-    .about-text {
-      flex: 1;
-      text-align: center;
-    }
-  
-   
-  
-    /* RESPONSIVE DESIGN */
-    @media (max-width: 1024px) {
-      .about-section {
         flex-direction: column-reverse;
         text-align: center;
-      }
-      .about-text {
-        text-align: center;
-      }
+        padding: 60px 5%;
     }
-  </style>
-  
-  <main id="main" aria-label="Content" tabindex="-1">
-      <!-- ABOUT SECTION -->
-      <div class="about-section">
-          <!-- About Text -->
-          <div class="about-text">
-              <h1 class="hero-title">من هي BCOS!</h1>
-              <p class="hero-description">مؤسسة تكوين واستشارات في مجال تسيير وإدارة الشركات.
-              منذ 2006 على دعم وتطوير أداء BCOS تعمل الشركات الاقتصادية بغية الرفع من أدائها لضمان قوتها ونجاعتها في السوق.</p>
-          </div>
-          
-          <!-- Video Section -->
-          <div class="about-video">
-              <iframe src="https://www.youtube.com/embed/Ns_sBz-DfOc" frameborder="0" allowfullscreen></iframe>
-          </div>
-      </div>
-  </main>
-  
+    .about-text {
+        text-align: center;
+    }
+    .about-video iframe {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    .hero-description {
+        font-size: 1.2rem;
+    }
+    .stats-item h2 {
+        font-size: 36px;
+    }
+    .stats-item h3 {
+        font-size: 16px;
+    }
+    .about-text .hero-title {
+        font-size: 2rem;
+    }
+    .about-text .hero-description {
+        font-size: 1rem;
+    }
+    .about-video iframe {
+        height: 250px;
+    }
+    .card {
+        flex: 0 0 280px;
+        height: 240px;
+    }
+    .card h3 {
+        font-size: 1.4rem;
+    }
+    .card p {
+        font-size: 0.95rem;
+    }
+    .profile-img {
+        width: 70px;
+        height: 70px;
+        top: -35px;
+    }
+}
+</style>

@@ -14,112 +14,189 @@
 <%block name="css">
   <style>
     /* Import Expo Arabic font */
-    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
 
-    /* Course List Centering */
-    .courses-container {
-        max-width: 1400px !important;
-        margin: 0 auto !important;
-        padding: 20px !important;
-    }
+/* Global Styles */
+* {
+    font-family: 'Cairo', sans-serif !important;
+}
 
-    .courses-listing {
-        display: grid !important;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
-        gap: 25px !important;
-        padding: 0 !important;
-        list-style: none !important;
-        margin: 0 auto !important;
-        max-width: calc(100% - 40px) !important;
-    }
+/* Hero Section */
+.hero-section {
+    width: 100% !important;
+    position: relative !important;
+    overflow: hidden !important;
+    height: 600px !important;
+}
 
-    /* Hero Section CSS-only Animation */
-    .hero-slider {
-        position: relative !important;
-        width: 100% !important;
-        max-width: 1200px !important;
-        margin: 0 auto !important;
-        height: 500px !important;
-        overflow: hidden !important;
-    }
+/* Gradient Overlay */
+.image-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(135deg, rgba(27, 117, 188, 0.7), rgba(27, 117, 188, 0.3)) !important;
+    z-index: 1 !important;
+}
 
-    .slide {
-        position: absolute !important;
-        width: 100% !important;
-        height: 100% !important;
+/* Hero Slider */
+.hero-slider {
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.slide {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0 !important;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out !important;
+    transform: translateX(100%) !important;
+}
+
+.slide.active {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+.slide img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill !important;
+}
+
+/* Hero Content */
+.hero-content {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    text-align: center !important;
+    color: white !important;
+    z-index: 2 !important;
+    width: 90% !important;
+    max-width: 800px !important;
+}
+
+.hero-content h1 {
+    color: white !important;
+    font-size: 3.5rem !important;
+    margin-bottom: 20px !important;
+    font-weight: 700 !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
+    animation: fadeInDown 1s ease-in-out !important;
+    line-height: 1.2 !important;
+}
+
+.hero-content p {
+    font-size: 1.4rem !important;
+    margin-bottom: 30px !important;
+    animation: fadeInUp 1s ease-in-out !important;
+    font-weight: 400 !important;
+    line-height: 1.6 !important;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) !important;
+}
+
+.hero-button {
+    background: linear-gradient(45deg, #91be3f, #7aa32c) !important;
+    color: white !important;
+    padding: 15px 35px !important;
+    border-radius: 30px !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 1.2rem !important;
+    transition: all 0.3s ease !important;
+    display: inline-block !important;
+    box-shadow: 0 4px 15px rgba(145, 190, 63, 0.3) !important;
+}
+
+.hero-button:hover {
+    transform: translateY(-2px) scale(1.05) !important;
+    box-shadow: 0 6px 20px rgba(145, 190, 63, 0.4) !important;
+}
+
+/* Slider Dots */
+.slider-dots {
+    position: absolute !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    display: flex !important;
+    gap: 10px !important;
+    z-index: 2 !important;
+}
+
+.slider-dot {
+    width: 10px !important;
+    height: 10px !important;
+    background-color: white !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.slider-dot.active {
+    background-color: #91be3f !important;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
         opacity: 0 !important;
-        display: block !important;
-        animation: slideAnimation 15s infinite !important;
+        transform: translateY(-30px) !important;
+    }
+    to {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0 !important;
+        transform: translateY(20px) !important;
+    }
+    to {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+    .hero-content h1 {
+        font-size: 2.5rem !important;
     }
 
-    .slide:nth-child(1) {
-        animation-delay: -0s !important;
+    .hero-content p {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem !important;
     }
 
-    .slide:nth-child(2) {
-        animation-delay: -5s !important;
+    .hero-button {
+        padding: 12px 25px !important;
+        font-size: 1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem !important;
     }
 
-    .slide:nth-child(3) {
-        animation-delay: -10s !important;
+    .hero-content p {
+        font-size: 1rem !important;
     }
-
-    @keyframes slideAnimation {
-        0%, 26.66% {
-            opacity: 1 !important;
-            transform: scale(1) !important;
-        }
-        33.33%, 100% {
-            opacity: 0 !important;
-            transform: scale(1.1) !important;
-        }
-    }
-
-    /* Dots Animation */
-    .slider-dots {
-        position: absolute !important;
-        bottom: 30px !important;
-        left: 50% !important;
-        transform: translateX(-50%) !important;
-        display: flex !important;
-        gap: 12px !important;
-        z-index: 3 !important;
-    }
-
-    .slider-dot {
-        width: 12px !important;
-        height: 12px !important;
-        background-color: rgba(255, 255, 255, 0.4) !important;
-        border-radius: 50% !important;
-        animation: dotAnimation 15s infinite !important;
-    }
-
-    .slider-dot:nth-child(1) {
-        animation-delay: -0s !important;
-    }
-
-    .slider-dot:nth-child(2) {
-        animation-delay: -5s !important;
-    }
-
-    .slider-dot:nth-child(3) {
-        animation-delay: -10s !important;
-    }
-
-    @keyframes dotAnimation {
-        0%, 26.66% {
-            background-color: #91be3f !important;
-            transform: scale(1.2) !important;
-            border: 2px solid rgba(255, 255, 255, 0.8) !important;
-        }
-        33.33%, 100% {
-            background-color: rgba(255, 255, 255, 0.4) !important;
-            transform: scale(1) !important;
-            border: 2px solid transparent !important;
-        }
-    }
-
-    /* Updated Responsive Grid */
+}   /* Updated Responsive Grid */
     @media (max-width: 1400px) {
         .courses-listing {
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
@@ -141,69 +218,7 @@
         }
     }
 
-    /* Enhanced Hero Section Styles */
-    .hero-section {
-        width: 100% !important;
-        background: linear-gradient(135deg, rgba(37, 59, 116, 0.95), rgba(27, 117, 188, 0.95)) !important;
-        padding: 0 !important;
-        text-align: center !important;
-        color: white !important;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
-        position: relative !important;
-        overflow: hidden !important;
-        height: 500px !important;
-    }
-
-    .hero-content {
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        transform: translate(-50%, -50%) !important;
-        text-align: center !important;
-        color: #fff !important;
-        width: 90% !important;
-        max-width: 800px !important;
-        z-index: 2 !important;
-        font-family: 'Cairo', sans-serif !important;
-    }
-
-    .hero-content h1 {
-        font-size: 3.5rem !important;
-        margin-bottom: 20px !important;
-        font-weight: 700 !important;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3) !important;
-        animation: fadeInDown 1s ease-in-out !important;
-        line-height: 1.2 !important;
-    }
-
-    .hero-content p {
-        font-size: 1.4rem !important;
-        margin-bottom: 30px !important;
-        animation: fadeInUp 1s ease-in-out !important;
-        font-weight: 400 !important;
-        line-height: 1.6 !important;
-        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2) !important;
-    }
-
-    .hero-button {
-        background: linear-gradient(45deg, #91be3f, #7aa32c) !important;
-        color: white !important;
-        padding: 15px 35px !important;
-        border-radius: 30px !important;
-        text-decoration: none !important;
-        font-weight: 600 !important;
-        font-size: 1.2rem !important;
-        transition: all 0.3s ease !important;
-        display: inline-block !important;
-        box-shadow: 0 4px 15px rgba(145, 190, 63, 0.3) !important;
-    }
-
-    .hero-button:hover {
-        transform: translateY(-2px) scale(1.05) !important;
-        box-shadow: 0 6px 20px rgba(145, 190, 63, 0.4) !important;
-    }
-
-    /* Course Discovery Section Styles */
+       /* Course Discovery Section Styles */
     .find-courses {
         padding: 40px 20px !important;
         background: transparent !important;
@@ -496,68 +511,55 @@
 <%block name="js_extra">
   <script type="text/javascript" src="${static.url('common/js/vendor/bootstrap.bundle.js')}"></script>
   <script type="text/javascript">
-   document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.slider-dot');
     let currentSlide = 0;
-    let isAnimating = false;
-    
+    let slideInterval;
+
     function showSlide(index) {
-        if (isAnimating) return;
-        isAnimating = true;
-        
         // Remove active class from all slides and dots
-        slides.forEach(slide => {
-            slide.style.display = 'none';
-            slide.classList.remove('active');
-        });
-        
+        slides.forEach(slide => slide.classList.remove('active'));
         dots.forEach(dot => dot.classList.remove('active'));
-        
+
         // Show and activate new slide
-        if (slides[index]) {
-            slides[index].style.display = 'block';
-            // Trigger reflow
-            slides[index].offsetHeight;
-            slides[index].classList.add('active');
-        }
-        
-        // Activate corresponding dot
-        if (dots[index]) {
-            dots[index].classList.add('active');
-        }
-        
-        // Reset animation lock after transition
-        setTimeout(() => {
-            isAnimating = false;
-        }, 800);
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
     }
-    
+
     function nextSlide() {
         currentSlide = (currentSlide + 1) % slides.length;
         showSlide(currentSlide);
     }
-    
+
     // Add click handlers to dots
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
-            if (!isAnimating && currentSlide !== index) {
+            if (currentSlide !== index) {
                 currentSlide = index;
                 showSlide(currentSlide);
             }
         });
     });
-    
+
     // Initialize first slide
     showSlide(0);
-    
+
     // Set up auto-rotation
-    const slideInterval = setInterval(nextSlide, 5000);
-    
+    function startSlider() {
+        slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopSlider() {
+        clearInterval(slideInterval);
+    }
+
+    startSlider();
+
     // Pause on hover (optional)
     const slider = document.querySelector('.hero-slider');
-    slider.addEventListener('mouseenter', () => clearInterval(slideInterval));
-    slider.addEventListener('mouseleave', () => setInterval(nextSlide, 5000));
+    slider.addEventListener('mouseenter', stopSlider);
+    slider.addEventListener('mouseleave', startSlider);
 });
   </script>
 </%block>
@@ -587,33 +589,50 @@
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-slider">
-            <div class="slide">
-                <img src="image1.jpg" alt="Slide 1">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="image-overlay"></div>
+                <img src="https://i.pinimg.com/736x/1e/4d/88/1e4d88e63a4ee24599e1d837f4d50dce.jpg" alt="اكتشف عالمًا من المعرفة">
+                <div class="hero-content">
+                    <h1>اكتشف عالمًا من المعرفة</h1>
+                    <p>انطلق في رحلة تعليمية مع دوراتنا المتنوعة والمصممة لتنمية مهاراتك</p>
+                    <a href="#discovery-form" class="hero-button">ابدأ البحث الآن</a>
+                </div>
             </div>
+            <!-- Slide 2 -->
             <div class="slide">
-                <img src="image2.jpg" alt="Slide 2">
+                <div class="image-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=400&q=80" alt="تعلم من الخبراء">
+                <div class="hero-content">
+                    <h1>تعلم من الخبراء</h1>
+                    <p>استفد من خبرات أفضل المدربين في مجالات متنوعة</p>
+                    <a href="#discovery-form" class="hero-button">ابدأ البحث الآن</a>
+                </div>
             </div>
+            <!-- Slide 3 -->
             <div class="slide">
-                <img src="image3.jpg" alt="Slide 3">
-            </div>
-            <div class="slide">
-                <img src="image4.jpg" alt="Slide 4">
+                <div class="image-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&h=400&q=80" alt="طور مهاراتك">
+                <div class="hero-content">
+                    <h1>طور مهاراتك</h1>
+                    <p>تعلم من أفضل الكورسات التي تساعدك على التميز في مجالك</p>
+                    <a href="#discovery-form" class="hero-button">ابدأ البحث الآن</a>
+                </div>
             </div>
         </div>
         <!-- Slider Dots -->
         <div class="slider-dots">
+            <div class="slider-dot active"></div>
             <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
-            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>  
         </div>
     </section>
-    <section class="find-courses">
+     <section class="find-courses">
       <section class="courses-container">
         <!-- NEW IN INDIGO Heading was added. -->
         <div class="course-heading-area">
-          <h2>افتح إمكانياتك: اكتشف دورات جديدة اليوم!</h2>
-          <p>استكشف عالمًا من المعرفة وقم بتنمية مهاراتك مع مجموعة متنوعة من الدورات</p>
+        <h2 >  افتح إمكانياتك: اكتشف دورات جديدة اليوم  </h2> 
+        <p>استكشف عالمًا من المعرفة وقم بتنمية مهاراتك مع مجموعة متنوعة من الدورات</p>
         </div>
         <!-- NEW IN INDIGO Modified search bar and filters. -->
         % if course_discovery_enabled:

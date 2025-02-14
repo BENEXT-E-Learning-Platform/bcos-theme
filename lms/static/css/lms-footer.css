@@ -31,13 +31,13 @@
 
 /* line 6, node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #15376D !important; }
+  background-color: #91be3f !important; }
 
 /* line 19, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #0d2142 !important; }
+  background-color: #749832 !important; }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-secondary {
@@ -219,7 +219,7 @@ button.bg-darkest:focus {
 
 /* line 20, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-primary {
-  border-color: #15376D !important; }
+  border-color: #91be3f !important; }
 
 /* line 20, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-secondary {
@@ -2582,11 +2582,11 @@ button.bg-darkest:focus {
 
 /* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #15376D !important; }
+  color: #91be3f !important; }
 
 /* line 19, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.text-primary:hover, a.text-primary:focus {
-  color: #0d2142 !important; }
+  color: #749832 !important; }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-secondary {
@@ -2748,13 +2748,13 @@ a.text-darkest:hover, a.text-darkest:focus {
 
 /* line 44, node_modules/bootstrap/scss/_badge.scss */
 .badge-primary {
-  color: #fff;
-  background-color: #15376D; }
+  color: #111;
+  background-color: #91be3f; }
   /* line 19, node_modules/bootstrap/scss/mixins/_hover.scss */
   .badge-primary[href]:hover, .badge-primary[href]:focus {
-    color: #fff;
+    color: #111;
     text-decoration: none;
-    background-color: #0d2142; }
+    background-color: #749832; }
 
 /* line 44, node_modules/bootstrap/scss/_badge.scss */
 .badge-secondary {
@@ -3070,7 +3070,7 @@ a.text-darkest:hover, a.text-darkest:focus {
 
 /* line 17, common/static/sass/_builtin-block-variables.scss */
 :root {
-  --action-primary-active-bg: #15376D;
+  --action-primary-active-bg: #91be3f;
   --base-font-size: 18px;
   --base-line-height: 1.5em;
   --baseline: 20px;
@@ -3093,7 +3093,7 @@ a.text-darkest:hover, a.text-darkest:focus {
   --error-color-light: #f95861;
   --font-bold: 700;
   --font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --general-color-accent: #15376D;
+  --general-color-accent: #91be3f;
   --gray: #767676;
   --gray-300: #d9d9d9;
   --gray-d1: #5e5e5e;
@@ -3113,13 +3113,13 @@ a.text-darkest:hover, a.text-darkest:focus {
   --link-color: #1b6d99;
   --medium-font-size: 0.9em;
   --partially-correct: #008100;
-  --primary: #15376D;
+  --primary: #91be3f;
   --shadow: rgba(0, 0, 0, 0.2);
   --shadow-l1: rgba(0, 0, 0, 0.1);
   --sidebar-color: #f6f6f6;
   --small-font-size: 80%;
   --static-path: "..";
-  --submitted: #15376D;
+  --submitted: #91be3f;
   --success: #008100;
   --tmg-f2: 0.25s;
   --tmg-s2: 2s;
@@ -3598,7 +3598,7 @@ footer#footer-openedx .sr-only {
     /* line 36, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
     .breadcrumbs .nav-item a,
     .breadcrumbs .nav-item a:visited {
-      color: #15376D; }
+      color: #91be3f; }
     /* line 41, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
     .breadcrumbs .nav-item a:hover {
       color: #065683; }
@@ -3650,16 +3650,16 @@ footer#footer-openedx .sr-only {
 .btn-default {
   border-color: transparent;
   background: transparent;
-  color: #15376D; }
+  color: #91be3f; }
   /* line 63, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-default:hover, .btn-default.is-hovered, .btn-default:focus, .btn-default.is-focused {
-    border-color: #15376D;
+    border-color: #91be3f;
     background-color: transparent;
-    color: #15376D; }
+    color: #91be3f; }
   /* line 73, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-default:active, .btn-default.is-pressed, .btn-default.is-active {
-    border-color: #15376D;
-    color: #15376D; }
+    border-color: #91be3f;
+    color: #91be3f; }
   /* line 81, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-default:disabled, .btn-default.is-disabled {
     border-color: #d2d0d0;
@@ -3667,8 +3667,8 @@ footer#footer-openedx .sr-only {
 
 /* line 91, common/static/sass/edx-pattern-library-shims/_buttons.scss */
 .btn-primary, .btn-brand {
-  border-color: #15376D;
-  background: #15376D;
+  border-color: #91be3f;
+  background: #91be3f;
   color: #fcfcfc; }
   /* line 99, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-primary:hover, .btn-brand:hover, .btn-primary.is-hovered, .is-hovered.btn-brand, .btn-primary:focus, .btn-brand:focus, .btn-primary.is-focused, .is-focused.btn-brand {
@@ -3677,8 +3677,8 @@ footer#footer-openedx .sr-only {
     color: #fcfcfc; }
   /* line 109, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-primary:active, .btn-brand:active, .btn-primary.is-pressed, .is-pressed.btn-brand, .btn-primary.is-active, .is-active.btn-brand {
-    border-color: #15376D;
-    background: #15376D; }
+    border-color: #91be3f;
+    background: #91be3f; }
   /* line 117, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-primary:disabled, .btn-brand:disabled, .btn-primary.is-disabled, .is-disabled.btn-brand {
     border-color: #d2d0d0;
@@ -4600,15 +4600,22 @@ footer#footer-openedx .is-deprecated {
   .view-passwordreset .wrapper-footer footer .colophon-about img {
     margin-top: 30px; }
 
-/* line 7, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* line 8, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+.rtl {
+  direction: rtl; }
+
+/* line 16, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body, h1, h2, h3, h4, h5, h6, p, label, button {
   font-family: "Inter", sans-serif !important; }
 
-/* line 10, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 19, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 html {
   background: transparent !important; }
 
-/* line 13, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 22, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body, body.view-profile {
   min-height: initial;
   background-color: #fff;
@@ -4616,7 +4623,7 @@ body, body.view-profile {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility; }
 
-/* line 20, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 29, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -4626,26 +4633,26 @@ input:-webkit-autofill:active {
   transition: background-color 5000s ease-in-out 0s;
   box-shadow: none; }
 
-/* line 29, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 38, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .page-content-container {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 15px;
   border: none; }
 
-/* line 40, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 49, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .btn, .global-header .nav-links .secondary .btn {
   border-radius: 0; }
 
-/* line 48, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 57, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
   font-family: "Inter", sans-serif; }
 
-/* line 54, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 63, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 :not(.courseware) > #content.content-wrapper {
   min-height: calc(100vh - 234.5px); }
   @media (min-width: 992px) {
-    /* line 54, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 63, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     :not(.courseware) > #content.content-wrapper {
       padding-top: 24px;
       padding-bottom: 10px;
@@ -4687,198 +4694,198 @@ h1, h2, h3, h1 span, h2 span, h3 span, .nav-item {
   font-weight: 700;
   font-style: italic; }
 
-/* line 67, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 76, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 header.global-header {
   box-shadow: none; }
   @media (min-width: 992px) {
-    /* line 67, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 76, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     header.global-header {
       position: fixed;
       top: 0;
       z-index: 200;
       overflow: visible; } }
 
-/* line 78, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 87, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 header.global-header .nav-links .secondary .user-image-frame {
   border-radius: 0; }
 
-/* line 82, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 91, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 header.global-header .nav-links .secondary .dropdown-user-menu {
   position: fixed; }
 
-/* line 90, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 99, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .login-register .form-field button.enterprise-login {
   display: none; }
 
-/* line 96, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 105, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .home header {
   box-shadow: none;
   background-color: #fff; }
 
-/* line 101, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 110, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .home > header .title {
   box-shadow: none; }
 
-/* line 105, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 114, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .home > header .outer-wrapper {
   padding: 0; }
 
-/* line 109, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 118, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .home > header .title > .heading-group {
   width: 100%;
   text-align: center; }
 
-/* line 113, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 122, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .home > header .title > .heading-group h1 {
   text-align: center; }
 
-/* line 117, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 126, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .animation-home-header-pop-up, .home > header .outer-wrapper {
   animation: none; }
 
-/* line 121, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 130, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .highlighted-courses .courses, .find-courses .courses {
   padding-top: 0; }
 
-/* line 125, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 134, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .home .courses-container .courses .courses-listing {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  /* line 129, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 138, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .home .courses-container .courses .courses-listing .courses-listing-item {
     margin: 0 20px 30px 20px; }
-    /* line 132, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 141, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     .home .courses-container .courses .courses-listing .courses-listing-item:nth-child(4n), .home .courses-container .courses .courses-listing .courses-listing-item:last-child {
       margin-right: 20px; }
 
-/* line 139, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 148, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .dashboard .main-container {
   padding: initial; }
 
 @media (min-width: 992px) {
-  /* line 144, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 153, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   nav.wrapper-preview-menu {
     margin-top: 75px; } }
 
-/* line 152, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 161, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .course-info header.course-profile {
   background: #fff;
   box-shadow: none;
   border-bottom: none; }
-  /* line 157, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 166, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .course-info header.course-profile .intro-inner-wrapper {
     border: none;
     box-shadow: none; }
 
-/* line 164, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 173, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .course-info .container {
   padding-bottom: 0; }
 
-/* line 167, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 176, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .course-info .details .inner-wrapper > section {
   margin-bottom: 0; }
 
-/* line 171, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 180, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .course-info header.course-profile .intro-inner-wrapper .intro .main-cta span.register {
   padding: 10px 0; }
 
-/* line 175, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 184, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong {
   background-image: none;
   border-radius: 0; }
-  /* line 178, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 187, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:hover:not(:disabled) {
     background-image: none; }
 
-/* line 187, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 196, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .find-courses, .university-profile {
   background-color: #fff; }
 
-/* line 192, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 201, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .view-profile .profile-self .wrapper-profile-field-account-privacy {
   margin-top: -24px; }
 
-/* line 195, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 204, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .view-profile .wrapper-profile {
   background-color: #fff; }
 
-/* line 199, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 208, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .view-profile .wrapper-profile-section-container-one .wrapper-profile-section-one {
-  border: solid #15376D;
+  border: solid #91be3f;
   border-width: 5px 1px 1px 1px; }
 
-/* line 205, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 214, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .wrapper-account-settings .wrapper-header {
   height: 100px; }
 
-/* line 208, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 217, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .wrapper-account-settings .wrapper-header .header-title {
   padding-top: 0; }
 
-/* line 211, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 220, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .wrapper-account-settings .wrapper-header .account-nav button.active {
-  border-bottom-color: #15376D; }
+  border-bottom-color: #91be3f; }
 
-/* line 216, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 225, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .wrapper-footer {
   box-shadow: none;
   padding: 25px 40px; }
-  /* line 220, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 229, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .wrapper-footer .wrapper-logo {
     display: none; }
-  /* line 223, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 232, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .wrapper-footer .copyright {
     display: none; }
-  /* line 226, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 235, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .wrapper-footer .nav-legal ul {
     display: inline-block; }
-  /* line 230, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 239, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .wrapper-footer footer#footer-openedx .footer-about-openedx a {
     float: none; }
-  /* line 233, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 242, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .wrapper-footer footer#footer-openedx .footer-about-openedx p {
     text-align: right; }
 
-/* line 238, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 247, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .container, .main-container, .find-courses {
   max-width: 1600px;
   padding-left: 15px !important;
   padding-right: 15px !important;
   margin: 0 auto; }
 
-/* line 244, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 253, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .window-wrap {
   position: relative;
   overflow: hidden;
   width: 100%; }
 
-/* line 249, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 258, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 #lean_overlay {
   z-index: 250; }
 
-/* line 252, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 261, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .modal {
   box-shadow: none;
   padding: 0;
   background: none; }
-  /* line 256, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 265, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .modal .inner-wrapper {
     padding: 15px;
     border-radius: 8px;
     border: none; }
     @media (min-width: 576px) {
-      /* line 256, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 265, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       .modal .inner-wrapper {
         padding: 24px; } }
 
-/* line 266, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 275, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .container.about {
   padding: 30px 0;
   font-size: 16px;
   line-height: 24px;
   color: #515661; }
-  /* line 271, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 280, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .container.about h1 {
     font-size: 24px;
     font-weight: 700;
@@ -4886,61 +4893,61 @@ header.global-header .nav-links .secondary .dropdown-user-menu {
     margin: 0 0 12px;
     text-align: left;
     color: #111827; }
-  /* line 279, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 288, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .container.about p {
     margin: 0 0 20px; }
-  /* line 282, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 291, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .container.about a {
-    color: #15376D;
+    color: #91be3f;
     text-decoration: underline; }
-  /* line 286, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 295, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .container.about .graphic-img {
     margin: 0 auto;
     max-width: 178px;
     padding: 30px 0; }
-    /* line 290, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 299, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     .container.about .graphic-img img {
       width: 100%;
       display: block;
       height: auto; }
-      /* line 294, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 303, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       .container.about .graphic-img img.dark {
         display: none; }
 
-/* line 301, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 310, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .wrapper-course-material[aria-label="Course Material"] {
   margin: 0 auto;
   max-width: 1600px;
   padding: 20px 15px !important; }
-  /* line 305, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 314, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   .wrapper-course-material[aria-label="Course Material"] .tabs.course-tabs {
     margin: 0 0 10px;
     border-bottom: 1px solid #E5E7EB;
     padding: 0; }
-    /* line 309, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 318, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     .wrapper-course-material[aria-label="Course Material"] .tabs.course-tabs li {
       margin: 0 32px 0 0; }
-      /* line 311, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 320, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       .wrapper-course-material[aria-label="Course Material"] .tabs.course-tabs li a {
         border-width: 2px;
         font-size: 14px;
         font-weight: 500;
         color: #374151; }
-        /* line 316, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+        /* line 325, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
         .wrapper-course-material[aria-label="Course Material"] .tabs.course-tabs li a:hover, .wrapper-course-material[aria-label="Course Material"] .tabs.course-tabs li a:visited {
           color: #111827;
           border-color: transparent; }
-        /* line 320, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+        /* line 329, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
         .wrapper-course-material[aria-label="Course Material"] .tabs.course-tabs li a.active {
           color: #111827;
-          border-color: #15376D; }
+          border-color: #91be3f; }
 
-/* line 331, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 340, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-statictab #main .container, body.view-instructordash #main .container, body.view-teams #main .container, body.view-wiki #main .container,
 body.view-student-notes #main .container {
   padding: 0; }
 
-/* line 334, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 343, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-statictab #main .static_tab_wrapper, body.view-instructordash #main .static_tab_wrapper, body.view-teams #main .static_tab_wrapper, body.view-wiki #main .static_tab_wrapper,
 body.view-student-notes #main .static_tab_wrapper {
   border: none;
@@ -4950,90 +4957,90 @@ body.view-student-notes #main .static_tab_wrapper {
   box-sizing: border-box;
   background: no-repeat; }
 
-/* line 343, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 352, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-statictab .container.about, body.view-instructordash .container.about, body.view-teams .container.about, body.view-wiki .container.about,
 body.view-student-notes .container.about {
   color: #DDDFE2; }
-  /* line 345, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 354, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-statictab .container.about h1, body.view-instructordash .container.about h1, body.view-teams .container.about h1, body.view-wiki .container.about h1,
   body.view-student-notes .container.about h1 {
     color: #AEC7F6; }
-  /* line 348, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 357, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-statictab .container.about a, body.view-instructordash .container.about a, body.view-teams .container.about a, body.view-wiki .container.about a,
   body.view-student-notes .container.about a {
     color: #AEC7F6; }
-  /* line 352, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 361, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-statictab .container.about .graphic-img img, body.view-instructordash .container.about .graphic-img img, body.view-teams .container.about .graphic-img img, body.view-wiki .container.about .graphic-img img,
   body.view-student-notes .container.about .graphic-img img {
     display: none; }
-    /* line 354, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 363, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-statictab .container.about .graphic-img img.dark, body.view-instructordash .container.about .graphic-img img.dark, body.view-teams .container.about .graphic-img img.dark, body.view-wiki .container.about .graphic-img img.dark,
     body.view-student-notes .container.about .graphic-img img.dark {
       display: block; }
 
-/* line 361, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 370, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-statictab .wrapper-member-select, body.view-instructordash .wrapper-member-select, body.view-teams .wrapper-member-select, body.view-wiki .wrapper-member-select,
 body.view-student-notes .wrapper-member-select {
   background: #F2F7F8 !important; }
-  /* line 363, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 372, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-statictab .wrapper-member-select select, body.view-instructordash .wrapper-member-select select, body.view-teams .wrapper-member-select select, body.view-wiki .wrapper-member-select select,
   body.view-student-notes .wrapper-member-select select {
     background: none;
     color: dark; }
 
-/* line 369, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 378, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-statictab .member-list .label, body.view-instructordash .member-list .label, body.view-teams .member-list .label, body.view-wiki .member-list .label,
 body.view-student-notes .member-list .label {
   color: dark !important;
   background: #F2F7F8 !important; }
 
-/* line 374, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 383, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-statictab .bottom-bar, body.view-instructordash .bottom-bar, body.view-teams .bottom-bar, body.view-wiki .bottom-bar,
 body.view-student-notes .bottom-bar {
   background: #F2F7F8 !important; }
-  /* line 376, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 385, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-statictab .bottom-bar input[type="button"], body.view-instructordash .bottom-bar input[type="button"], body.view-teams .bottom-bar input[type="button"], body.view-wiki .bottom-bar input[type="button"],
   body.view-student-notes .bottom-bar input[type="button"] {
-    background: #15376D !important;
-    border-color: #15376D !important;
+    background: #91be3f !important;
+    border-color: #91be3f !important;
     color: white !important;
     text-shadow: none !important;
     font-size: 14px;
     font-weight: 500; }
 
-/* line 387, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 396, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-teams .container {
   max-width: 1600px !important;
   padding: 0 15px !important;
   margin: 0 auto; }
-  /* line 391, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 400, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-teams .container > div {
     border: none;
     background: none; }
 
-/* line 398, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 407, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-instructordash .container {
   max-width: 1600px !important;
   padding: 0 15px !important;
   margin: 0 auto; }
-  /* line 402, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 411, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-instructordash .container > div {
     border: none;
     background: none; }
 
-/* line 407, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 416, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-instructordash .instructor-dashboard-content-2 {
   padding: 0; }
-  /* line 409, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 418, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-instructordash .instructor-dashboard-content-2 h2.instructor-dashboard-title {
     font-size: 24px;
     line-height: 30px; }
-  /* line 413, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 422, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-instructordash .instructor-dashboard-content-2 a.instructor-info-action {
-    background: #15376D;
+    background: #91be3f;
     color: white;
     margin: 0 0 10px; }
-  /* line 418, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 427, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-instructordash .instructor-dashboard-content-2 .instructor-nav {
     overflow: hidden;
     width: 100%;
@@ -5043,13 +5050,13 @@ body.view-instructordash .instructor-dashboard-content-2 {
     border-radius: 6px;
     padding: 0 !important;
     letter-spacing: -.32em; }
-    /* line 427, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 436, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-instructordash .instructor-dashboard-content-2 .instructor-nav li {
       letter-spacing: normal; }
-      /* line 430, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 439, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-instructordash .instructor-dashboard-content-2 .instructor-nav li:first-child button {
         border: none; }
-      /* line 434, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 443, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-instructordash .instructor-dashboard-content-2 .instructor-nav li button {
         border: none !important;
         border-radius: 0 !important;
@@ -5060,20 +5067,20 @@ body.view-instructordash .instructor-dashboard-content-2 {
         padding: 9px 17px;
         color: #374151;
         text-decoration: none !important; }
-        /* line 444, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+        /* line 453, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
         body.view-instructordash .instructor-dashboard-content-2 .instructor-nav li button.active-section {
-          background: #15376D !important;
+          background: #91be3f !important;
           color: white !important; }
-        /* line 448, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+        /* line 457, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
         body.view-instructordash .instructor-dashboard-content-2 .instructor-nav li button:hover {
           color: #111827; }
-  /* line 454, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 463, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper {
     margin: 0; }
-    /* line 456, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 465, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table {
       width: 100%; }
-      /* line 458, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 467, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table th, body.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table td {
         padding: 10px;
         width: 50%;
@@ -5081,14 +5088,14 @@ body.view-instructordash .instructor-dashboard-content-2 {
         line-height: 28px;
         font-weight: 400;
         color: #111827; }
-      /* line 466, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 475, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table .total {
         border-top: 1px solid #E5E7EB; }
-        /* line 468, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+        /* line 477, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
         body.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table .total th, body.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table .total td {
-          color: #15376D;
+          color: #91be3f;
           font-weight: 700; }
-  /* line 475, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 484, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-instructordash .instructor-dashboard-content-2 #course_info > h4 {
     background: #F2F7F8;
     padding: 15px 0 0 15px;
@@ -5096,41 +5103,41 @@ body.view-instructordash .instructor-dashboard-content-2 {
     color: #111827;
     font-weight: 600;
     margin-bottom: 0; }
-  /* line 483, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 492, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-instructordash .instructor-dashboard-content-2 #course_info > .enrollment-wrapper {
     padding-top: 0 !important; }
-    /* line 485, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 494, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-instructordash .instructor-dashboard-content-2 #course_info > .enrollment-wrapper .tip {
       text-align: left;
       font-size: 14px;
       font-weight: normal;
       color: #374151;
       margin-bottom: 10px; }
-  /* line 493, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 502, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-instructordash .instructor-dashboard-content-2 #course_info .enrollment-wrapper, body.view-instructordash .instructor-dashboard-content-2 .basic-wrapper, body.view-instructordash .instructor-dashboard-content-2 .course-errors-wrapper, body.view-instructordash .instructor-dashboard-content-2 .running-tasks-container {
     background: #F2F7F8;
     padding: 15px;
     margin: 0 0 30px; }
-    /* line 497, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 506, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-instructordash .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4, body.view-instructordash .instructor-dashboard-content-2 .basic-wrapper h4, body.view-instructordash .instructor-dashboard-content-2 .course-errors-wrapper h4, body.view-instructordash .instructor-dashboard-content-2 .running-tasks-container h4 {
       font-size: 18px;
       color: #111827;
       font-weight: 600; }
-      /* line 501, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 510, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-instructordash .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4 span, body.view-instructordash .instructor-dashboard-content-2 .basic-wrapper h4 span, body.view-instructordash .instructor-dashboard-content-2 .course-errors-wrapper h4 span, body.view-instructordash .instructor-dashboard-content-2 .running-tasks-container h4 span {
         font-size: 14px;
         font-weight: normal;
         color: #374151; }
-  /* line 508, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 517, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-instructordash .instructor-dashboard-content-2 .list-input {
     list-style: none;
     padding: 0; }
-    /* line 511, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 520, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-instructordash .instructor-dashboard-content-2 .list-input li {
       display: flex;
       font-size: 16px;
       line-height: 28px; }
-      /* line 515, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 524, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-instructordash .instructor-dashboard-content-2 .list-input li label, body.view-instructordash .instructor-dashboard-content-2 .list-input li b {
         font-weight: normal;
         font-style: normal;
@@ -5141,38 +5148,38 @@ body.view-instructordash .instructor-dashboard-content-2 {
         width: 50%;
         color: #111827; }
 
-/* line 528, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 537, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-instructordash .enrollment-button, body.view-instructordash input[type=button], body.view-instructordash button.btn {
-  background: #15376D;
-  border-color: #15376D;
+  background: #91be3f;
+  border-color: #91be3f;
   color: white;
   font-weight: 500;
   font-size: 14px;
   box-shadow: none; }
 
-/* line 537, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 546, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 .course-wrapper .course-content .xblock.xblock-student_view-vertical,
 .course-wrapper .course-content .xblock.xblock-public_view-vertical,
 .course-wrapper .courseware-results-wrapper .xblock.xblock-student_view-vertical,
 .course-wrapper .courseware-results-wrapper .xblock.xblock-public_view-vertical {
   max-width: 100% !important; }
 
-/* line 544, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 553, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.view-wiki .container {
   max-width: 1600px !important;
   margin: 0 auto !important;
   padding: 0 15px !important; }
-  /* line 548, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 557, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container > div {
     background: none;
     box-shadow: none;
     border: none; }
-  /* line 554, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 563, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container #alert_stat_bar .paragon__alert-warning {
     color: #111827;
     background: #F2F7F8;
     border: none; }
-    /* line 558, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 567, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-wiki .container #alert_stat_bar .paragon__alert-warning button.paragon__close {
       background: none !important;
       box-shadow: none !important;
@@ -5180,54 +5187,54 @@ body.view-wiki .container {
       opacity: 1 !important;
       font-size: 1.2rem;
       border: none !important; }
-  /* line 570, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 579, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container section.wiki .diff-container table tr.insert td {
     background: #54CF5E;
     color: #F8F8F8; }
-  /* line 574, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 583, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container section.wiki .diff-container table tr.delete td {
     background: #FFA07A;
     color: #F8F8F8; }
-  /* line 580, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 589, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container section.wiki .table.table-striped tr:nth-child(2n) {
     background: #F2F7F8; }
-  /* line 584, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 593, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container section.wiki .table.table-striped td a {
-    color: #15376D !important; }
-  /* line 589, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    color: #91be3f !important; }
+  /* line 598, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container section.wiki .directory-toolbar {
     background: #F2F7F8; }
-    /* line 591, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 600, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-wiki .container section.wiki .directory-toolbar a.btn {
-      background: #15376D !important;
-      border-color: #15376D !important;
+      background: #91be3f !important;
+      border-color: #91be3f !important;
       box-shadow: none !important;
       color: white !important;
       text-shadow: none; }
-  /* line 600, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 609, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container .wiki-wrapper section.wiki .btn.btn-large, body.view-wiki .container .wiki-wrapper section.wiki .btn.btn-danger {
     background: none;
     color: #111827 !important;
     border-color: #111827 !important;
     text-shadow: none !important;
     box-shadow: none !important; }
-    /* line 606, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 615, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-wiki .container .wiki-wrapper section.wiki .btn.btn-large:hover, body.view-wiki .container .wiki-wrapper section.wiki .btn.btn-danger:hover {
       background: none !important;
       color: #111827 !important;
       border-color: #111827 !important; }
-  /* line 612, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 621, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container .wiki-wrapper section.wiki .btn.btn-primary, body.view-wiki .container .wiki-wrapper section.wiki .btn.btn-brand, body.view-wiki .container .wiki-wrapper section.wiki .btn.btn-brand {
-    background: #15376D !important;
-    border-color: #15376D !important;
+    background: #91be3f !important;
+    border-color: #91be3f !important;
     color: white !important;
     box-shadow: none; }
-    /* line 617, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 626, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-wiki .container .wiki-wrapper section.wiki .btn.btn-primary:hover, body.view-wiki .container .wiki-wrapper section.wiki .btn.btn-brand:hover, body.view-wiki .container .wiki-wrapper section.wiki .btn.btn-brand:hover {
-      background: #15376D !important;
-      border-color: #15376D !important;
+      background: #91be3f !important;
+      border-color: #91be3f !important;
       color: white !important; }
-  /* line 624, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 633, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container .wiki .breadcrumbs-header {
     padding: 15px;
     background: #F2F7F8;
@@ -5236,13 +5243,13 @@ body.view-wiki .container {
     height: auto;
     overflow: hidden;
     margin: 0 0 30px; }
-    /* line 632, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 641, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-wiki .container .wiki .breadcrumbs-header .global-functions {
       margin: 0 0 0 10px; }
-      /* line 634, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 643, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-wiki .container .wiki .breadcrumbs-header .global-functions a.add-article-btn {
         margin: 0;
-        background: #15376D;
+        background: #91be3f;
         color: white;
         font-size: 14px;
         font-weight: 500;
@@ -5251,47 +5258,47 @@ body.view-wiki .container {
         padding: 5px 15px !important;
         line-height: 28px;
         text-shadow: none; }
-    /* line 647, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 656, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-wiki .container .wiki .breadcrumbs-header .breadcrumb {
       margin: 0; }
-      /* line 650, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 659, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-wiki .container .wiki .breadcrumbs-header .breadcrumb li:after {
         color: #6B7280; }
-      /* line 653, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 662, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-wiki .container .wiki .breadcrumbs-header .breadcrumb li a {
         font-size: 14px;
         font-weight: 500;
         color: #6B7280; }
-  /* line 661, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 670, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container .wiki .new-article {
     padding: 10px 0; }
-  /* line 665, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 674, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container .page-header, body.view-wiki .container h1 {
     border-bottom: none;
     font-size: 20px;
     padding: 0;
     margin: 0 0 10px; }
-  /* line 671, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 680, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.view-wiki .container .article-wrapper {
     border: 1px solid #F2F7F8;
     border-radius: 8px;
     padding: 15px; }
-    /* line 675, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 684, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-wiki .container .article-wrapper:after {
       display: block;
       clear: both;
       content: ""; }
-    /* line 680, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 689, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-wiki .container .article-wrapper .main-article {
       padding: 0;
       width: calc(100% - 240px - 40px);
       margin: 0 40px 0 0;
       font-size: 14px;
       line-height: 28px; }
-      /* line 686, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 695, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-wiki .container .article-wrapper .main-article p {
         margin: 0 0 15px; }
-      /* line 689, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 698, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-wiki .container .article-wrapper .main-article h3.entry-title {
         margin: 0 0 15px;
         font-size: 18px;
@@ -5299,103 +5306,103 @@ body.view-wiki .container {
         font-weight: 600;
         border: none;
         padding: 0; }
-    /* line 698, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 707, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.view-wiki .container .article-wrapper .article-functions {
       padding: 0;
       width: 240px; }
-      /* line 702, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 711, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-wiki .container .article-wrapper .article-functions .nav-tabs li {
         margin: 0 0 1px; }
-        /* line 704, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+        /* line 713, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
         body.view-wiki .container .article-wrapper .article-functions .nav-tabs li a {
           font-size: 14px;
           line-height: 28px;
           font-weight: 500;
-          color: #15376D;
+          color: #91be3f;
           padding: 6px 10px; }
-          /* line 710, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+          /* line 719, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
           body.view-wiki .container .article-wrapper .article-functions .nav-tabs li a:hover {
             text-decoration: none;
             font-weight: 500;
             border: none;
             background: #F2F7F8; }
-          /* line 716, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+          /* line 725, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
           body.view-wiki .container .article-wrapper .article-functions .nav-tabs li a .icon {
             font-size: 18px;
             line-height: 28px;
             color: #82919B;
             margin: 0; }
-        /* line 724, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+        /* line 733, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
         body.view-wiki .container .article-wrapper .article-functions .nav-tabs li.active a {
           border: none;
-          color: #15376D;
+          color: #91be3f;
           background: #F2F7F8; }
-      /* line 732, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 741, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-wiki .container .article-wrapper .article-functions .timestamp {
         border: 1px solid #E5E7EB;
         border-radius: 8px;
         border-left: 6px solid #F2F7F8;
         padding: 15px; }
-        /* line 737, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+        /* line 746, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
         body.view-wiki .container .article-wrapper .article-functions .timestamp .label {
           font-weight: 500;
           font-size: 12px;
           color: #4B5563; }
-        /* line 742, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+        /* line 751, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
         body.view-wiki .container .article-wrapper .article-functions .timestamp .date {
           font-weight: 500;
           font-size: 14px;
           color: #4B5563; }
-      /* line 748, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+      /* line 757, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
       body.view-wiki .container .article-wrapper .article-functions .see-children {
         border: none; }
-        /* line 750, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+        /* line 759, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
         body.view-wiki .container .article-wrapper .article-functions .see-children a {
-          background: #15376D;
+          background: #91be3f;
           padding: 6px 15px;
           text-align: center;
           color: white;
           font-size: 14px;
           font-weight: 500;
           border-radius: 6px; }
-          /* line 758, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+          /* line 767, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
           body.view-wiki .container .article-wrapper .article-functions .see-children a:hover, body.view-wiki .container .article-wrapper .article-functions .see-children a:focus {
             font-weight: 500;
             color: white;
             text-decoration: none; }
 
-/* line 770, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 779, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body div.book-wrapper {
   margin: 0 auto;
   max-width: 1600px; }
 
-/* line 776, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 785, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme input:-webkit-autofill,
 body.indigo-dark-theme input:-webkit-autofill:hover,
 body.indigo-dark-theme input:-webkit-autofill:focus,
 body.indigo-dark-theme input:-webkit-autofill:active {
   -webkit-text-fill-color: #F8F8F8; }
 
-/* line 782, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 791, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme input::placeholder {
   opacity: .9;
   color: #F8F8F8; }
 
-/* line 786, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 795, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme textarea, body.indigo-dark-theme form#wiki_revision .CodeMirror, body.indigo-dark-theme input[type="text"], body.indigo-dark-theme input[type="email"], body.indigo-dark-theme input[type="password"] {
   background: transparent;
   color: white; }
 
-/* line 790, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 799, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme * {
   accent-color: #AEC7F6;
   scrollbar-color: #F8F8F8 #0D0D0E; }
 
-/* line 794, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 803, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .find-courses, body.indigo-dark-theme .university-profile {
   background-color: #0D0D0E; }
 
-/* line 797, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 806, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .ui-state-default,
 body.indigo-dark-theme .ui-widget-content
 .ui-state-default,
@@ -5404,49 +5411,49 @@ body.indigo-dark-theme .ui-widget-header
   background: #292A2C;
   color: #F8F8F8; }
 
-/* line 805, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 814, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .idash-section .no-pending-tasks-message p {
   color: #F8F8F8; }
 
-/* line 809, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 818, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .wrapper-course-material .tabs.course-tabs {
   border-bottom: 1px solid #292A2C; }
-  /* line 812, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 821, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .wrapper-course-material .tabs.course-tabs li a {
     color: #F8F8F8; }
-    /* line 814, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 823, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme .wrapper-course-material .tabs.course-tabs li a:hover, body.indigo-dark-theme .wrapper-course-material .tabs.course-tabs li a:visited {
       color: #DDDFE2;
       border-color: transparent; }
-    /* line 818, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 827, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme .wrapper-course-material .tabs.course-tabs li a.active {
       color: #F8F8F8;
       border-color: #F8F8F8; }
 
-/* line 828, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 837, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .window-wrap, body.indigo-dark-theme.view-instructordash .window-wrap, body.indigo-dark-theme.view-teams .window-wrap, body.indigo-dark-theme.view-wiki .window-wrap, body.indigo-dark-theme.view-student-notes .window-wrap {
   background: none; }
 
-/* line 831, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 840, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab #email-students-beta-tip, body.indigo-dark-theme.view-instructordash #email-students-beta-tip, body.indigo-dark-theme.view-teams #email-students-beta-tip, body.indigo-dark-theme.view-wiki #email-students-beta-tip, body.indigo-dark-theme.view-student-notes #email-students-beta-tip {
   color: #111827; }
 
-/* line 836, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 845, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 a.instructor-info-action, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 a.instructor-info-action, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 a.instructor-info-action, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 a.instructor-info-action, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 a.instructor-info-action {
   background: #AEC7F6;
   color: #112F6B; }
 
-/* line 840, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 849, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .request-response-error, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .request-response-error, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .request-response-error, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .request-response-error, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .request-response-error {
   color: #FFA07A; }
 
-/* line 843, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 852, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .ui-widget-content, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .ui-widget-content, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .ui-widget-content, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .ui-widget-content, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .ui-widget-content {
   background: none;
   color: #F8F8F8;
   border: 1px solid #292A2C; }
 
-/* line 848, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 857, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .ui-accordion-header, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .ui-accordion-header, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .ui-accordion-header, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .ui-accordion-header, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .ui-accordion-header {
   background: #AEC7F6;
   color: #112F6B;
@@ -5454,7 +5461,7 @@ body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .ui-accord
   padding-top: 10px;
   padding-bottom: 10px; }
 
-/* line 855, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 864, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .ecommerce-wrapper span.tip,
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .proctoring-wrapper span.tip, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .ecommerce-wrapper span.tip,
 body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .proctoring-wrapper span.tip, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .ecommerce-wrapper span.tip,
@@ -5464,7 +5471,7 @@ body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .proct
   background: #292A2C;
   color: #F8F8F8;
   border: none; }
-  /* line 860, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 869, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .ecommerce-wrapper span.tip a.blue-button,
   body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .proctoring-wrapper span.tip a.blue-button, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .ecommerce-wrapper span.tip a.blue-button,
   body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .proctoring-wrapper span.tip a.blue-button, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .ecommerce-wrapper span.tip a.blue-button,
@@ -5478,7 +5485,7 @@ body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .proct
     box-shadow: none;
     font-weight: 500; }
 
-/* line 869, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 878, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .enrollment-button, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 input[type=button], body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 button.btn, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .enrollment-button, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 input[type=button], body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 button.btn, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .enrollment-button, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 input[type=button], body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 button.btn, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .enrollment-button, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 input[type=button], body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 button.btn, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .enrollment-button, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 input[type=button], body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 button.btn {
   background: #AEC7F6;
   border-color: #AEC7F6;
@@ -5486,126 +5493,126 @@ body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .enrollmen
   text-shadow: none;
   box-shadow: none !important; }
 
-/* line 876, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 885, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .instructor-nav, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .instructor-nav, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .instructor-nav, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .instructor-nav, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .instructor-nav {
   border: 1px solid #E5E7EB; }
-  /* line 880, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 889, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .instructor-nav li:first-child button, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .instructor-nav li:first-child button, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .instructor-nav li:first-child button, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .instructor-nav li:first-child button, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .instructor-nav li:first-child button {
     border: none; }
-  /* line 884, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 893, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .instructor-nav li button, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .instructor-nav li button, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .instructor-nav li button, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .instructor-nav li button, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .instructor-nav li button {
     border: none !important;
     border-radius: 0 !important;
     border-left: 1px solid #E5E7EB !important;
     color: #DDDFE2; }
-    /* line 889, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 898, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .instructor-nav li button.active-section, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .instructor-nav li button.active-section, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .instructor-nav li button.active-section, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .instructor-nav li button.active-section, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .instructor-nav li button.active-section {
       background: #AEC7F6 !important;
       color: #112F6B !important; }
-    /* line 893, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 902, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .instructor-nav li button:hover, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .instructor-nav li button:hover, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .instructor-nav li button:hover, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .instructor-nav li button:hover, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .instructor-nav li button:hover {
       color: #F8F8F8; }
 
-/* line 901, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 910, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .enrollment-wrapper table th, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .enrollment-wrapper table td, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table th, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table td, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .enrollment-wrapper table th, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .enrollment-wrapper table td, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .enrollment-wrapper table th, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .enrollment-wrapper table td, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .enrollment-wrapper table th, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .enrollment-wrapper table td {
   color: #F8F8F8; }
 
-/* line 904, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 913, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .enrollment-wrapper table .total, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table .total, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .enrollment-wrapper table .total, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .enrollment-wrapper table .total, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .enrollment-wrapper table .total {
   border-top: 1px solid #E5E7EB; }
-  /* line 906, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 915, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .enrollment-wrapper table .total th, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .enrollment-wrapper table .total td, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table .total th, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .enrollment-wrapper table .total td, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .enrollment-wrapper table .total th, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .enrollment-wrapper table .total td, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .enrollment-wrapper table .total th, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .enrollment-wrapper table .total td, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .enrollment-wrapper table .total th, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .enrollment-wrapper table .total td {
     color: #AEC7F6; }
 
-/* line 912, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 921, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 #course_info > h4, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 #course_info > h4, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 #course_info > h4, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 #course_info > h4, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 #course_info > h4 {
   background: #292A2C;
   color: #F8F8F8; }
 
-/* line 916, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 925, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 #course_info .enrollment-wrapper, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 #course_info .enrollment-wrapper, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 #course_info .enrollment-wrapper, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 #course_info .enrollment-wrapper, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 #course_info .enrollment-wrapper {
   padding-top: 0; }
-  /* line 918, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 927, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 #course_info .enrollment-wrapper .tip, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 #course_info .enrollment-wrapper .tip, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 #course_info .enrollment-wrapper .tip, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 #course_info .enrollment-wrapper .tip, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 #course_info .enrollment-wrapper .tip {
     color: #DDDFE2; }
 
-/* line 922, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 931, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 #course_info .enrollment-wrapper, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .basic-wrapper, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .course-errors-wrapper, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .running-tasks-container, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 #course_info .enrollment-wrapper, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .basic-wrapper, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .course-errors-wrapper, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .running-tasks-container, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 #course_info .enrollment-wrapper, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .basic-wrapper, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .course-errors-wrapper, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .running-tasks-container, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 #course_info .enrollment-wrapper, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .basic-wrapper, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .course-errors-wrapper, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .running-tasks-container, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 #course_info .enrollment-wrapper, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .basic-wrapper, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .course-errors-wrapper, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .running-tasks-container {
   background: #292A2C; }
-  /* line 924, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 933, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .basic-wrapper h4, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .course-errors-wrapper h4, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .running-tasks-container h4, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .basic-wrapper h4, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .course-errors-wrapper h4, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .running-tasks-container h4, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .basic-wrapper h4, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .course-errors-wrapper h4, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .running-tasks-container h4, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .basic-wrapper h4, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .course-errors-wrapper h4, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .running-tasks-container h4, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .basic-wrapper h4, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .course-errors-wrapper h4, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .running-tasks-container h4 {
     color: #F8F8F8; }
-    /* line 926, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 935, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4 span, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .basic-wrapper h4 span, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .course-errors-wrapper h4 span, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .running-tasks-container h4 span, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4 span, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .basic-wrapper h4 span, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .course-errors-wrapper h4 span, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .running-tasks-container h4 span, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4 span, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .basic-wrapper h4 span, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .course-errors-wrapper h4 span, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .running-tasks-container h4 span, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4 span, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .basic-wrapper h4 span, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .course-errors-wrapper h4 span, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .running-tasks-container h4 span, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 #course_info .enrollment-wrapper h4 span, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .basic-wrapper h4 span, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .course-errors-wrapper h4 span, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .running-tasks-container h4 span {
       color: #DDDFE2; }
 
-/* line 933, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 942, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .list-input li label, body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .list-input li b, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .list-input li label, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .list-input li b, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .list-input li label, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .list-input li b, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .list-input li label, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .list-input li b, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .list-input li label, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .list-input li b {
   color: #F8F8F8; }
 
-/* line 939, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 948, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table th, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table th, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table th, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table th, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table th {
   background: #292A2C;
   color: #F8F8F8 !important; }
-  /* line 942, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 951, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table th button, body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table th button, body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table th button, body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table th button, body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table th button {
     text-shadow: none !important;
     color: #F8F8F8 !important; }
 
-/* line 947, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 956, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-statictab .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table tbody tr:nth-child(odd), body.indigo-dark-theme.view-instructordash .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table tbody tr:nth-child(odd), body.indigo-dark-theme.view-teams .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table tbody tr:nth-child(odd), body.indigo-dark-theme.view-wiki .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table tbody tr:nth-child(odd), body.indigo-dark-theme.view-student-notes .instructor-dashboard-content-2 .open-response-assessment-block .open-response-assessment-main-table tbody tr:nth-child(odd) {
   background: #292A2C;
   color: #F8F8F8 !important; }
 
-/* line 955, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 964, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .CodeMirror-scroll {
   background: #0D0D0E; }
-  /* line 957, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 966, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .CodeMirror-scroll * {
     color: #F8F8F8 !important; }
 
-/* line 962, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 971, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki #previewModal .inner-wrapper {
   background: #292A2C; }
-  /* line 964, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 973, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki #previewModal .inner-wrapper iframe {
     background: #fafafa; }
-  /* line 967, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 976, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki #previewModal .inner-wrapper .close-modal {
     color: #F8F8F8; }
-  /* line 970, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 979, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki #previewModal .inner-wrapper h1 {
     color: #F8F8F8; }
-  /* line 973, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 982, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki #previewModal .inner-wrapper header h2 {
     color: #F8F8F8;
     text-shadow: none; }
 
-/* line 980, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 989, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper .alert.denied, body.indigo-dark-theme.view-wiki .wiki-wrapper .alert.alert-error {
   color: #F8F8F8;
   background: #292A2C;
   border: none; }
 
-/* line 985, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 994, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .main-article .alert {
   color: #F8F8F8;
   background: #292A2C;
   border: none; }
 
-/* line 990, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 999, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper label {
   color: #F8F8F8 !important; }
-  /* line 992, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1001, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .wiki-wrapper label section.wiki .main-article {
     color: #F8F8F8; }
 
-/* line 997, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1006, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper #alert_stat_bar .paragon__alert-warning {
   color: #F8F8F8;
   background: #292A2C;
   border: none; }
-  /* line 1001, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1010, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .wiki-wrapper #alert_stat_bar .paragon__alert-warning button.paragon__close {
     background: none !important;
     box-shadow: none !important;
@@ -5613,178 +5620,178 @@ body.indigo-dark-theme.view-wiki .wiki-wrapper #alert_stat_bar .paragon__alert-w
     opacity: 1 !important;
     font-size: 1.2rem; }
 
-/* line 1012, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1021, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .diff-container table tr.insert td {
   background: #54CF5E;
   color: #F8F8F8; }
 
-/* line 1016, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1025, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .diff-container table tr.delete td {
   background: #FFA07A;
   color: #F8F8F8; }
 
-/* line 1022, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1031, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .table.table-striped tr:nth-child(2n) {
   background: #292A2C; }
 
-/* line 1026, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1035, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .table.table-striped td a {
   color: #AEC7F6 !important; }
 
-/* line 1031, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1040, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .directory-toolbar {
   background: #292A2C; }
-  /* line 1033, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1042, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .directory-toolbar a.btn {
     background: #AEC7F6 !important;
     border-color: #AEC7F6 !important;
     box-shadow: none !important;
     color: #112F6B !important;
     text-shadow: none; }
-  /* line 1041, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1050, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .directory-toolbar .filter-clear a {
     color: #AEC7F6 !important; }
 
-/* line 1047, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1056, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper #cheatsheet-body {
   background: #292A2C;
   color: #F8F8F8; }
-  /* line 1050, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1059, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .wiki-wrapper #cheatsheet-body pre {
     background: #0D0D0E;
     color: #F8F8F8; }
 
-/* line 1056, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1065, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper #cheatsheetModal .inner-wrapper {
   background: #292A2C;
   box-shadow: none; }
-  /* line 1059, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1068, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .wiki-wrapper #cheatsheetModal .inner-wrapper button.close-modal {
     color: #F8F8F8 !important; }
 
-/* line 1065, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1074, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .btn.btn-large, body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .btn.btn-danger {
   background: none;
   color: #F8F8F8 !important;
   border-color: #F8F8F8 !important;
   text-shadow: none !important;
   box-shadow: none !important; }
-  /* line 1071, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1080, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .btn.btn-large:hover, body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .btn.btn-danger:hover {
     background: none !important;
     color: #F8F8F8 !important;
     border-color: #F8F8F8 !important; }
 
-/* line 1077, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1086, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .btn.btn-primary, body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .btn.btn-brand, body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .btn.btn-brand {
   background: #AEC7F6 !important;
   border-color: #AEC7F6 !important;
   color: #112F6B !important;
   text-shadow: none !important;
   box-shadow: none; }
-  /* line 1083, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1092, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .btn.btn-primary:hover, body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .btn.btn-brand:hover, body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki .btn.btn-brand:hover {
     background: #AEC7F6 !important;
     border-color: #AEC7F6 !important;
     color: #112F6B !important; }
 
-/* line 1089, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1098, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki.history .accordion {
   background: #292A2C;
   border: none; }
-  /* line 1092, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1101, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .wiki-wrapper section.wiki.history .accordion small {
     color: #F8F8F8; }
 
-/* line 1098, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1107, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .container .wiki .breadcrumbs-header {
   background: #292A2C; }
-  /* line 1101, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1110, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .container .wiki .breadcrumbs-header .global-functions a.add-article-btn {
     background: #AEC7F6 !important;
     color: #112F6B !important; }
-  /* line 1108, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1117, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .container .wiki .breadcrumbs-header .breadcrumb li:after {
     color: #DDDFE2; }
-  /* line 1111, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1120, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .container .wiki .breadcrumbs-header .breadcrumb li a {
     color: #DDDFE2; }
 
-/* line 1117, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1126, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .container .wiki .main-article {
   color: #F8F8F8; }
 
-/* line 1121, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1130, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-wiki .container .article-wrapper {
   border: 1px solid #292A2C; }
-  /* line 1123, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1132, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .container .article-wrapper .main-article {
     color: #F8F8F8 !important; }
-    /* line 1125, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 1134, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme.view-wiki .container .article-wrapper .main-article p {
       color: #F8F8F8; }
-    /* line 1128, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 1137, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme.view-wiki .container .article-wrapper .main-article h3.entry-title {
       color: #F8F8F8; }
-  /* line 1135, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1144, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .container .article-wrapper .article-functions .nav-tabs li a {
     color: #AEC7F6; }
-    /* line 1137, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 1146, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme.view-wiki .container .article-wrapper .article-functions .nav-tabs li a:hover {
       background: #292A2C;
       color: #F8F8F8; }
-    /* line 1141, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 1150, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme.view-wiki .container .article-wrapper .article-functions .nav-tabs li a .icon {
       color: #DDDFE2; }
-  /* line 1146, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1155, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .container .article-wrapper .article-functions .nav-tabs li.active a {
     background: #292A2C;
     color: #F8F8F8; }
-  /* line 1153, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1162, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .container .article-wrapper .article-functions .timestamp {
     border: 1px solid #292A2C;
     border-left: 6px solid #292A2C; }
-    /* line 1156, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 1165, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme.view-wiki .container .article-wrapper .article-functions .timestamp .label {
       color: #F8F8F8; }
-    /* line 1159, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 1168, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme.view-wiki .container .article-wrapper .article-functions .timestamp .date {
       color: #F8F8F8; }
-  /* line 1164, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1173, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-wiki .container .article-wrapper .article-functions .see-children a {
     background: #AEC7F6;
     color: #112F6B; }
-    /* line 1167, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 1176, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme.view-wiki .container .article-wrapper .article-functions .see-children a:hover, body.indigo-dark-theme.view-wiki .container .article-wrapper .article-functions .see-children a:focus {
       color: #112F6B; }
 
-/* line 1176, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1185, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .container.about {
   color: #DDDFE2; }
-  /* line 1178, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1187, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .container.about h1 {
     color: #AEC7F6; }
-  /* line 1181, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1190, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .container.about a {
     color: #AEC7F6; }
-  /* line 1185, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1194, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .container.about .graphic-img img {
     display: none; }
-    /* line 1187, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 1196, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme .container.about .graphic-img img.dark {
       display: block; }
 
-/* line 1193, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1202, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .modal {
   background: #292A2C !important; }
-  /* line 1195, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1204, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .modal .modal-header {
     color: #F8F8F8 !important; }
-  /* line 1198, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1207, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .modal select, body.indigo-dark-theme .modal textarea {
     background: transparent;
     color: white; }
-  /* line 1202, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1211, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .modal input[type=submit] {
     background: #AEC7F6;
     border-color: #AEC7F6;
@@ -5793,87 +5800,87 @@ body.indigo-dark-theme .modal {
     font-size: 14px;
     font-weight: 500; }
 
-/* line 1211, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1220, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .wrapper-member-select {
   background: #292A2C !important; }
-  /* line 1213, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1222, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .wrapper-member-select select {
     background: none;
     color: #F8F8F8; }
 
-/* line 1218, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1227, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .auth-list-container .info {
   color: #F8F8F8 !important; }
 
-/* line 1222, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1231, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#membership .batch-beta-testers .request-res-section h3 {
   color: #F8F8F8; }
 
-/* line 1225, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1234, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 .msg-error {
   background: #292A2C !important;
   border-color: #FFA07A !important;
   color: #FFA07A !important; }
 
-/* line 1230, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1239, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 .msg-confirm {
   background: #292A2C;
   border-top: 2px solid #54CF5E;
   color: #54CF5E; }
 
-/* line 1235, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1244, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 .copy-error {
   color: #FFA07A; }
 
-/* line 1238, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1247, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 .message-error {
   background: #292A2C;
   border-color: #FFA07A; }
-  /* line 1241, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1250, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .instructor-dashboard-wrapper-2 .message-error .message-title {
     color: #FFA07A; }
-  /* line 1244, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1253, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .instructor-dashboard-wrapper-2 .message-error .message-copy {
     color: #F8F8F8; }
 
-/* line 1248, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1257, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 .idash-section .message-confirmation {
   background: #0D0D0E;
   border-color: #54CF5E; }
-  /* line 1251, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1260, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .instructor-dashboard-wrapper-2 .idash-section .message-confirmation .message-title {
     color: #54CF5E; }
 
-/* line 1255, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1264, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .cohort-management-details .cohort-management-settings {
   background: transparent; }
 
-/* line 1258, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1267, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-header {
   background: #292A2C; }
 
-/* line 1261, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1270, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-group-setup {
   color: #F8F8F8; }
 
-/* line 1264, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1273, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .cohort-management-details,
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .cohort-management-group-add {
   background: #292A2C; }
 
-/* line 1268, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1277, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .wrapper-tabs .tab .toggle-button {
   text-shadow: none;
   color: #F8F8F8; }
 
-/* line 1272, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1281, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .wrapper-tabs .tab.is-selected .toggle-button {
   background: #AEC7F6;
   border-color: #AEC7F6;
   color: #112F6B;
   text-decoration: none; }
 
-/* line 1278, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1287, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .form-submit,
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-nav .action-create,
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .file-upload-form .action-submit {
@@ -5883,55 +5890,55 @@ body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#coh
   text-shadow: none !important;
   box-shadow: none !important; }
 
-/* line 1287, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1296, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-supplemental {
   background: #292A2C; }
-  /* line 1289, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1298, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-supplemental button {
     color: #F8F8F8;
     text-decoration: underline; }
 
-/* line 1294, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1303, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .file-upload-form .form-fields .input-file {
   color: #F8F8F8; }
 
-/* line 1297, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1306, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .toggle-cohort-management-secondary,
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .toggle-cohort-management-discussions {
   color: #AEC7F6; }
 
-/* line 1301, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1310, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings, body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-settings .form-title {
   background: #292A2C; }
 
-/* line 1304, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1313, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#data_download .problem-browser .block-browser {
   background: #292A2C; }
 
-/* line 1307, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1316, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#membership .batch-enrollment .request-res-section h3 {
   color: #FFA07A; }
 
-/* line 1310, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1319, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#membership .enroll-option .hint, body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#membership .enroll-option .hint {
   background: #292A2C; }
-  /* line 1312, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1321, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#membership .enroll-option .hint p, body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#membership .enroll-option .hint p {
     color: inherit !important; }
-  /* line 1315, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1324, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#membership .enroll-option .hint .hint-caret, body.indigo-dark-theme .instructor-dashboard-wrapper-2 section.idash-section#membership .enroll-option .hint .hint-caret {
     border-right: 8px solid #292A2C;
     border-top: 8px solid #292A2C; }
 
-/* line 1322, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1331, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .member-list .label {
   color: #F8F8F8 !important;
   background: #292A2C !important; }
 
-/* line 1327, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1336, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .bottom-bar {
   background: #292A2C !important; }
-  /* line 1329, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1338, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .bottom-bar input[type="button"] {
     background: #AEC7F6 !important;
     border-color: #AEC7F6 !important;
@@ -5940,177 +5947,177 @@ body.indigo-dark-theme .bottom-bar {
     font-size: 14px;
     font-weight: 500; }
 
-/* line 1340, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1349, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .page-header .page-title {
   color: #DDDFE2; }
 
-/* line 1343, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1352, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .page-header .page-description {
   color: #F8F8F8; }
 
-/* line 1347, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1356, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .page-content-nav .nav-item {
   color: #F8F8F8; }
-  /* line 1349, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1358, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-teams .page-content-nav .nav-item.is-active {
     border-color: #AEC7F6; }
 
-/* line 1352, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1361, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .page-content-main span.listing-count, body.indigo-dark-theme.view-teams .page-content-main span.listing-sort .field-label {
   color: #F8F8F8; }
 
-/* line 1357, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1366, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams ul.topics-list li.topic-card {
   background-color: #0D0D0E; }
-  /* line 1360, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1369, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-teams ul.topics-list li.topic-card div.wrapper-card-meta {
     background-color: #0D0D0E; }
 
-/* line 1366, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1375, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams ul.cards-list li.list-card {
   background-color: #0D0D0E; }
-  /* line 1369, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1378, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-teams ul.cards-list li.list-card div.wrapper-card-meta {
     background-color: #0D0D0E; }
 
-/* line 1375, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1384, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .teams-content .teams-main .team-edit-fields .team-required-fields .u-field-title, body.indigo-dark-theme.view-teams .teams-content .teams-main .team-edit-fields .team-optional-fields .u-field-title {
   color: #F8F8F8; }
 
-/* line 1380, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1389, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .listing-tools {
   color: #F8F8F8; }
 
-/* line 1382, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1391, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .u-field-message .u-field-message-help, body.indigo-dark-theme.view-teams .u-field-message .u-field-message-notification {
   color: grey; }
 
-/* line 1387, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1396, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .team-profile .page-content-secondary {
   color: grey; }
 
-/* line 1393, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1402, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .card .card-type, body.indigo-dark-theme.view-teams .card .card-description {
   color: grey; }
 
-/* line 1397, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1406, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .card .wrapper-card-meta {
   background: #292A2C; }
-  /* line 1399, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1408, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-teams .card .wrapper-card-meta .meta-detail {
     color: #DDDFE2; }
 
-/* line 1402, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1411, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .card .card-actions .action-view {
   border-color: #AEC7F6;
   color: #AEC7F6; }
-  /* line 1405, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1414, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-teams .card .card-actions .action-view:hover {
     background-color: #AEC7F6;
     color: #292A2C; }
 
-/* line 1412, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1421, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .btn-secondary, body.indigo-dark-theme.view-teams .btn-link,
 body.indigo-dark-theme.view-teams .edit-members .action-remove-member {
   color: #AEC7F6; }
 
-/* line 1417, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1426, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .action-primary {
   background: #AEC7F6;
   color: #292A2C; }
 
-/* line 1422, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1431, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-teams .teams-content #teams-message.wrapper-msg {
   background: #292A2C; }
-  /* line 1424, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1433, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-teams .teams-content #teams-message.wrapper-msg div.msg {
     color: #F8F8F8; }
 
-/* line 1430, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1439, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme .book-wrapper .book-sidebar {
   background: #292A2C; }
-  /* line 1432, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1441, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme .book-wrapper .book-sidebar #booknav a {
     color: #F8F8F8; }
-    /* line 1434, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+    /* line 1443, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
     body.indigo-dark-theme .book-wrapper .book-sidebar #booknav a:hover {
       color: #DDDFE2; }
 
-/* line 1443, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1452, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .wrapper-student-notes {
   background: #0D0D0E; }
 
-/* line 1447, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1456, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .wrapper-title .page-title .page-subtitle {
   color: #F8F8F8; }
 
-/* line 1452, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1461, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .wrapper-tabs .tab-list .tab .tab-label {
   color: lightgrey; }
 
-/* line 1457, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1466, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .wrapper-tabs .tab-list .tab.is-active .tab-label {
   color: #F8F8F8;
   border-bottom-color: #DDDFE2; }
 
-/* line 1463, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1472, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .wrapper-tabs .tab-list #view-search-results .action-close {
   color: #AEC7F6;
   background: #0D0D0E;
   border-color: transparent;
   box-shadow: none; }
 
-/* line 1471, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1480, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .listing-tools {
   color: lightgrey; }
 
-/* line 1473, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1482, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .placeholder {
   border-color: #AEC7F6;
   background: #292A2C; }
-  /* line 1477, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1486, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-student-notes .placeholder .placeholder-title {
     color: #F8F8F8; }
 
-/* line 1481, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1490, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .wrapper-notes-search .search-notes-input {
   background: #292A2C;
   color: #F8F8F8;
   border: 1px solid grey; }
 
-/* line 1486, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1495, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .wrapper-notes-search .search-notes-submit {
   background: #AEC7F6;
   border-color: #AEC7F6; }
 
-/* line 1492, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1501, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .ui-loading {
   border-color: #AEC7F6;
   background: #0D0D0E; }
 
-/* line 1499, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1508, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .tab-panel.note-group .note .wrapper-note-excerpts {
   border-color: orange; }
-  /* line 1501, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1510, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-student-notes .tab-panel.note-group .note .wrapper-note-excerpts .note-excerpt {
     background: orange;
     color: #0D0D0E; }
-  /* line 1506, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1515, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-student-notes .tab-panel.note-group .note .wrapper-note-excerpts .note-comments .note-comment-p {
     color: #F8F8F8; }
 
-/* line 1509, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1518, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .tab-panel.note-group .note:hover .note-excerpt {
   background: #FFA07A; }
 
-/* line 1515, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1524, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .tab-panel.note-group .note footer.reference .wrapper-reference-content a.reference-meta {
   color: #AEC7F6; }
 
-/* line 1518, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+/* line 1527, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
 body.indigo-dark-theme.view-student-notes .tab-panel.note-group .note footer.reference .wrapper-reference-content .reference-meta {
   color: #F8F8F8; }
-  /* line 1520, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
+  /* line 1529, /openedx/themes/bcos-theme/lms/static/sass/partials/lms/theme/_extras.scss */
   body.indigo-dark-theme.view-student-notes .tab-panel.note-group .note footer.reference .wrapper-reference-content .reference-meta::after {
     color: #DDDFE2; }
 
@@ -6222,7 +6229,7 @@ footer.tutor-container {
 
 /* line 103, /openedx/themes/bcos-theme/lms/static/sass/extra/_footer.scss */
 body.indigo-dark-theme .wrapper-footer {
-  border-top: 1px solid #91be3f;
+  border-top: 1px solid #777792;
   background: #0D0D0E; }
 
 /* line 109, /openedx/themes/bcos-theme/lms/static/sass/extra/_footer.scss */
@@ -6309,8 +6316,8 @@ header.global-header {
         transition: all 0.2s ease; }
         /* line 73, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
         header.global-header .nav-links .main .nav-tab a.active, header.global-header .nav-links .main .nav-tab a:hover {
-          color: #15376D;
-          border-bottom: 3px solid #15376D; }
+          color: #91be3f;
+          border-bottom: 3px solid #91be3f; }
     /* line 81, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
     header.global-header .nav-links .secondary {
       margin: 0;
@@ -6320,7 +6327,7 @@ header.global-header {
       header.global-header .nav-links .secondary .toggle-user-dropdown {
         padding: 10px 20px;
         background: #F2F7F8;
-        color: #15376D;
+        color: #91be3f;
         font-size: 14px;
         font-weight: 600;
         line-height: 20px;
@@ -6379,7 +6386,7 @@ header.global-header {
             /* line 153, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
             header.global-header .nav-links .secondary .dropdown-user-menu .dropdown-item a:hover {
               background: #F2F7F8;
-              color: #15376D;
+              color: #91be3f;
               padding-left: 20px; }
   /* line 164, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
   header.global-header .hamburger-menu {
@@ -6434,7 +6441,7 @@ header.global-header {
     /* line 222, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
     .mobile-menu .mobile-nav-link a:hover, .mobile-menu .mobile-nav-link a.active {
       background: #F2F7F8;
-      color: #15376D;
+      color: #91be3f;
       padding-left: 28px; }
 
 /* line 231, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
@@ -6460,7 +6467,7 @@ header.global-header {
   transition: all 0.2s ease; }
   /* line 254, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
   .theme-toggle-button:hover {
-    background: rgba(21, 55, 109, 0.05); }
+    background: rgba(145, 190, 63, 0.05); }
   @media (min-width: 992px) {
     /* line 245, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
     .theme-toggle-button {
@@ -6469,7 +6476,7 @@ header.global-header {
   .theme-toggle-button .light-theme-icon, .theme-toggle-button .dark-theme-icon {
     width: 20px;
     height: 20px;
-    color: #15376D;
+    color: #91be3f;
     transition: all 0.2s ease; }
     /* line 268, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
     .theme-toggle-button .light-theme-icon svg, .theme-toggle-button .dark-theme-icon svg {
@@ -6495,7 +6502,7 @@ header.global-header {
         height: 0; }
         /* line 293, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
         .theme-toggle-button #toggle-switch .switch input:checked + .slider {
-          background-color: #15376D; }
+          background-color: #91be3f; }
           /* line 296, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
           .theme-toggle-button #toggle-switch .switch input:checked + .slider:before {
             transform: translateX(22px); }
@@ -6543,15 +6550,15 @@ body.indigo-dark-theme {
       color: #F8F8F8; }
       /* line 354, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
       body.indigo-dark-theme header.global-header .nav-links .main .nav-tab a.active, body.indigo-dark-theme header.global-header .nav-links .main .nav-tab a:hover {
-        color: #2562c3;
-        border-bottom: 3px solid #2562c3; }
+        color: #bdd88b;
+        border-bottom: 3px solid #bdd88b; }
     /* line 363, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
     body.indigo-dark-theme header.global-header .nav-links .secondary .toggle-user-dropdown {
-      background: rgba(21, 55, 109, 0.2);
-      color: #2562c3; }
+      background: rgba(145, 190, 63, 0.2);
+      color: #bdd88b; }
       /* line 367, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
       body.indigo-dark-theme header.global-header .nav-links .secondary .toggle-user-dropdown:hover {
-        background: rgba(21, 55, 109, 0.3); }
+        background: rgba(145, 190, 63, 0.3); }
       /* line 371, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
       body.indigo-dark-theme header.global-header .nav-links .secondary .toggle-user-dropdown:after {
         border-color: currentColor; }
@@ -6564,8 +6571,8 @@ body.indigo-dark-theme {
         color: #F8F8F8; }
         /* line 384, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
         body.indigo-dark-theme header.global-header .nav-links .secondary .dropdown-user-menu .dropdown-item a:hover {
-          background: rgba(21, 55, 109, 0.2);
-          color: #2562c3; }
+          background: rgba(145, 190, 63, 0.2);
+          color: #bdd88b; }
   /* line 395, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
   body.indigo-dark-theme .mobile-menu {
     background: #080809;
@@ -6575,17 +6582,17 @@ body.indigo-dark-theme {
       color: #F8F8F8; }
       /* line 403, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
       body.indigo-dark-theme .mobile-menu .mobile-nav-link a:hover, body.indigo-dark-theme .mobile-menu .mobile-nav-link a.active {
-        background: rgba(21, 55, 109, 0.2);
-        color: #2562c3; }
+        background: rgba(145, 190, 63, 0.2);
+        color: #bdd88b; }
   /* line 412, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
   body.indigo-dark-theme .theme-toggle-button .light-theme-icon, body.indigo-dark-theme .theme-toggle-button .dark-theme-icon {
-    color: #2562c3; }
+    color: #bdd88b; }
   /* line 416, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
   body.indigo-dark-theme .theme-toggle-button:hover {
-    background: rgba(21, 55, 109, 0.2); }
+    background: rgba(145, 190, 63, 0.2); }
   /* line 422, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
   body.indigo-dark-theme .theme-toggle-button #toggle-switch .switch .slider {
-    background-color: rgba(21, 55, 109, 0.3); }
+    background-color: rgba(145, 190, 63, 0.3); }
     /* line 425, /openedx/themes/bcos-theme/lms/static/sass/extra/_header.scss */
     body.indigo-dark-theme .theme-toggle-button #toggle-switch .switch .slider:before {
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
@@ -6794,7 +6801,7 @@ body.indigo-dark-theme {
       padding: 6px;
       height: 38px;
       border-radius: 6px;
-      background: #15376D;
+      background: #91be3f;
       font-family: "Inter", sans-serif; }
       @media (min-width: 576px) {
         /* line 204, /openedx/themes/bcos-theme/lms/static/sass/dashboard/_dashboard.scss */
@@ -6891,8 +6898,8 @@ body.indigo-dark-theme {
         width: 100%;
         font-size: 14px;
         line-height: 20px;
-        border: 1px solid #15376D !important;
-        background: #15376D !important;
+        border: 1px solid #91be3f !important;
+        background: #91be3f !important;
         color: #fff;
         padding: 8px 15px;
         border-radius: 6px;
@@ -7049,7 +7056,7 @@ body.indigo-dark-theme {
         .courses-container .courses .courses-listing li .course .course-info .learn-more {
           display: block;
           border-radius: 6px;
-          background: #15376D;
+          background: #91be3f;
           text-align: center;
           padding: 9px 17px;
           font-size: 14px;
@@ -7101,7 +7108,7 @@ body.indigo-dark-theme {
       .saerch-bar-discover .filters .filters-inner ul li button {
         padding: 2px 10px;
         border-radius: 12px;
-        background: #15376D !important;
+        background: #91be3f !important;
         color: #fff;
         font-size: 14px;
         line-height: 20px; }
@@ -7138,7 +7145,7 @@ body.indigo-dark-theme {
             padding: 6px;
             height: 38px;
             border-radius: 6px;
-            background: #15376D;
+            background: #91be3f;
             font-family: "Inter", sans-serif;
             border: none;
             box-shadow: none !important; }
@@ -7148,7 +7155,7 @@ body.indigo-dark-theme {
                 min-width: 100px; } }
             /* line 233, /openedx/themes/bcos-theme/lms/static/sass/courseware/_discover.scss */
             .saerch-bar-discover .discover-search .wrapper-search-context .wrapper-search-input .button-holder button:hover {
-              background: #15376D;
+              background: #91be3f;
               opacity: .8; }
         /* line 239, /openedx/themes/bcos-theme/lms/static/sass/courseware/_discover.scss */
         .saerch-bar-discover .discover-search .wrapper-search-context .wrapper-search-input .input-holder {
@@ -7271,8 +7278,8 @@ body.indigo-dark-theme {
           color: #191B23; }
           /* line 359, /openedx/themes/bcos-theme/lms/static/sass/courseware/_discover.scss */
           .filter-block .search-facets .search-facets-lists ul.facet-list li button.facet-option.selected .count {
-            background: #15376D;
-            border-color: #15376D; }
+            background: #91be3f;
+            border-color: #91be3f; }
             /* line 362, /openedx/themes/bcos-theme/lms/static/sass/courseware/_discover.scss */
             .filter-block .search-facets .search-facets-lists ul.facet-list li button.facet-option.selected .count:before {
               content: "\f00c";
@@ -7375,7 +7382,7 @@ body.indigo-dark-theme .saerch-bar-discover .filter-block .search-facets .search
 /* line 498, /openedx/themes/bcos-theme/lms/static/sass/courseware/_discover.scss */
 body.indigo-dark-theme .courses-container .courses .courses-listing li .course {
   box-shadow: none;
-  border: 1px solid #91be3f;
+  border: 1px solid #777792;
   background: #292A2C; }
   /* line 503, /openedx/themes/bcos-theme/lms/static/sass/courseware/_discover.scss */
   body.indigo-dark-theme .courses-container .courses .courses-listing li .course .course-info .course-title {
@@ -7389,7 +7396,7 @@ body.indigo-dark-theme .courses-container .courses .courses-listing li .course {
     color: #112F6B; }
   /* line 513, /openedx/themes/bcos-theme/lms/static/sass/courseware/_discover.scss */
   body.indigo-dark-theme .courses-container .courses .courses-listing li .course .course-info .course-date {
-    border-top: 1px solid #91be3f;
+    border-top: 1px solid #777792;
     color: #DDDFE2;
     background: #36383B; }
     /* line 518, /openedx/themes/bcos-theme/lms/static/sass/courseware/_discover.scss */
@@ -7528,7 +7535,7 @@ body.indigo-dark-theme .courses-container .courses .courses-listing li .course {
   padding: 8px 15px;
   color: #fff;
   border-radius: 6px;
-  background: #15376D;
+  background: #91be3f;
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
@@ -7712,7 +7719,7 @@ body.indigo-dark-theme .courses-container .courses .courses-listing li .course {
       .course-info.about .course-sidebar header .social-sharing .sharing-message {
         background: white;
         border: none;
-        border-top: 4px solid #15376D;
+        border-top: 4px solid #91be3f;
         color: #000;
         font: 10px/15px "Inter", sans-serif;
         padding: 10px; }
@@ -7790,7 +7797,7 @@ body.indigo-dark-theme .course-info.about .intro-inner-wrapper .profile-top .inf
 
 /* line 377, /openedx/themes/bcos-theme/lms/static/sass/courseware/_about.scss */
 body.indigo-dark-theme .course-info.about .intro-inner-wrapper .profile-top .media .hero:after {
-  border-color: #91be3f; }
+  border-color: #777792; }
 
 /* line 385, /openedx/themes/bcos-theme/lms/static/sass/courseware/_about.scss */
 body.indigo-dark-theme .course-info.about .main-cta a span {
@@ -7915,7 +7922,7 @@ body.indigo-dark-theme .course-info.about .course-sidebar {
       display: block;
       margin: 0 0 10px;
       font-size: 30px;
-      color: #15376D; }
+      color: #91be3f; }
 
 /* line 67, /openedx/themes/bcos-theme/lms/static/sass/courseware/_bookmarks.scss */
 .page-content-container .search-results {
@@ -7987,7 +7994,7 @@ body.indigo-dark-theme .course-info.about .course-sidebar {
     line-height: 16px;
     font-weight: 500;
     color: #fff;
-    background: #15376D;
+    background: #91be3f;
     padding: 9px 13px;
     border-radius: 6px;
     bottom: 0;
@@ -8068,7 +8075,7 @@ body.indigo-dark-theme .course-bookmarks .bookmarks-results-list a.bookmarks-res
     color: #F8F8F8 !important; }
     /* line 222, /openedx/themes/bcos-theme/lms/static/sass/courseware/_bookmarks.scss */
     body.indigo-dark-theme .course-bookmarks .bookmarks-results-list a.bookmarks-results-list-item h3 .icon {
-      border: 2px solid #91be3f; }
+      border: 2px solid #777792; }
   /* line 226, /openedx/themes/bcos-theme/lms/static/sass/courseware/_bookmarks.scss */
   body.indigo-dark-theme .course-bookmarks .bookmarks-results-list a.bookmarks-results-list-item .list-item-date {
     color: #F8F8F8; }
@@ -8090,30 +8097,37 @@ body.indigo-dark-theme .pagination .current-page, body.indigo-dark-theme .pagina
 body.indigo-dark-theme .pagination .page-divider {
   color: #F8F8F8; }
 
-/* line 12, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* line 7, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+.rtl {
+  direction: rtl; }
+
+/* line 20, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
 section.home {
   max-width: 1600px;
   margin: 0 auto;
   padding: 0 15px; }
 
-/* line 18, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+/* line 26, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
 .home > header .title {
   background: none !important; }
 
-/* line 22, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+/* line 30, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
 .home > header .outer-wrapper {
   max-width: 100%; }
 
-/* line 28, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+/* line 36, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
 .global-header .nav-links .secondary .btn-holder {
   letter-spacing: -0.32em;
   margin: 0 -7px; }
-  /* line 32, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+  /* line 40, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
   .global-header .nav-links .secondary .btn-holder .nav-item {
     letter-spacing: normal;
     margin: 0 7px;
     padding: 12px 0; }
-    /* line 37, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+    /* line 45, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
     .global-header .nav-links .secondary .btn-holder .nav-item .btn {
       line-height: 20px;
       padding: 9px 17px;
@@ -8123,30 +8137,30 @@ section.home {
       display: block;
       background: #3498db;
       color: #fff; }
-      /* line 47, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+      /* line 55, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
       .global-header .nav-links .secondary .btn-holder .nav-item .btn:hover {
         background: #217dbb; }
-      /* line 51, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+      /* line 59, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
       .global-header .nav-links .secondary .btn-holder .nav-item .btn.sign-in-btn {
         background: #2ecc71;
         color: #fff; }
-        /* line 55, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+        /* line 63, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
         .global-header .nav-links .secondary .btn-holder .nav-item .btn.sign-in-btn:hover {
           background: #25a25a; }
-      /* line 60, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+      /* line 68, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
       .global-header .nav-links .secondary .btn-holder .nav-item .btn.register-btn {
         background: none;
         border: 2px solid #3498db;
         color: #3498db; }
-        /* line 65, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+        /* line 73, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
         .global-header .nav-links .secondary .btn-holder .nav-item .btn.register-btn:hover {
           background: #3498db;
           color: #fff; }
 
-/* line 77, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+/* line 85, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
 #main .home.style-logout header {
   background: none; }
-  /* line 81, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+  /* line 89, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
   #main .home.style-logout header .outer-wrapper .title {
     width: 100%;
     float: none;
@@ -8154,19 +8168,19 @@ section.home {
     padding: 30px 0 0;
     min-height: 20px; }
     @media (min-width: 576px) {
-      /* line 81, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+      /* line 89, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
       #main .home.style-logout header .outer-wrapper .title {
         padding: 50px 0 0; } }
-    /* line 92, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+    /* line 100, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
     #main .home.style-logout header .outer-wrapper .title .heading-group {
       margin: 0 0 25px;
       text-align: left;
       padding: 0; }
       @media (min-width: 576px) {
-        /* line 92, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+        /* line 100, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
         #main .home.style-logout header .outer-wrapper .title .heading-group {
           margin: 0 0 45px; } }
-      /* line 101, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+      /* line 109, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
       #main .home.style-logout header .outer-wrapper .title .heading-group h1 {
         color: #111827;
         font-size: 20px;
@@ -8175,29 +8189,29 @@ section.home {
         margin: 0 0 8px;
         text-align: left; }
         @media (min-width: 768px) {
-          /* line 101, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+          /* line 109, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
           #main .home.style-logout header .outer-wrapper .title .heading-group h1 {
             font-size: 24px;
             margin: 0 0 12px; } }
-      /* line 115, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+      /* line 123, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
       #main .home.style-logout header .outer-wrapper .title .heading-group p {
         font-size: 16px;
         line-height: 20px;
         color: #515661;
         font-style: normal;
         margin: 0; }
-    /* line 124, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+    /* line 132, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
     #main .home.style-logout header .outer-wrapper .title .course-search {
       padding: 0; }
-      /* line 128, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+      /* line 136, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
       #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper:after {
         clear: both;
         content: "";
         display: block; }
-      /* line 134, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+      /* line 142, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
       #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .button-holder {
         float: right; }
-        /* line 137, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+        /* line 145, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
         #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .button-holder button {
           position: static;
           margin: 0 0 0 16px;
@@ -8214,13 +8228,13 @@ section.home {
           font-family: "Inter", sans-serif;
           border: none; }
           @media (min-width: 576px) {
-            /* line 137, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+            /* line 145, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
             #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .button-holder button {
               min-width: 100px; } }
-          /* line 157, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+          /* line 165, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
           #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .button-holder button:hover {
             background: #217dbb; }
-      /* line 163, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+      /* line 171, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
       #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .input-holder {
         overflow: hidden;
         border-radius: 6px;
@@ -8228,13 +8242,13 @@ section.home {
         padding: 0 0 0 33px;
         position: relative;
         display: block; }
-        /* line 171, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+        /* line 179, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
         #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .input-holder svg {
           position: absolute;
           left: 12px;
           font-size: 20px;
           top: 10px; }
-        /* line 178, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+        /* line 186, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
         #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .input-holder input {
           border: none;
           box-shadow: none;
@@ -8246,15 +8260,15 @@ section.home {
           line-height: 20px;
           padding: 9px 10px; }
 
-/* line 199, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+/* line 207, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
 body.indigo-dark-theme h1 {
   color: #2c3e50; }
 
-/* line 203, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+/* line 211, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
 body.indigo-dark-theme p a:not(.btn),
 body.indigo-dark-theme a:not(.btn) {
   color: #2c3e50; }
-  /* line 207, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+  /* line 215, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
   body.indigo-dark-theme p a:not(.btn):hover, body.indigo-dark-theme p a:not(.btn):focus, body.indigo-dark-theme p a:not(.btn):active,
   body.indigo-dark-theme p a:not(.btn) a:visited:not(.btn):focus,
   body.indigo-dark-theme a:not(.btn):hover,
@@ -8263,43 +8277,43 @@ body.indigo-dark-theme a:not(.btn) {
   body.indigo-dark-theme a:not(.btn) a:visited:not(.btn):focus {
     color: #2c3e50; }
 
-/* line 219, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+/* line 227, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
 body.indigo-dark-theme .global-header .nav-links .secondary .btn-holder .nav-item .btn.sign-in-btn {
   background: #2ecc71;
   color: #ffffff;
   border-color: #2ecc71; }
 
-/* line 225, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+/* line 233, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
 body.indigo-dark-theme .global-header .nav-links .secondary .btn-holder .nav-item .btn.register-btn {
   color: #2c3e50;
   border-color: #2c3e50;
   background: none; }
 
-/* line 236, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+/* line 244, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
 body.indigo-dark-theme #main .home.style-logout header {
   background: none; }
-  /* line 242, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+  /* line 250, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
   body.indigo-dark-theme #main .home.style-logout header .outer-wrapper .title .heading-group h1 {
     color: #2c3e50; }
-  /* line 246, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+  /* line 254, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
   body.indigo-dark-theme #main .home.style-logout header .outer-wrapper .title .heading-group p {
     color: #515661; }
-  /* line 254, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+  /* line 262, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
   body.indigo-dark-theme #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .button-holder button {
     color: #ffffff;
     background: #2c3e50;
     border: none; }
-    /* line 259, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+    /* line 267, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
     body.indigo-dark-theme #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .button-holder button:hover {
       color: #ffffff;
       background: #1a252f; }
-  /* line 266, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+  /* line 274, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
   body.indigo-dark-theme #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .input-holder {
     background: #292A2C; }
-    /* line 270, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+    /* line 278, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
     body.indigo-dark-theme #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .input-holder svg path {
       fill: #515661; }
-    /* line 275, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
+    /* line 283, /openedx/themes/bcos-theme/lms/static/sass/home/_home.scss */
     body.indigo-dark-theme #main .home.style-logout header .outer-wrapper .title .course-search .search-field-wrapper .input-holder input {
       color: #2c3e50; }
 
@@ -9374,7 +9388,7 @@ body.certificate.indigo-dark-theme {
 
 /* line 356, /openedx/themes/bcos-theme/lms/static/sass/xblock/_xblock.scss */
 .indigo-dark-theme div.wrapper--xblock .openassessment .openassessment__steps .openassessment__steps__step .step__header .step__deadline {
-  color: #91be3f; }
+  color: #777792; }
 
 /* line 360, /openedx/themes/bcos-theme/lms/static/sass/xblock/_xblock.scss */
 .indigo-dark-theme div.wrapper--xblock .step--response .step__rubric {

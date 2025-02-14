@@ -31,13 +31,13 @@
 
 /* line 6, node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #15376D !important; }
+  background-color: #91be3f !important; }
 
 /* line 19, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #0d2142 !important; }
+  background-color: #749832 !important; }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-secondary {
@@ -219,7 +219,7 @@ button.bg-darkest:focus {
 
 /* line 20, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-primary {
-  border-color: #15376D !important; }
+  border-color: #91be3f !important; }
 
 /* line 20, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-secondary {
@@ -2582,11 +2582,11 @@ button.bg-darkest:focus {
 
 /* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #15376D !important; }
+  color: #91be3f !important; }
 
 /* line 19, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.text-primary:hover, a.text-primary:focus {
-  color: #0d2142 !important; }
+  color: #749832 !important; }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-secondary {
@@ -2748,13 +2748,13 @@ a.text-darkest:hover, a.text-darkest:focus {
 
 /* line 44, node_modules/bootstrap/scss/_badge.scss */
 .badge-primary {
-  color: #fff;
-  background-color: #15376D; }
+  color: #111;
+  background-color: #91be3f; }
   /* line 19, node_modules/bootstrap/scss/mixins/_hover.scss */
   .badge-primary[href]:hover, .badge-primary[href]:focus {
-    color: #fff;
+    color: #111;
     text-decoration: none;
-    background-color: #0d2142; }
+    background-color: #749832; }
 
 /* line 44, node_modules/bootstrap/scss/_badge.scss */
 .badge-secondary {
@@ -3070,7 +3070,7 @@ a.text-darkest:hover, a.text-darkest:focus {
 
 /* line 17, common/static/sass/_builtin-block-variables.scss */
 :root {
-  --action-primary-active-bg: #15376D;
+  --action-primary-active-bg: #91be3f;
   --base-font-size: 18px;
   --base-line-height: 1.5em;
   --baseline: 20px;
@@ -3093,7 +3093,7 @@ a.text-darkest:hover, a.text-darkest:focus {
   --error-color-light: #f95861;
   --font-bold: 700;
   --font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --general-color-accent: #15376D;
+  --general-color-accent: #91be3f;
   --gray: #767676;
   --gray-300: #d9d9d9;
   --gray-d1: #5e5e5e;
@@ -3113,13 +3113,13 @@ a.text-darkest:hover, a.text-darkest:focus {
   --link-color: #1b6d99;
   --medium-font-size: 0.9em;
   --partially-correct: #008100;
-  --primary: #15376D;
+  --primary: #91be3f;
   --shadow: rgba(0, 0, 0, 0.2);
   --shadow-l1: rgba(0, 0, 0, 0.1);
   --sidebar-color: #f6f6f6;
   --small-font-size: 80%;
   --static-path: "..";
-  --submitted: #15376D;
+  --submitted: #91be3f;
   --success: #008100;
   --tmg-f2: 0.25s;
   --tmg-s2: 2s;
@@ -3569,7 +3569,7 @@ td {
     /* line 36, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
     .breadcrumbs .nav-item a,
     .breadcrumbs .nav-item a:visited {
-      color: #15376D; }
+      color: #91be3f; }
     /* line 41, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
     .breadcrumbs .nav-item a:hover {
       color: #065683; }
@@ -3621,16 +3621,16 @@ td {
 .btn-default {
   border-color: transparent;
   background: transparent;
-  color: #15376D; }
+  color: #91be3f; }
   /* line 63, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-default:hover, .btn-default.is-hovered, .btn-default:focus, .btn-default.is-focused {
-    border-color: #15376D;
+    border-color: #91be3f;
     background-color: transparent;
-    color: #15376D; }
+    color: #91be3f; }
   /* line 73, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-default:active, .btn-default.is-pressed, .btn-default.is-active {
-    border-color: #15376D;
-    color: #15376D; }
+    border-color: #91be3f;
+    color: #91be3f; }
   /* line 81, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-default:disabled, .btn-default.is-disabled {
     border-color: #d2d0d0;
@@ -3638,8 +3638,8 @@ td {
 
 /* line 91, common/static/sass/edx-pattern-library-shims/_buttons.scss */
 .btn-primary, .btn-brand {
-  border-color: #15376D;
-  background: #15376D;
+  border-color: #91be3f;
+  background: #91be3f;
   color: #fcfcfc; }
   /* line 99, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-primary:hover, .btn-brand:hover, .btn-primary.is-hovered, .is-hovered.btn-brand, .btn-primary:focus, .btn-brand:focus, .btn-primary.is-focused, .is-focused.btn-brand {
@@ -3648,8 +3648,8 @@ td {
     color: #fcfcfc; }
   /* line 109, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-primary:active, .btn-brand:active, .btn-primary.is-pressed, .is-pressed.btn-brand, .btn-primary.is-active, .is-active.btn-brand {
-    border-color: #15376D;
-    background: #15376D; }
+    border-color: #91be3f;
+    background: #91be3f; }
   /* line 117, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-primary:disabled, .btn-brand:disabled, .btn-primary.is-disabled, .is-disabled.btn-brand {
     border-color: #d2d0d0;

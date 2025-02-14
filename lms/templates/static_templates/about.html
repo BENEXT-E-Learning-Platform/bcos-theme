@@ -1,190 +1,410 @@
-<%namespace name='static' file='../static_content.html'/>
 <%page expression_filter="h"/>
 <%! from django.utils.translation import gettext as _ %>
 <%inherit file="../main.html" />
+<%namespace name='static' file='../static_content.html'/>
 
 <%block name="pagetitle">${_("من نحن")}</%block>
 
+<%block name="css_extra">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+<style>
+/* Remove original bullet points */
+.section-side ul li {
+    padding-right: 3.5rem;
+    position: relative;
+}
+
+.section-side ul li i {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #253B74;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    .section-side ul li i {
+        background: #8899AA;
+    }
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    direction: rtl;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.about-header h1 {
+    font-family: 'Cairo', serif;
+    font-size: 3.5rem;
+    color: #2d483e;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.about-header h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #3182CE 0%, #63B3ED 100%);
+    border-radius: 2px;
+}
+
+.section-wrapper {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-section {
+    padding: 2rem;
+}
+
+.about-section h2 {
+    font-family: 'Cairo', serif;
+    font-size: 2.5rem;
+    color: #91bf40;
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.section-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.section-side {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background: #F7FAFC;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-side img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.section-side:hover img {
+    transform: scale(1.05);
+}
+
+.section-side p, .section-side ul {
+    padding: 0.5rem;
+    padding-top: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4A5568;
+    background: white;
+    margin: 0;
+    border-top: 4px solid #3182CE;
+    flex-grow: 1;
+    font-family: 'Cairo', serif;
+}
+
+.section-side ul {
+    list-style: none;
+}
+
+.section-side ul li {
+    margin-bottom: 1rem;
+    padding-right: 2.7rem;
+    position: relative;
+}
+
+
+
+.graphic-img {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.graphic-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.graphic-img img:hover {
+    transform: scale(1.02);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #e2e8f0;
+    }
+
+    .about-container {
+        background: #0f172a;
+    }
+
+    .section-wrapper {
+        background: #1e293b;
+        border: 1px solid #334155;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    .about-header h1 {
+        color: #7dd3fc;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .about-header h1::after {
+        background: linear-gradient(90deg, #7dd3fc 0%, #38bdf8 100%);
+    }
+
+    .about-section h2 {
+        color: #7dd3fc;
+        border-bottom: 2px solid #334155;
+        padding-bottom: 1rem;
+    }
+
+    .section-side {
+        background: #1e293b;
+        border: 1px solid #334155;
+    }
+
+    .section-side p, 
+    .section-side ul {
+        background: #1e293b;
+        color: #cbd5e1;
+        border-top-color: #7dd3fc;
+    }
+
+    .section-side ul li {
+        color: #e2e8f0;
+    }
+
+    .section-side ul li i {
+        background: #475569;
+        color: #7dd3fc;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-side img {
+        filter: brightness(0.8) contrast(1.2) saturate(0.9);
+        border-bottom: 1px solid #334155;
+    }
+
+    .section-wrapper:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+        transform: translateY(-3px);
+    }
+
+    .graphic-img img {
+        background: #1e293b;
+        border: 1px solid #334155;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Text links/emphasis */
+    a {
+        color: #7dd3fc;
+    }
+
+    /* Add subtle animation for mode transition */
+    .about-container,
+    .section-wrapper,
+    .section-side,
+    .section-side ul li i {
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Improve image overlay */
+    .section-side::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(15, 23, 42, 0.4) 0%,
+            rgba(15, 23, 42, 0.8) 100%
+        );
+        z-index: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-section h2 {
+        font-size: 2rem;
+    }
+    
+    .section-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-container {
+        padding: 1rem;
+    }
+}
+</style>
+</%block>
+
 <main id="main" aria-label="Content" tabindex="-1">
-    <section class="container about">
-        <h1>
-            <%block name="pageheader">${page_header or _("من نحن")}</%block>
-        </h1>
+    <section class="about-container">
+        <div class="about-header fade-in">
+            <h1>
+                <%block name="pageheader">${page_header or _("من نحن")}</%block>
+            </h1>
+        </div>
 
         <!-- Mission Section -->
-        <div class="about-section">
-            <h2>${_("مهمتنا")}</h2>
-            <div class="section-content">
-                <div class="section-side">
-                    <img src="${static.url('images/mission1.jpg')}" alt="مهمتنا 1" />
-                    <p>${_("نحن ملتزمون بتوفير تعليم عالي الجودة عبر الإنترنت لتمكين الأفراد والمؤسسات من تحقيق أهدافهم التعليمية والمهنية.")}</p>
-                </div>
-                <div class="section-side">
-                    <img src="${static.url('images/mission2.jpg')}" alt="مهمتنا 2" />
-                    <p>${_("نسعى جاهدين لتقديم محتوى تعليمي متكامل يلبي احتياجات جميع المتعلمين.")}</p>
+        <div class="section-wrapper fade-in">
+            <div class="about-section">
+                <h2>${_("مهمتنا")}</h2>
+                <div class="section-content">
+                    <div class="section-side">
+                        <img src="https://images.unsplash.com/photo-1522881193457-37ae97c905bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="${_('مهمتنا 1')}" />
+                        <ul class="mission">
+                            <li>
+                                <i class="fa-solid fa-graduation-cap fa-5x"></i>
+                                ${_("نحن ملتزمون بتوفير تعليم عالي الجودة عبر الإنترنت لتمكين الأفراد والمؤسسات من تحقيق أهدافهم التعليمية والمهنية.")}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-side">
+                        <img src="https://images.unsplash.com/photo-1515603403036-f3d35f75ca52?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="${_('مهمتنا 2')}" />
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-chalkboard-user"></i>
+                                ${_("نسعى جاهدين لتقديم محتوى تعليمي متكامل يلبي احتياجات جميع المتعلمين.")}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Vision Section -->
-        <div class="about-section">
-            <h2>${_("رؤيتنا")}</h2>
-            <div class="section-content">
-                <div class="section-side">
-                    <img src="${static.url('images/vision1.jpg')}" alt="رؤيتنا 1" />
-                    <p>${_("أن نكون الرواد في تقديم حلول تعليمية مبتكرة تلبي احتياجات المتعلمين في العالم العربي.")}</p>
-                </div>
-                <div class="section-side">
-                    <img src="${static.url('images/vision2.jpg')}" alt="رؤيتنا 2" />
-                    <p>${_("نسعى لتحقيق رؤيتنا من خلال الابتكار والتعاون مع المؤسسات التعليمية.")}</p>
+        <div class="section-wrapper fade-in">
+            <div class="about-section">
+                <h2>${_("رؤيتنا")}</h2>
+                <div class="section-content">
+                    <div class="section-side">
+                        <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31" alt="${_('رؤيتنا 1')}" />
+                        <ul>
+                            <li>
+                                <i class="fa-brands fa-stack-overflow"></i>
+                                ${_("أن نكون الرواد في تقديم حلول تعليمية مبتكرة تلبي احتياجات المتعلمين في العالم العربي.")}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-side">
+                        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644" alt="${_('رؤيتنا 2')}" />
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-lightbulb"></i>
+                                ${_("نسعى لتحقيق رؤيتنا من خلال الابتكار والتعاون مع المؤسسات التعليمية.")}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Values Section -->
-        <div class="about-section">
-            <h2>${_("قيمنا")}</h2>
-            <div class="section-content">
-                <div class="section-side">
-                    <img src="${static.url('images/values1.jpg')}" alt="قيمنا 1" />
-                    <ul>
-                        <li>${_("الجودة: نحرص على تقديم محتوى تعليمي عالي الجودة.")}</li>
-                        <li>${_("الابتكار: نستخدم أحدث التقنيات لتقديم تجربة تعليمية فريدة.")}</li>
-                    </ul>
-                </div>
-                <div class="section-side">
-                    <img src="${static.url('images/values2.jpg')}" alt="قيمنا 2" />
-                    <ul>
-                        <li>${_("التعاون: نعمل مع المؤسسات والأفراد لتحقيق أهداف مشتركة.")}</li>
-                        <li>${_("التمكين: نسعى لتمكين المتعلمين من تحقيق إمكاناتهم الكاملة.")}</li>
-                    </ul>
+        <div class="section-wrapper fade-in">
+            <div class="about-section">
+                <h2>${_("قيمنا")}</h2>
+                <div class="section-content">
+                    <div class="section-side">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="${_('قيمنا 1')}" />
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-medal fa-2x"></i>
+                                ${_("الجودة: نحرص على تقديم محتوى تعليمي عالي الجودة.")}
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-desktop"></i>
+                                ${_("الابتكار: نستخدم أحدث التقنيات لتقديم تجربة تعليمية فريدة.")}
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="section-side">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" alt="${_('قيمنا 2')}" />
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-handshake"></i>
+                                ${_("التعاون: نعمل مع المؤسسات والأفراد لتحقيق أهداف مشتركة.")}
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-thumbs-up"></i>
+                                ${_("التمكين: نسعى لتمكين المتعلمين من تحقيق إمكاناتهم الكاملة.")}
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- NEW IN INDIGO: add graphic image -->
-        <div class="graphic-img">
-            <img src="${static.url('images/about.svg')}" alt="من نحن" />
-            <img class="dark" src="${static.url('images/about-dark.svg')}" alt="من نحن" />
         </div>
     </section>
 </main>
 
-<style>
-  /* Modern Arabic Style with Expo Arabic Bold */
-  @import url('https://fonts.googleapis.com/css2?family=Expo+Arabic:wght@700&display=swap');
+<%block name="js_extra">
+<script>
+    // Intersection Observer for fade-in animations
+    document.addEventListener('DOMContentLoaded', function() {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Expo Arabic', sans-serif;
-  }
-
-  :root {
-    --primary-blue: #253b74;
-    --primary-green: #91be3f;
-    --secondary-blue: #1b75bc;
-    --background-light: #f9fafb;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-  }
-
-  body {
-    background-color: var(--background-light);
-    overflow-x: hidden;
-  }
-
-  .container.about {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: right;
-  }
-
-  .container.about h1 {
-    font-size: 2.5rem;
-    color: var(--primary-blue);
-    margin-bottom: 2rem;
-  }
-
-  .about-section {
-    margin-bottom: 3rem;
-  }
-
-  .about-section h2 {
-    font-size: 2rem;
-    color: var(--primary-blue);
-    margin-bottom: 1rem;
-  }
-
-  .section-content {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-
-  .section-side {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-
-  .section-side img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-
-  .section-side p {
-    font-size: 1.2rem;
-    color: var(--text-light);
-    line-height: 1.8;
-  }
-
-  .section-side ul {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .section-side ul li {
-    font-size: 1.2rem;
-    color: var(--text-light);
-    margin-bottom: 1rem;
-    padding-right: 1.5rem;
-    position: relative;
-  }
-
-  .section-side ul li::before {
-    content: "•";
-    color: var(--primary-green);
-    font-size: 1.5rem;
-    position: absolute;
-    right: 0;
-    top: -0.2rem;
-  }
-
-  .graphic-img {
-    margin-top: 3rem;
-    text-align: center;
-  }
-
-  .graphic-img img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .graphic-img .dark {
-    display: none;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .graphic-img img {
-      display: none;
-    }
-    .graphic-img .dark {
-      display: inline-block;
-    }
-  }
-</style>
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+    });
+</script>
+</%block>

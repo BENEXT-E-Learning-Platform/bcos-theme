@@ -13,6 +13,111 @@ from openedx.core.lib.courses import course_image_url
 %>
 
 <%inherit file="../main.html" />
+
+<%block name="extrahead">
+  <!-- Add Expo Arabic Font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS for Modern Animations and Bigger Titles -->
+  <style>
+    /* Expo Arabic Font */
+    @font-face {
+      font-family: 'Expo Arabic';
+      src: url('/static/fonts/ExpoArabic-Regular.woff2') format('woff2'),
+           url('/static/fonts/ExpoArabic-Regular.woff') format('woff');
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    /* Animations */
+    @keyframes slideInFromLeft {
+      0% { transform: translateX(-100px); opacity: 0; }
+      100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes floatHeader {
+      0% { transform: translateY(30px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes scaleIn {
+      0% { transform: scale(0.95); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Big Titles */
+    .course-info h1 {
+      font-family: 'Expo Arabic', sans-serif;
+      font-size: 3.5rem;
+      animation: floatHeader 1s cubic-bezier(0.4, 0, 0.2, 1);
+      color: #2b3750;
+      margin: 2rem 0;
+      position: relative;
+      display: inline-block;
+    }
+    .btn-primary{
+      background: transparent;
+      border: none;
+    }
+    .course-info h1::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #ff6b6b 0%, #4ecdc4 100%);
+      animation: scaleIn 0.8s 0.5s both;
+    }
+
+    .course-summary h2 {
+      font-family: 'Expo Arabic', sans-serif;
+      font-size: 2.8rem;
+      color: #36454f;
+      animation: slideInFromLeft 0.8s ease-out;
+      margin-bottom: 2rem;
+    }
+
+    /* Enhanced Animations */
+    .course-profile.animated { animation: floatHeader 1s both; }
+    .about-content.animated { animation: slideInFromLeft 0.8s 0.2s both; }
+    .course-sidebar.animated { animation: scaleIn 0.8s 0.4s both; }
+
+    /* Staggered List Animations */
+    .important-dates-item {
+      opacity: 0;
+      animation: slideInFromLeft 0.6s forwards;
+    }
+
+    .important-dates-item:nth-child(1) { animation-delay: 0.4s; }
+    .important-dates-item:nth-child(2) { animation-delay: 0.6s; }
+    .important-dates-item:nth-child(3) { animation-delay: 0.8s; }
+    .important-dates-item:nth-child(4) { animation-delay: 1.0s; }
+
+    /* Button Animation */
+    .btn-success.animated {
+      animation: pulse 2s infinite;
+      transition: all 0.3s ease;
+    }
+
+    .btn-success.animated:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(78, 205, 196, 0.3);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .course-info h1 {
+        font-size: 2.5rem;
+      }
+      .course-summary h2 {
+        font-size: 2rem;
+      }
+    }
+  
+  </style>
+</%block>
+
 <%block name="headextra">
   ## OG (Open Graph) title and description added below to give social media info to display
   ## (https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content#tags)
@@ -57,36 +162,36 @@ from openedx.core.lib.courses import course_image_url
 <section class="course-info about container">
 
   <%block name="course_about_header">
-  <!-- Course profile header is updated inclusive of course heading and course image. -->
+  <!-- Course profile header with modern animations -->
   <header class="course-profile">
     <div class="intro-inner-wrapper">
       <div class="profile-top">
         % if get_course_about_section(request, course, "video"):
         <a href="#video-modal" class="media" rel="leanModal">
           <div class="hero">
-            <img src="${course_image_urls['large']}" alt="" />
-            <div class="play-intro"></div>
+            <img src="${course_image_urls['large']}" alt="" class="animated fadeInDown" />
+            <div class="play-intro animated pulse"></div>
           </div>
         </a>
         %else:
         <div class="media">
           <div class="hero">
             <!-- NEW IN INDIGO: Add fallback image in case of no course-image using onerror -->
-            <img src="${course_image_urls['large']}" onerror="this.src='/theming/asset/images/no_course_image.png';" alt="" />
+            <img src="${course_image_urls['large']}" onerror="this.src='/theming/asset/images/no_course_image.png';" alt="" class="animated fadeInDown" />
           </div>
         </div>
         % endif
-        <div class="info-profile">
+        <div class="info-profile animated fadeIn">
           <h1>
             ${course.display_name_with_default}
           </h1>
           <span class="org">${course.display_org_with_default}</span>
         </div>
       </div>
-      <div class="main-cta">
+      <div class="main-cta animated fadeIn">
         %if user.is_authenticated and registered:
           %if show_courseware_link:
-            <a href="${course_target}">
+            <a href="${course_target}" class="btn btn-primary">
           %endif
 
           <span class="register disabled">${_("Already Enrolled")}</span>
@@ -102,14 +207,11 @@ from openedx.core.lib.courses import course_image_url
           </span>
         % elif invitation_only and not can_enroll:
           <span class="register disabled">${_("Enrollment in this course is by invitation only")}</span>
-        ## Shib courses need the enrollment button to be displayed even when can_enroll is False,
-        ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
-        ## so that they can register and become a real user that can enroll.
         % elif not is_shib_course and not can_enroll:
         <span class="register closed disabled"><i class="fa fa-lock" aria-hidden="true"></i> ${_("Enrollment is Closed")}</span>
         %elif allow_anonymous:
           %if show_courseware_link:
-            <a href="${course_target}">
+            <a href="${course_target}" class="btn btn-primary">
             <strong>${_("View Course")}</strong>
             </a>
           %endif
@@ -124,7 +226,7 @@ from openedx.core.lib.courses import course_image_url
             else:
               href_class = "register"
           %>
-          <a href="${reg_href}" class="${href_class}">
+          <a href="${reg_href}" class="${href_class} btn btn-success">
             ${_("Enroll Now")}
           </a>
           <div id="register_error"></div>
@@ -134,7 +236,7 @@ from openedx.core.lib.courses import course_image_url
   </header>
   </%block>
 
-  <div class="about-content">
+  <div class="about-content animated fadeInUp">
 
     <%block name="course_about_details">
     <div class="details">
@@ -150,26 +252,25 @@ from openedx.core.lib.courses import course_image_url
     </div>
     </%block>
 
-    <!-- NEW IN INDIGO sidebar is improved with better icons -->
-
-    <div class="course-sidebar">
+    <!-- Modern sidebar with icons and animations -->
+    <div class="course-sidebar animated fadeInRight">
       <div class="course-summary">
-        <h2>Course Summary</h2>
+        <h2>${_("Course Summary")}</h2>
         <%block name="course_about_important_dates">
         <ol class="important-dates">
-          <li class="important-dates-item">
+          <li class="important-dates-item animated fadeInRight">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3ZM18.8201 8.99997L12.0001 12.72L5.18007 8.99997L12.0001 5.27997L18.8201 8.99997ZM12 18.72L17 15.99V12.27L12 15L7 12.27V15.99L12 18.72Z" fill="#9CA3AF"/>
-              </svg>
+            </svg>
             <p class="important-dates-item-title">${_("Course Number")}</p><span class="important-dates-item-text course-number">${course.display_number_with_default}</span></li>
           % if not course.start_date_is_still_default:
               <%
                   course_start_date = course.advertised_start or course.start
               %>
-            <li class="important-dates-item">
+            <li class="important-dates-item animated fadeInRight">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18 4H19C20.1 4 21 4.9 21 6V20C21 21.1 20.1 22 19 22H5C3.89 22 3 21.1 3 20L3.01 6C3.01 4.9 3.89 4 5 4H6V2H8V4H16V2H18V4ZM5 10V20H19V10H5ZM19 8H5V6H19V8ZM17 13H12V18H17V13Z" fill="#9CA3AF"/>
-                </svg>
+              </svg>
               <p class="important-dates-item-title">${_("Classes Start")}</p>
               % if isinstance(course_start_date, str):
                   <span class="important-dates-item-text start-date">${course_start_date}</span>
@@ -181,17 +282,15 @@ from openedx.core.lib.courses import course_image_url
               % endif
             </li>
           % endif
-            ## We plan to ditch end_date (which is not stored in course metadata),
-            ## but for backwards compatibility, show about/end_date blob if it exists.
             % if course.end:
                 <%
                     course_end_date = course.end
                 %>
 
-            <li class="important-dates-item">
+            <li class="important-dates-item animated fadeInRight">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M18 4H19C20.1 4 21 4.9 21 6V20C21 21.1 20.1 22 19 22H5C3.89 22 3 21.1 3 20L3.01 6C3.01 4.9 3.89 4 5 4H6V2H8V4H16V2H18V4ZM5 10V20H19V10H5ZM19 8H5V6H19V8ZM17 13H12V18H17V13Z" fill="#9CA3AF"/>
-                </svg>
+              </svg>
                 <p class="important-dates-item-title">${_("Classes End")}</p>
                   % if isinstance(course_end_date, str):
                       <span class="important-dates-item-text final-date">${course_end_date}</span>
@@ -205,13 +304,11 @@ from openedx.core.lib.courses import course_image_url
             % endif
 
           % if get_course_about_section(request, course, "effort"):
-            <li class="important-dates-item"><span class="icon fa fa-pencil" aria-hidden="true"></span><p class="important-dates-item-title">${_("Estimated Effort")}</p><span class="important-dates-item-text effort">${get_course_about_section(request, course, "effort")}</span></li>
+            <li class="important-dates-item animated fadeInRight"><span class="icon fa fa-pencil" aria-hidden="true"></span><p class="important-dates-item-title">${_("Estimated Effort")}</p><span class="important-dates-item-text effort">${get_course_about_section(request, course, "effort")}</span></li>
           % endif
 
-          ##<li class="important-dates-item"><span class="icon fa fa-clock-o" aria-hidden="true"></span><p class="important-dates-item-title">${_('Course Length')}</p><span class="important-dates-item-text course-length">${_('{number} weeks').format(number=15)}</span></li>
-
           %if course_price and (is_cosmetic_price_enabled):
-            <li class="important-dates-item">
+            <li class="important-dates-item animated fadeInRight">
               <span class="icon fa fa-money" aria-hidden="true"></span>
               <p class="important-dates-item-title">${_("Price")}</p>
               <span class="important-dates-item-text">${course_price}</span>
@@ -220,7 +317,7 @@ from openedx.core.lib.courses import course_image_url
 
           % if pre_requisite_courses:
           <% prc_target = reverse('about_course', args=[str(pre_requisite_courses[0]['key'])]) %>
-          <li class="prerequisite-course important-dates-item">
+          <li class="prerequisite-course important-dates-item animated fadeInRight">
             <span class="icon fa fa-list-ul" aria-hidden="true"></span>
             <p class="important-dates-item-title">${_("Prerequisites")}</p>
             ## Multiple pre-requisite courses are not supported on frontend that's why we are pulling first element
@@ -236,60 +333,60 @@ from openedx.core.lib.courses import course_image_url
           % endif
 
           % if get_course_about_section(request, course, "prerequisites"):
-            <li class="important-dates-item"><span class="icon fa fa-book" aria-hidden="true"></span><p class="important-dates-item-title">${_("Requirements")}</p><span class="important-dates-item-text prerequisites">${get_course_about_section(request, course, "prerequisites")}</span></li>
-          % endif
-        </ol>
-        </%block>
-        <%include file="course_about_sidebar_header.html" />
-    </div>
-
-      ## For now, ocw links are the only thing that goes in additional resources
-      % if get_course_about_section(request, course, "ocw_links"):
-      <div class="additional-resources">
-        <header>
-          <h1>${_("Additional Resources")}</h1>
-      </div>
-
-        <div>
-          ## "MITOpenCourseware" should *not* be translated
-          <h2 class="opencourseware">MITOpenCourseware</h2>
-             ${get_course_about_section(request, course, "ocw_links")}
+            <li class="important-dates-item animated fadeInRight"><span class="icon fa fa-book" aria-hidden="
+              % endif
+            </ol>
+            </%block>
+            <%include file="course_about_sidebar_header.html" />
         </div>
-    </div>
-      %endif
-
-    % if sidebar_html_enabled:
-      % if get_course_about_section(request, course, "about_sidebar_html"):
-        <section class="about-sidebar-html">
-          ${get_course_about_section(request, course, "about_sidebar_html")}
-        </section>
-      % endif
-    %endif
-  </div>
-
-  </div>
-</div>
-
-## Need to put this hidden form on the page so that the registration button works.
-## Since it's no harm to display a hidden form, we display it with the most permissive conditional
-## which is when the student is not registered.
-%if active_reg_button or is_shib_course:
-  <div style="display: none;">
-    <form id="class_enroll_form" method="post" data-remote="true" action="${reverse('change_enrollment')}">
-      <fieldset class="enroll_fieldset">
-        <legend class="sr">${pgettext("self","Enroll")}</legend>
-        <input name="course_id" type="hidden" value="${course.id}">
-        <input name="enrollment_action" type="hidden" value="enroll">
-      </fieldset>
-      <div class="submit">
-        <input name="submit" type="submit" value="${pgettext('self','enroll')}">
+    
+          ## For now, ocw links are the only thing that goes in additional resources
+          % if get_course_about_section(request, course, "ocw_links"):
+          <div class="additional-resources animated fadeInRight">
+            <header>
+              <h1>${_("Additional Resources")}</h1>
+          </div>
+    
+            <div>
+              ## "MITOpenCourseware" should *not* be translated
+              <h2 class="opencourseware">MITOpenCourseware</h2>
+                 ${get_course_about_section(request, course, "ocw_links")}
+            </div>
+        </div>
+          %endif
+    
+        % if sidebar_html_enabled:
+          % if get_course_about_section(request, course, "about_sidebar_html"):
+            <section class="about-sidebar-html animated fadeInRight">
+              ${get_course_about_section(request, course, "about_sidebar_html")}
+            </section>
+          % endif
+        %endif
       </div>
-    </form>
-  </div>
-%endif
-
-<%include file="../video_modal.html" />
-
-<%static:require_module_async module_name="js/dateutil_factory" class_name="DateUtilFactory">
-    DateUtilFactory.transform(iterationKey=".localized_datetime");
-</%static:require_module_async>
+    
+      </div>
+    </div>
+    
+    ## Need to put this hidden form on the page so that the registration button works.
+    ## Since it's no harm to display a hidden form, we display it with the most permissive conditional
+    ## which is when the student is not registered.
+    %if active_reg_button or is_shib_course:
+      <div style="display: none;">
+        <form id="class_enroll_form" method="post" data-remote="true" action="${reverse('change_enrollment')}">
+          <fieldset class="enroll_fieldset">
+            <legend class="sr">${pgettext("self","Enroll")}</legend>
+            <input name="course_id" type="hidden" value="${course.id}">
+            <input name="enrollment_action" type="hidden" value="enroll">
+          </fieldset>
+          <div class="submit">
+            <input name="submit" type="submit" value="${pgettext('self','enroll')}">
+          </div>
+        </form>
+      </div>
+    %endif
+    
+    <%include file="../video_modal.html" />
+    
+    <%static:require_module_async module_name="js/dateutil_factory" class_name="DateUtilFactory">
+        DateUtilFactory.transform(iterationKey=".localized_datetime");
+    </%static:require_module_async>

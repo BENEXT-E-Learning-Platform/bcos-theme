@@ -35,7 +35,7 @@
   --cyan: #17a2b8;
   --white: #fff;
   --gray: #767676;
-  --primary: #15376D;
+  --primary: #91be3f;
   --secondary: #313131;
   --success: #008100;
   --info: #17a2b8;
@@ -182,13 +182,13 @@ sup {
 
 /* line 198, /openedx/edx-platform/node_modules/bootstrap/scss/_reboot.scss */
 a {
-  color: #15376D;
+  color: #91be3f;
   text-decoration: none;
   background-color: transparent;
   -webkit-text-decoration-skip: objects; }
   /* line 15, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_hover.scss */
   a:hover {
-    color: #09172d;
+    color: #65852c;
     text-decoration: underline; }
 
 /* line 216, /openedx/edx-platform/node_modules/bootstrap/scss/_reboot.scss */
@@ -1419,15 +1419,15 @@ pre {
 .table-primary,
 .table-primary > th,
 .table-primary > td {
-  background-color: #bdc7d6; }
+  background-color: #e0edc9; }
 
 /* line 15, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_hover.scss */
 .table-hover .table-primary:hover {
-  background-color: #adbacc; }
+  background-color: #d5e7b6; }
   /* line 23, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_table-row.scss */
   .table-hover .table-primary:hover > td,
   .table-hover .table-primary:hover > th {
-    background-color: #adbacc; }
+    background-color: #d5e7b6; }
 
 /* line 7, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_table-row.scss */
 .table-secondary,
@@ -1736,9 +1736,9 @@ pre {
   .form-control:focus {
     color: #313131;
     background-color: #fff;
-    border-color: #2b6dd6;
+    border-color: #c8df9e;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(21, 55, 109, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(145, 190, 63, 0.25); }
   /* line 40, /openedx/edx-platform/node_modules/bootstrap/scss/_forms.scss */
   .form-control::placeholder {
     color: #767676;
@@ -2160,7 +2160,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   /* line 23, /openedx/edx-platform/node_modules/bootstrap/scss/_buttons.scss */
   .btn:focus, .btn.focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(21, 55, 109, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(145, 190, 63, 0.25); }
   /* line 30, /openedx/edx-platform/node_modules/bootstrap/scss/_buttons.scss */
   .btn.disabled, .btn:disabled {
     opacity: 0.65; }
@@ -2178,32 +2178,32 @@ fieldset:disabled a.btn {
 
 /* line 64, /openedx/edx-platform/node_modules/bootstrap/scss/_buttons.scss */
 .btn-primary {
-  color: #fff;
-  background-color: #15376D;
-  border-color: #15376D; }
+  color: #111;
+  background-color: #91be3f;
+  border-color: #91be3f; }
   /* line 15, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_hover.scss */
   .btn-primary:hover {
     color: #fff;
-    background-color: #0f274d;
-    border-color: #0d2142; }
+    background-color: #7ba135;
+    border-color: #749832; }
   /* line 18, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_buttons.scss */
   .btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(21, 55, 109, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(145, 190, 63, 0.5); }
   /* line 29, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_buttons.scss */
   .btn-primary.disabled, .btn-primary:disabled {
-    color: #fff;
-    background-color: #15376D;
-    border-color: #15376D; }
+    color: #111;
+    background-color: #91be3f;
+    border-color: #91be3f; }
   /* line 36, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_buttons.scss */
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #0d2142;
-    border-color: #0b1c38; }
+    background-color: #749832;
+    border-color: #6c8e2f; }
     /* line 46, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_buttons.scss */
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(21, 55, 109, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(145, 190, 63, 0.5); }
 
 /* line 64, /openedx/edx-platform/node_modules/bootstrap/scss/_buttons.scss */
 .btn-secondary {
@@ -2584,32 +2584,32 @@ fieldset:disabled a.btn {
 
 /* line 70, /openedx/edx-platform/node_modules/bootstrap/scss/_buttons.scss */
 .btn-outline-primary {
-  color: #15376D;
+  color: #91be3f;
   background-color: transparent;
   background-image: none;
-  border-color: #15376D; }
+  border-color: #91be3f; }
   /* line 63, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_buttons.scss */
   .btn-outline-primary:hover {
-    color: #fff;
-    background-color: #15376D;
-    border-color: #15376D; }
+    color: #111;
+    background-color: #91be3f;
+    border-color: #91be3f; }
   /* line 69, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_buttons.scss */
   .btn-outline-primary:focus, .btn-outline-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(21, 55, 109, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(145, 190, 63, 0.5); }
   /* line 74, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_buttons.scss */
   .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-    color: #15376D;
+    color: #91be3f;
     background-color: transparent; }
   /* line 80, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_buttons.scss */
   .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active,
   .show > .btn-outline-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #15376D;
-    border-color: #15376D; }
+    color: #111;
+    background-color: #91be3f;
+    border-color: #91be3f; }
     /* line 87, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_buttons.scss */
     .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-primary.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(21, 55, 109, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(145, 190, 63, 0.5); }
 
 /* line 70, /openedx/edx-platform/node_modules/bootstrap/scss/_buttons.scss */
 .btn-outline-secondary {
@@ -2991,11 +2991,11 @@ fieldset:disabled a.btn {
 /* line 81, /openedx/edx-platform/node_modules/bootstrap/scss/_buttons.scss */
 .btn-link {
   font-weight: 400;
-  color: #15376D;
+  color: #91be3f;
   background-color: transparent; }
   /* line 15, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_hover.scss */
   .btn-link:hover {
-    color: #09172d;
+    color: #65852c;
     text-decoration: underline;
     background-color: transparent;
     border-color: transparent; }
@@ -3221,7 +3221,7 @@ tbody.collapse.show {
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #15376D; }
+    background-color: #91be3f; }
   /* line 108, /openedx/edx-platform/node_modules/bootstrap/scss/_dropdown.scss */
   .dropdown-item.disabled, .dropdown-item:disabled {
     color: theme-colors("disabled");
@@ -3499,14 +3499,14 @@ tbody.collapse.show {
   /* line 27, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    background-color: #15376D; }
+    background-color: #91be3f; }
   /* line 33, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-control-input:focus ~ .custom-control-label::before {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(21, 55, 109, 0.25); }
+    box-shadow: 0 0 0 1px #fff, 0 0 0 0.2rem rgba(145, 190, 63, 0.25); }
   /* line 38, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-control-input:active ~ .custom-control-label::before {
     color: #fff;
-    background-color: #568bde; }
+    background-color: #ddebc4; }
   /* line 45, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-control-input:disabled ~ .custom-control-label {
     color: #767676; }
@@ -3548,7 +3548,7 @@ tbody.collapse.show {
 
 /* line 103, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #15376D; }
+  background-color: #91be3f; }
 
 /* line 106, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::after {
@@ -3556,7 +3556,7 @@ tbody.collapse.show {
 
 /* line 112, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-  background-color: #15376D; }
+  background-color: #91be3f; }
 
 /* line 116, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
@@ -3564,11 +3564,11 @@ tbody.collapse.show {
 
 /* line 122, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(21, 55, 109, 0.5); }
+  background-color: rgba(145, 190, 63, 0.5); }
 
 /* line 125, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-checkbox .custom-control-input:disabled:indeterminate ~ .custom-control-label::before {
-  background-color: rgba(21, 55, 109, 0.5); }
+  background-color: rgba(145, 190, 63, 0.5); }
 
 /* line 136, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-radio .custom-control-label::before {
@@ -3576,7 +3576,7 @@ tbody.collapse.show {
 
 /* line 141, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-radio .custom-control-input:checked ~ .custom-control-label::before {
-  background-color: #15376D; }
+  background-color: #91be3f; }
 
 /* line 144, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
@@ -3584,7 +3584,7 @@ tbody.collapse.show {
 
 /* line 150, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
-  background-color: rgba(21, 55, 109, 0.5); }
+  background-color: rgba(145, 190, 63, 0.5); }
 
 /* line 163, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
 .custom-select {
@@ -3602,9 +3602,9 @@ tbody.collapse.show {
   appearance: none; }
   /* line 181, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-select:focus {
-    border-color: #2b6dd6;
+    border-color: #c8df9e;
     outline: 0;
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(43, 109, 214, 0.5); }
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075), 0 0 5px rgba(200, 223, 158, 0.5); }
     /* line 186, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
     .custom-select:focus::-ms-value {
       color: #313131;
@@ -3654,11 +3654,11 @@ tbody.collapse.show {
   opacity: 0; }
   /* line 250, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-file-input:focus ~ .custom-file-control {
-    border-color: #2b6dd6;
-    box-shadow: 0 0 0 0.2rem rgba(21, 55, 109, 0.25); }
+    border-color: #c8df9e;
+    box-shadow: 0 0 0 0.2rem rgba(145, 190, 63, 0.25); }
     /* line 254, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
     .custom-file-input:focus ~ .custom-file-control::before {
-      border-color: #2b6dd6; }
+      border-color: #c8df9e; }
   /* line 260, /openedx/edx-platform/node_modules/bootstrap/scss/_custom-forms.scss */
   .custom-file-input:lang(en) ~ .custom-file-label::after {
     content: "Browse"; }
@@ -3752,7 +3752,7 @@ tbody.collapse.show {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #15376D; }
+  background-color: #91be3f; }
 
 /* line 92, /openedx/edx-platform/node_modules/bootstrap/scss/_nav.scss */
 .nav-fill .nav-item {
@@ -4404,12 +4404,12 @@ tbody.collapse.show {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #15376D;
+  color: #91be3f;
   background-color: #fff;
   border: 1px solid #d9d9d9; }
   /* line 17, /openedx/edx-platform/node_modules/bootstrap/scss/_pagination.scss */
   .page-link:hover {
-    color: #09172d;
+    color: #65852c;
     text-decoration: none;
     background-color: #e7e7e7;
     border-color: #d9d9d9; }
@@ -4417,7 +4417,7 @@ tbody.collapse.show {
   .page-link:focus {
     z-index: 2;
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(21, 55, 109, 0.25); }
+    box-shadow: 0 0 0 0.2rem rgba(145, 190, 63, 0.25); }
   /* line 31, /openedx/edx-platform/node_modules/bootstrap/scss/_pagination.scss */
   .page-link:not(:disabled):not(.disabled) {
     cursor: pointer; }
@@ -4437,8 +4437,8 @@ tbody.collapse.show {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #15376D;
-  border-color: #15376D; }
+  background-color: #91be3f;
+  border-color: #91be3f; }
 
 /* line 56, /openedx/edx-platform/node_modules/bootstrap/scss/_pagination.scss */
 .page-item.disabled .page-link {
@@ -4508,13 +4508,13 @@ tbody.collapse.show {
 
 /* line 44, /openedx/edx-platform/node_modules/bootstrap/scss/_badge.scss */
 .badge-primary {
-  color: #fff;
-  background-color: #15376D; }
+  color: #111;
+  background-color: #91be3f; }
   /* line 19, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_hover.scss */
   .badge-primary[href]:hover, .badge-primary[href]:focus {
-    color: #fff;
+    color: #111;
     text-decoration: none;
-    background-color: #0d2142; }
+    background-color: #749832; }
 
 /* line 44, /openedx/edx-platform/node_modules/bootstrap/scss/_badge.scss */
 .badge-secondary {
@@ -4692,15 +4692,15 @@ tbody.collapse.show {
 
 /* line 48, /openedx/edx-platform/node_modules/bootstrap/scss/_alert.scss */
 .alert-primary {
-  color: #0b1d39;
-  background-color: #d0d7e2;
-  border-color: #bdc7d6; }
+  color: #4b6321;
+  background-color: #e9f2d9;
+  border-color: #e0edc9; }
   /* line 6, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_alert.scss */
   .alert-primary hr {
-    border-top-color: #adbacc; }
+    border-top-color: #d5e7b6; }
   /* line 10, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_alert.scss */
   .alert-primary .alert-link {
-    color: #03070e; }
+    color: #2e3d14; }
 
 /* line 48, /openedx/edx-platform/node_modules/bootstrap/scss/_alert.scss */
 .alert-secondary {
@@ -4880,7 +4880,7 @@ tbody.collapse.show {
   justify-content: center;
   color: #fff;
   text-align: center;
-  background-color: #15376D;
+  background-color: #91be3f;
   transition: width 0.6s ease; }
 
 /* line 26, /openedx/edx-platform/node_modules/bootstrap/scss/_progress.scss */
@@ -4952,8 +4952,8 @@ tbody.collapse.show {
   .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #15376D;
-    border-color: #15376D; }
+    background-color: #91be3f;
+    border-color: #91be3f; }
 
 /* line 88, /openedx/edx-platform/node_modules/bootstrap/scss/_list-group.scss */
 .list-group-flush .list-group-item {
@@ -4971,17 +4971,17 @@ tbody.collapse.show {
 
 /* line 4, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_list-group.scss */
 .list-group-item-primary {
-  color: #0b1d39;
-  background-color: #bdc7d6; }
+  color: #4b6321;
+  background-color: #e0edc9; }
   /* line 19, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_hover.scss */
   .list-group-item-primary.list-group-item-action:hover, .list-group-item-primary.list-group-item-action:focus {
-    color: #0b1d39;
-    background-color: #adbacc; }
+    color: #4b6321;
+    background-color: #d5e7b6; }
   /* line 14, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_list-group.scss */
   .list-group-item-primary.list-group-item-action.active {
     color: #fff;
-    background-color: #0b1d39;
-    border-color: #0b1d39; }
+    background-color: #4b6321;
+    border-color: #4b6321; }
 
 /* line 4, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_list-group.scss */
 .list-group-item-secondary {
@@ -5769,13 +5769,13 @@ button.close {
 
 /* line 6, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #15376D !important; }
+  background-color: #91be3f !important; }
 
 /* line 19, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_hover.scss */
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #0d2142 !important; }
+  background-color: #749832 !important; }
 
 /* line 6, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-secondary {
@@ -5957,7 +5957,7 @@ button.bg-darkest:focus {
 
 /* line 20, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-primary {
-  border-color: #15376D !important; }
+  border-color: #91be3f !important; }
 
 /* line 20, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-secondary {
@@ -8320,11 +8320,11 @@ button.bg-darkest:focus {
 
 /* line 6, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #15376D !important; }
+  color: #91be3f !important; }
 
 /* line 19, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_hover.scss */
 a.text-primary:hover, a.text-primary:focus {
-  color: #0d2142 !important; }
+  color: #749832 !important; }
 
 /* line 6, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-secondary {
@@ -8557,7 +8557,7 @@ body {
           color: #111; }
           /* line 28, /openedx/edx-platform/lms/static/sass/bootstrap/_footer.scss */
           .wrapper-footer footer .site-nav .nav-item .nav-link:hover {
-            color: #15376D; }
+            color: #91be3f; }
     /* line 35, /openedx/edx-platform/lms/static/sass/bootstrap/_footer.scss */
     .wrapper-footer footer .wrapper-logo img {
       height: 42px; }
@@ -8588,7 +8588,7 @@ body {
 
 /* line 2, /openedx/edx-platform/lms/static/sass/bootstrap/_navigation.scss */
 .navigation-container {
-  border-bottom: 1px solid #15376D;
+  border-bottom: 1px solid #91be3f;
   text-decoration: none;
   background-color: #fff; }
   /* line 7, /openedx/edx-platform/lms/static/sass/bootstrap/_navigation.scss */
@@ -8627,7 +8627,7 @@ body {
       list-style: none; }
       /* line 47, /openedx/edx-platform/lms/static/sass/bootstrap/_navigation.scss */
       .navigation-container .navbar .nav-item .nav-link {
-        color: #15376D; }
+        color: #91be3f; }
       /* line 51, /openedx/edx-platform/lms/static/sass/bootstrap/_navigation.scss */
       .navigation-container .navbar .nav-item .user-image-frame {
         max-width: 40px;
@@ -8642,7 +8642,7 @@ body {
           margin: 5px 10px; }
           /* line 67, /openedx/edx-platform/lms/static/sass/bootstrap/_navigation.scss */
           .navigation-container .navbar .nav-item.nav-item-open-collapsed a, .navigation-container .navbar .nav-item.nav-item-open-collapsed-only a {
-            color: #15376D;
+            color: #91be3f;
             padding: 0;
             text-decoration: none; }
             /* line 72, /openedx/edx-platform/lms/static/sass/bootstrap/_navigation.scss */
@@ -8697,8 +8697,8 @@ body {
       color: #313131; }
     /* line 34, /openedx/edx-platform/lms/static/sass/bootstrap/_layouts.scss */
     .content-wrapper .course-tabs .nav-item.active .nav-link, .content-wrapper .course-tabs .nav-item:hover .nav-link {
-      border-bottom-color: #15376D;
-      color: #15376D; }
+      border-bottom-color: #91be3f;
+      color: #91be3f; }
   /* line 42, /openedx/edx-platform/lms/static/sass/bootstrap/_layouts.scss */
   .content-wrapper.container-fluid {
     max-width: 1920px; }
@@ -8864,7 +8864,7 @@ body {
 .wrapper-preview-menu {
   margin: 0 auto;
   padding: 15px;
-  background-color: #15376D;
+  background-color: #91be3f;
   box-sizing: border-box; }
   /* line 2, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_clearfix.scss */
   .wrapper-preview-menu::after {
@@ -8925,7 +8925,7 @@ body {
   font-size: 14px;
   background-color: #e5eaec;
   padding: 20px 40px;
-  border-left: 4px solid #15376D;
+  border-left: 4px solid #91be3f;
   margin: 0 auto;
   color: #313131; }
   /* line 85, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_preview.scss */
@@ -9188,7 +9188,7 @@ body {
   /* line 108, /openedx/edx-platform/lms/static/sass/discussion/_discussion.scss */
   .discussion-show.shown {
     background-color: #fff;
-    color: #15376D; }
+    color: #91be3f; }
 
 /* line 2, /openedx/edx-platform/node_modules/bootstrap/scss/mixins/_clearfix.scss */
 section.discussion::after {
@@ -9423,15 +9423,15 @@ section.discussion-pagination {
     border-bottom-left-radius: 0; }
   /* line 171, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
   .discussion .action-button.action-follow .action-label {
-    color: #15376D; }
+    color: #91be3f; }
   /* line 178, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
   .discussion .action-button.action-follow.is-checked .action-icon, .discussion .action-button.action-follow:hover .action-icon, .discussion .action-button.action-follow:focus .action-icon {
-    background-color: #15376D;
-    border: 1px solid #15376D;
+    background-color: #91be3f;
+    border: 1px solid #91be3f;
     color: #fff; }
   /* line 185, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
   .discussion .action-button.action-follow:hover, .discussion .action-button.action-follow:focus {
-    border-color: #15376D; }
+    border-color: #91be3f; }
   /* line 192, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
   .discussion .action-button.action-vote .action-label {
     opacity: 1; }
@@ -9448,16 +9448,16 @@ section.discussion-pagination {
       color: #008100; }
   /* line 220, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
   .discussion .action-button.action-endorse.is-checked .action-icon, .discussion .action-button.action-endorse:hover .action-icon, .discussion .action-button.action-endorse:focus .action-icon {
-    background-color: #15376D;
-    border: 1px solid #15376D;
+    background-color: #91be3f;
+    border: 1px solid #91be3f;
     color: #fff; }
   /* line 227, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
   .discussion .action-button.action-endorse:hover, .discussion .action-button.action-endorse:focus {
-    border-color: #15376D;
+    border-color: #91be3f;
     background-color: #fff; }
     /* line 232, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
     .discussion .action-button.action-endorse:hover .action-label, .discussion .action-button.action-endorse:focus .action-label {
-      color: #15376D; }
+      color: #91be3f; }
   /* line 242, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
   .discussion .action-button.action-answer.is-checked .action-icon, .discussion .action-button.action-answer:hover .action-icon, .discussion .action-button.action-answer:focus .action-icon {
     border: 1px solid #008100;
@@ -9497,7 +9497,7 @@ section.discussion-pagination {
   color: #313131; }
   /* line 299, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
   .discussion .actions-dropdown .action-list-item:hover, .discussion .actions-dropdown .action-list-item:focus {
-    color: #15376D; }
+    color: #91be3f; }
   /* line 304, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
   .discussion .actions-dropdown .action-list-item .action-icon {
     margin-left: 5px;
@@ -9516,7 +9516,7 @@ section.discussion-pagination {
     color: #c2387d; }
   /* line 330, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
   .discussion .actions-dropdown .action-list-item.is-checked:hover, .discussion .actions-dropdown .action-list-item.is-checked:focus {
-    color: #15376D; }
+    color: #91be3f; }
 
 /* line 340, /openedx/edx-platform/lms/static/sass/discussion/elements/_actions.scss */
 .discussion .action-button .action-label,
@@ -9767,7 +9767,7 @@ section.discussion-pagination {
     color: #982c62; }
   /* line 26, /openedx/edx-platform/lms/static/sass/discussion/elements/_labels.scss */
   .discussion .post-label.post-label-following {
-    color: #15376D; }
+    color: #91be3f; }
   /* line 30, /openedx/edx-platform/lms/static/sass/discussion/elements/_labels.scss */
   .discussion .post-label.post-label-reported {
     color: #982c62; }
@@ -9776,7 +9776,7 @@ section.discussion-pagination {
     color: #000; }
   /* line 38, /openedx/edx-platform/lms/static/sass/discussion/elements/_labels.scss */
   .discussion .post-label.post-label-by-staff {
-    color: #15376D; }
+    color: #91be3f; }
   /* line 42, /openedx/edx-platform/lms/static/sass/discussion/elements/_labels.scss */
   .discussion .post-label.post-label-by-community-ta {
     color: #008100; }
@@ -10001,8 +10001,8 @@ section.discussion-pagination {
       white-space: nowrap; }
   /* line 265, /openedx/edx-platform/lms/static/sass/discussion/elements/_navigation.scss */
   .forum-nav-thread.never-read .forum-nav-thread-link {
-    border-left: 3px solid #15376D;
-    color: #15376D; }
+    border-left: 3px solid #91be3f;
+    color: #91be3f; }
 
 /* line 273, /openedx/edx-platform/lms/static/sass/discussion/elements/_navigation.scss */
 .forum-nav-thread-wrapper-0, .forum-nav-thread-wrapper-1, .forum-nav-thread-wrapper-2 {
@@ -10083,12 +10083,12 @@ section.discussion-pagination {
 
 /* line 384, /openedx/edx-platform/lms/static/sass/discussion/elements/_navigation.scss */
 .forum-nav-load-more-link {
-  color: #15376D;
+  color: #91be3f;
   width: 100%; }
   /* line 390, /openedx/edx-platform/lms/static/sass/discussion/elements/_navigation.scss */
   .forum-nav-load-more-link:hover, .forum-nav-load-more-link:focus {
     color: #fff;
-    background-color: #15376D !important; }
+    background-color: #91be3f !important; }
 
 /* line 5, /openedx/edx-platform/lms/static/sass/discussion/views/_home.scss */
 .view-discussion-home {
@@ -10462,7 +10462,7 @@ section.discussion-pagination {
         /* line 293, /openedx/edx-platform/lms/static/sass/discussion/views/_thread.scss */
         .discussion-thread .discussion-article .post-tools .btn-link .icon {
           margin-right: 5px;
-          color: #15376D; }
+          color: #91be3f; }
 
 /* line 305, /openedx/edx-platform/lms/static/sass/discussion/views/_thread.scss */
 .thread-wrapper img,
@@ -10906,7 +10906,7 @@ section.discussion-pagination {
 
 /* line 19, /openedx/edx-platform/lms/static/sass/edx-pattern-library-shims/_form.scss */
 .field-label .field-input:checked + .field-input-label {
-  color: #15376D; }
+  color: #91be3f; }
 
 /* line 24, /openedx/edx-platform/lms/static/sass/edx-pattern-library-shims/_form.scss */
 .input-radio,
@@ -10929,7 +10929,7 @@ section.discussion-pagination {
     position: relative; }
     /* line 21, /openedx/edx-platform/lms/static/sass/discussion/views/_inline.scss */
     .discussion.inline-discussion .inline-thread .forum-nav-bar .all-posts-btn {
-      color: #15376D; }
+      color: #91be3f; }
       /* line 24, /openedx/edx-platform/lms/static/sass/discussion/views/_inline.scss */
       .discussion.inline-discussion .inline-thread .forum-nav-bar .all-posts-btn .icon {
         margin-left: 10px; }
@@ -10947,7 +10947,7 @@ section.discussion-pagination {
     right: 10px;
     top: 10px;
     position: absolute;
-    color: #15376D; }
+    color: #91be3f; }
     /* line 47, /openedx/edx-platform/lms/static/sass/discussion/views/_inline.scss */
     .discussion.inline-discussion .new-post-article .add-post-cancel:hover, .discussion.inline-discussion .new-post-article .add-post-cancel:focus {
       border-color: transparent;

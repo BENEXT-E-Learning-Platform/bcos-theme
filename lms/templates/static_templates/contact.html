@@ -10,7 +10,7 @@
         <h1>
             <%block name="pageheader">${page_header or _("اتصل بنا")}</%block>
         </h1>
-        <p>
+        <p> 
             <%block name="pagecontent">${page_content or _("نحن هنا لمساعدتك! إذا كان لديك أي أسئلة أو استفسارات، فلا تتردد في التواصل معنا.")}</%block>
         </p>
 
@@ -71,12 +71,15 @@
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    direction: rtl;
   }
 
   .container.about h1 {
     font-size: 2.5rem;
     color: var(--primary-blue);
     margin-bottom: 1rem;
+    direction: rtl;
+    text-align: center;
   }
 
   .container.about p {

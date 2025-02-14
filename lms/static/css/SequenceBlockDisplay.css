@@ -103,7 +103,7 @@
             color: #5a5a5a; }
           /* line 136, /openedx/edx-platform/xmodule/assets/sequence/_display.scss */
           .xmodule_display.xmodule_SequenceBlock .sequence-nav ol li button .fa-bookmark {
-            color: #15376D; }
+            color: #91be3f; }
           /* line 142, /openedx/edx-platform/xmodule/assets/sequence/_display.scss */
           .xmodule_display.xmodule_SequenceBlock .sequence-nav ol li button.seq_video .icon::before {
             content: "\f008"; }
@@ -259,7 +259,7 @@
   .xmodule_display.xmodule_SequenceBlock .sequence-nav button:active,
   .xmodule_display.xmodule_SequenceBlock .sequence-nav button.active {
     padding-top: 2px;
-    background-color: #15376D; }
+    background-color: #91be3f; }
     /* line 327, /openedx/edx-platform/xmodule/assets/sequence/_display.scss */
     .xmodule_display.xmodule_SequenceBlock .sequence-nav-button.focused .icon, .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:hover .icon, .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:active .icon, .xmodule_display.xmodule_SequenceBlock .sequence-nav-button.active .icon,
     .xmodule_display.xmodule_SequenceBlock .sequence-nav button.focused .icon,
@@ -274,7 +274,7 @@
       .xmodule_display.xmodule_SequenceBlock .sequence-nav button:hover,
       .xmodule_display.xmodule_SequenceBlock .sequence-nav button:active,
       .xmodule_display.xmodule_SequenceBlock .sequence-nav button.active {
-        border-bottom: 3px solid #15376D;
+        border-bottom: 3px solid #91be3f;
         background-color: #fff; }
         /* line 335, /openedx/edx-platform/xmodule/assets/sequence/_display.scss */
         .xmodule_display.xmodule_SequenceBlock .sequence-nav-button.focused .icon, .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:hover .icon, .xmodule_display.xmodule_SequenceBlock .sequence-nav-button:active .icon, .xmodule_display.xmodule_SequenceBlock .sequence-nav-button.active .icon,

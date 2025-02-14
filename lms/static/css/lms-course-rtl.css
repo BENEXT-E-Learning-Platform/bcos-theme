@@ -32,13 +32,13 @@
 
 /* line 6, node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #15376D !important; }
+  background-color: #91be3f !important; }
 
 /* line 19, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #0d2142 !important; }
+  background-color: #749832 !important; }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_background-variant.scss */
 .bg-secondary {
@@ -220,7 +220,7 @@ button.bg-darkest:focus {
 
 /* line 20, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-primary {
-  border-color: #15376D !important; }
+  border-color: #91be3f !important; }
 
 /* line 20, /openedx/edx-platform/node_modules/bootstrap/scss/utilities/_borders.scss */
 .border-secondary {
@@ -2584,11 +2584,11 @@ button.bg-darkest:focus {
 
 /* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #15376D !important; }
+  color: #91be3f !important; }
 
 /* line 19, node_modules/bootstrap/scss/mixins/_hover.scss */
 a.text-primary:hover, a.text-primary:focus {
-  color: #0d2142 !important; }
+  color: #749832 !important; }
 
 /* line 6, node_modules/bootstrap/scss/mixins/_text-emphasis.scss */
 .text-secondary {
@@ -2750,13 +2750,13 @@ a.text-darkest:hover, a.text-darkest:focus {
 
 /* line 44, node_modules/bootstrap/scss/_badge.scss */
 .badge-primary {
-  color: #fff;
-  background-color: #15376D; }
+  color: #111;
+  background-color: #91be3f; }
   /* line 19, node_modules/bootstrap/scss/mixins/_hover.scss */
   .badge-primary[href]:hover, .badge-primary[href]:focus {
-    color: #fff;
+    color: #111;
     text-decoration: none;
-    background-color: #0d2142; }
+    background-color: #749832; }
 
 /* line 44, node_modules/bootstrap/scss/_badge.scss */
 .badge-secondary {
@@ -3072,7 +3072,7 @@ a.text-darkest:hover, a.text-darkest:focus {
 
 /* line 17, common/static/sass/_builtin-block-variables.scss */
 :root {
-  --action-primary-active-bg: #15376D;
+  --action-primary-active-bg: #91be3f;
   --base-font-size: 18px;
   --base-line-height: 1.5em;
   --baseline: 20px;
@@ -3095,7 +3095,7 @@ a.text-darkest:hover, a.text-darkest:focus {
   --error-color-light: #f95861;
   --font-bold: 700;
   --font-family-sans-serif: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --general-color-accent: #15376D;
+  --general-color-accent: #91be3f;
   --gray: #767676;
   --gray-300: #d9d9d9;
   --gray-d1: #5e5e5e;
@@ -3115,13 +3115,13 @@ a.text-darkest:hover, a.text-darkest:focus {
   --link-color: #1b6d99;
   --medium-font-size: 0.9em;
   --partially-correct: #008100;
-  --primary: #15376D;
+  --primary: #91be3f;
   --shadow: rgba(0, 0, 0, 0.2);
   --shadow-l1: rgba(0, 0, 0, 0.1);
   --sidebar-color: #f6f6f6;
   --small-font-size: 80%;
   --static-path: "..";
-  --submitted: #15376D;
+  --submitted: #91be3f;
   --success: #008100;
   --tmg-f2: 0.25s;
   --tmg-s2: 2s;
@@ -3693,7 +3693,7 @@ div.gradebook-wrapper section.gradebook-content .grades .right-shadow {
     /* line 36, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
     .breadcrumbs .nav-item a,
     .breadcrumbs .nav-item a:visited {
-      color: #15376D; }
+      color: #91be3f; }
     /* line 41, common/static/sass/edx-pattern-library-shims/_breadcrumbs.scss */
     .breadcrumbs .nav-item a:hover {
       color: #065683; }
@@ -3745,16 +3745,16 @@ div.gradebook-wrapper section.gradebook-content .grades .right-shadow {
 .btn-default {
   border-color: transparent;
   background: transparent;
-  color: #15376D; }
+  color: #91be3f; }
   /* line 63, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-default:hover, .btn-default.is-hovered, .btn-default:focus, .btn-default.is-focused {
-    border-color: #15376D;
+    border-color: #91be3f;
     background-color: transparent;
-    color: #15376D; }
+    color: #91be3f; }
   /* line 73, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-default:active, .btn-default.is-pressed, .btn-default.is-active {
-    border-color: #15376D;
-    color: #15376D; }
+    border-color: #91be3f;
+    color: #91be3f; }
   /* line 81, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-default:disabled, .btn-default.is-disabled {
     border-color: #d2d0d0;
@@ -3762,8 +3762,8 @@ div.gradebook-wrapper section.gradebook-content .grades .right-shadow {
 
 /* line 91, common/static/sass/edx-pattern-library-shims/_buttons.scss */
 .btn-primary, .btn-brand {
-  border-color: #15376D;
-  background: #15376D;
+  border-color: #91be3f;
+  background: #91be3f;
   color: #fcfcfc; }
   /* line 99, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-primary:hover, .btn-brand:hover, .btn-primary.is-hovered, .is-hovered.btn-brand, .btn-primary:focus, .btn-brand:focus, .btn-primary.is-focused, .is-focused.btn-brand {
@@ -3772,8 +3772,8 @@ div.gradebook-wrapper section.gradebook-content .grades .right-shadow {
     color: #fcfcfc; }
   /* line 109, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-primary:active, .btn-brand:active, .btn-primary.is-pressed, .is-pressed.btn-brand, .btn-primary.is-active, .is-active.btn-brand {
-    border-color: #15376D;
-    background: #15376D; }
+    border-color: #91be3f;
+    background: #91be3f; }
   /* line 117, common/static/sass/edx-pattern-library-shims/_buttons.scss */
   .btn-primary:disabled, .btn-brand:disabled, .btn-primary.is-disabled, .is-disabled.btn-brand {
     border-color: #d2d0d0;
@@ -5068,7 +5068,7 @@ mark {
     color: #fff; }
   /* line 176, /openedx/edx-platform/lms/static/sass/elements/_controls.scss */
   .current.btn-blue, .view-teams .current.action-primary, .active.btn-blue, .view-teams .active.action-primary {
-    background: #15376D;
+    background: #91be3f;
     color: #0075b4; }
     /* line 181, /openedx/edx-platform/lms/static/sass/elements/_controls.scss */
     .current.btn-blue:hover, .view-teams .current.action-primary:hover, .current.btn-blue:active, .view-teams .current.action-primary:active, .current.btn-blue:focus, .view-teams .current.action-primary:focus, .active.btn-blue:hover, .view-teams .active.action-primary:hover, .active.btn-blue:active, .view-teams .active.action-primary:active, .active.btn-blue:focus, .view-teams .active.action-primary:focus {
@@ -5444,13 +5444,13 @@ mark {
         display: block;
         text-align: center;
         text-decoration: none;
-        border-bottom: 4px hidden #15376D; }
+        border-bottom: 4px hidden #91be3f; }
         /* line 58, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
         .wrapper-course-material .course-tabs .tab a:hover, .wrapper-course-material .course-tabs .tab a:focus, .wrapper-course-material .course-tabs .tab a.active,
         .wrapper-course-material .course-tabs .tab a:visited:hover,
         .wrapper-course-material .course-tabs .tab a:visited:focus,
         .wrapper-course-material .course-tabs .tab a:visited.active {
-          color: #15376D;
+          color: #91be3f;
           border-bottom-style: solid;
           background-color: transparent; }
 
@@ -5486,7 +5486,7 @@ mark {
       background-image: -webkit-linear-gradient(-90deg, #2186bc, #1f7caf 50%, #1b6d99 50%, #134e6e 100%);
       background-image: linear-gradient(-90deg, #2186bc, #1f7caf 50%, #1b6d99 50%, #134e6e 100%);
       border: 1px solid transparent;
-      border-color: #15376D;
+      border-color: #91be3f;
       border-radius: 3px;
       box-sizing: border-box;
       box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.6);
@@ -5505,8 +5505,8 @@ mark {
       vertical-align: middle; }
       /* line 123, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
       .header-global.slim .guest .secondary a#login:hover, .header-global.slim .guest .secondary a#login:active, .header-global.slim .guest .secondary a#login:focus {
-        background-image: -webkit-linear-gradient(-90deg, #15376D, #15376D 50%, #15376D 50%, #15376D 100%);
-        background-image: linear-gradient(-90deg, #15376D, #15376D 50%, #15376D 50%, #15376D 100%); }
+        background-image: -webkit-linear-gradient(-90deg, #91be3f, #91be3f 50%, #91be3f 50%, #91be3f 100%);
+        background-image: linear-gradient(-90deg, #91be3f, #91be3f 50%, #91be3f 50%, #91be3f 100%); }
   /* line 131, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_header.scss */
   .header-global.slim nav {
     padding-top: 5px; }
@@ -5552,7 +5552,7 @@ mark {
 .wrapper-preview-menu {
   margin: 0 auto;
   padding: 15px;
-  background-color: #15376D;
+  background-color: #91be3f;
   box-sizing: border-box; }
   /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
   .wrapper-preview-menu:after {
@@ -5613,7 +5613,7 @@ mark {
   font-size: 14px;
   background-color: #e5eaec;
   padding: 20px 40px;
-  border-left: 4px solid #15376D;
+  border-left: 4px solid #91be3f;
   margin: 0 auto;
   color: #313131; }
   /* line 85, /openedx/edx-platform/lms/static/sass/course/layout/_courseware_preview.scss */
@@ -6437,7 +6437,7 @@ html.video-fullscreen {
   .content-wrapper .course-license a:hover,
   .content-wrapper .xblock-license a:active,
   .content-wrapper .xblock-license a:hover {
-    color: #15376D; }
+    color: #91be3f; }
   /* line 92, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
   .content-wrapper .course-license .license-label,
   .content-wrapper .course-license .license-value,
@@ -6550,7 +6550,7 @@ html.video-fullscreen {
       .course-wrapper .courseware-results-wrapper div.timed-exam button.gated-sequence,
       .course-wrapper .courseware-results-wrapper div.proctored-exam button.gated-sequence {
         background: transparent;
-        color: #15376D;
+        color: #91be3f;
         border: none;
         box-shadow: none;
         text-align: left;
@@ -6571,7 +6571,7 @@ html.video-fullscreen {
       .course-wrapper .course-content div.timed-exam .gated-sequence, .course-wrapper .course-content div.proctored-exam .gated-sequence,
       .course-wrapper .courseware-results-wrapper div.timed-exam .gated-sequence,
       .course-wrapper .courseware-results-wrapper div.proctored-exam .gated-sequence {
-        color: #15376D;
+        color: #91be3f;
         font-weight: 600;
         padding: 13.33333px 5px; }
         /* line 217, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
@@ -6579,7 +6579,7 @@ html.video-fullscreen {
         .course-wrapper .courseware-results-wrapper div.timed-exam .gated-sequence a.start-timed-exam,
         .course-wrapper .courseware-results-wrapper div.proctored-exam .gated-sequence a.start-timed-exam {
           cursor: pointer;
-          color: #15376D;
+          color: #91be3f;
           font-weight: 600;
           position: relative;
           top: 2px; }
@@ -6712,7 +6712,7 @@ html.video-fullscreen {
         /* line 358, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
         .course-wrapper .course-content div.proctored-exam .gated-sequence.start-timed-exam.action-primary .icon,
         .course-wrapper .courseware-results-wrapper div.proctored-exam .gated-sequence.start-timed-exam.action-primary .icon {
-          color: #15376D; }
+          color: #91be3f; }
       /* line 364, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
       .course-wrapper .course-content div.proctored-exam .gated-sequence p,
       .course-wrapper .courseware-results-wrapper div.proctored-exam .gated-sequence p {
@@ -7022,7 +7022,7 @@ html.video-fullscreen {
           .course-wrapper .courseware-results-wrapper .vert-mod .vert .problem-reset-btn-wrapper .problem-reset-btn:hover,
           .course-wrapper .courseware-results-wrapper .vert-mod .vert .problem-reset-btn-wrapper .problem-reset-btn:focus,
           .course-wrapper .courseware-results-wrapper .vert-mod .vert .problem-reset-btn-wrapper .problem-reset-btn:active {
-            color: #15376D; }
+            color: #91be3f; }
       /* line 651, /openedx/edx-platform/lms/static/sass/course/courseware/_courseware.scss */
       .course-wrapper .course-content .vert-mod .vert > .xblock-student_view.is-hidden,
       .course-wrapper .course-content .vert-mod .vert > .xblock-public_view.is-hidden,
@@ -8657,7 +8657,7 @@ form#wiki_revision {
       padding: 2px 4px 2px 10px;
       font-size: 0.9em;
       line-height: 25px;
-      border-left: 1px solid #15376D; }
+      border-left: 1px solid #91be3f; }
       /* line 269, /openedx/edx-platform/lms/static/sass/course/wiki/_wiki.scss */
       .wiki-wrapper section.wiki .article-functions .see-children a:hover, .wiki-wrapper section.wiki .article-functions .see-children a:focus {
         color: #065683;
@@ -8826,32 +8826,32 @@ form#wiki_revision {
     text-decoration: none; }
   /* line 436, /openedx/edx-platform/lms/static/sass/course/wiki/_wiki.scss */
   .wiki-wrapper section.wiki .btn.btn-primary, .wiki-wrapper section.wiki .btn.btn-brand {
-    border: 1px solid #071834;
+    border: 1px solid #6a9125;
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #2a59a5;
-    color: white;
+    box-shadow: inset 0 1px 0 0 #b0cb7f;
+    color: #333333;
     display: inline-block;
     font-size: inherit;
     font-weight: bold;
-    background-color: #15376D;
-    background-image: -webkit-linear-gradient(#15376D, #091f41);
-    background-image: linear-gradient(#15376D, #091f41);
+    background-color: #91be3f;
+    background-image: -webkit-linear-gradient(#91be3f, #739d28);
+    background-image: linear-gradient(#91be3f, #739d28);
     padding: 7px 18px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #031023;
+    text-shadow: 0 1px 0 #9dd041;
     background-clip: padding-box;
     font-size: 0.8em; }
     /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .wiki-wrapper section.wiki .btn.btn-primary:hover:not(:disabled), .wiki-wrapper section.wiki .btn.btn-brand:hover:not(:disabled) {
-      box-shadow: inset 0 1px 0 0 #1f437d;
+      box-shadow: inset 0 1px 0 0 #9abd59;
       cursor: pointer;
-      background-color: #132d56;
-      background-image: -webkit-linear-gradient(#132d56, #071833);
-      background-image: linear-gradient(#132d56, #071833); }
+      background-color: #81a63d;
+      background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+      background-image: linear-gradient(#81a63d, #6a9026); }
     /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .wiki-wrapper section.wiki .btn.btn-primary:active:not(:disabled), .wiki-wrapper section.wiki .btn.btn-brand:active:not(:disabled), .wiki-wrapper section.wiki .btn.btn-primary:focus:not(:disabled), .wiki-wrapper section.wiki .btn.btn-brand:focus:not(:disabled) {
-      border: 1px solid #071834;
-      box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+      border: 1px solid #6a9125;
+      box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
     /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .wiki-wrapper section.wiki .btn.btn-primary:disabled, .wiki-wrapper section.wiki .btn.btn-brand:disabled {
       opacity: 0.5;
@@ -9477,7 +9477,7 @@ div.book-wrapper {
         /* line 55, /openedx/edx-platform/lms/static/sass/course/_textbook.scss */
         div.book-wrapper section.book-sidebar #booknav li a {
           padding: 0;
-          color: #15376D; }
+          color: #91be3f; }
           /* line 15, /openedx/edx-platform/common/static/sass/bourbon/addons/_clearfix.scss */
           div.book-wrapper section.book-sidebar #booknav li a:after {
             content: "";
@@ -9739,19 +9739,19 @@ div.book-wrapper {
     text-align: center; }
     /* line 160, /openedx/edx-platform/lms/static/sass/course/_profile.scss */
     .profile-wrapper .course-info #course-success > a {
-      border: 1px solid #071834;
+      border: 1px solid #6a9125;
       border-radius: 3px;
-      box-shadow: inset 0 1px 0 0 #2a59a5;
-      color: white;
+      box-shadow: inset 0 1px 0 0 #b0cb7f;
+      color: #333333;
       display: inline-block;
       font-size: inherit;
       font-weight: bold;
-      background-color: #15376D;
-      background-image: -webkit-linear-gradient(#15376D, #091f41);
-      background-image: linear-gradient(#15376D, #091f41);
+      background-color: #91be3f;
+      background-image: -webkit-linear-gradient(#91be3f, #739d28);
+      background-image: linear-gradient(#91be3f, #739d28);
       padding: 7px 18px;
       text-decoration: none;
-      text-shadow: 0 1px 0 #031023;
+      text-shadow: 0 1px 0 #9dd041;
       background-clip: padding-box;
       box-sizing: border-box;
       border-radius: 3px;
@@ -9761,15 +9761,15 @@ div.book-wrapper {
       text-align: center; }
       /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
       .profile-wrapper .course-info #course-success > a:hover:not(:disabled) {
-        box-shadow: inset 0 1px 0 0 #1f437d;
+        box-shadow: inset 0 1px 0 0 #9abd59;
         cursor: pointer;
-        background-color: #132d56;
-        background-image: -webkit-linear-gradient(#132d56, #071833);
-        background-image: linear-gradient(#132d56, #071833); }
+        background-color: #81a63d;
+        background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+        background-image: linear-gradient(#81a63d, #6a9026); }
       /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
       .profile-wrapper .course-info #course-success > a:active:not(:disabled), .profile-wrapper .course-info #course-success > a:focus:not(:disabled) {
-        border: 1px solid #071834;
-        box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+        border: 1px solid #6a9125;
+        box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
       /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
       .profile-wrapper .course-info #course-success > a:disabled {
         opacity: 0.5;
@@ -10522,7 +10522,7 @@ div.static_tab_wrapper {
     clear: both; }
   /* line 180, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
   .view-teams .card:hover, .view-teams .card:active, .view-teams .card:focus, .view-teams .card:focus-within {
-    box-shadow: 0 0 5px 1px rgba(21, 55, 109, 0.25); }
+    box-shadow: 0 0 5px 1px rgba(145, 190, 63, 0.25); }
     /* line 186, /openedx/edx-platform/lms/static/sass/views/_teams.scss */
     .view-teams .card:hover .card-description, .view-teams .card:active .card-description, .view-teams .card:focus .card-description, .view-teams .card:focus-within .card-description {
       color: #313131; }
@@ -11239,7 +11239,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   /* line 41, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 .file-download-link a {
     font-size: 15px;
-    color: #15376D;
+    color: #91be3f;
     text-decoration: underline;
     padding: 5px; }
   /* line 49, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
@@ -11365,19 +11365,19 @@ div.gradebook-wrapper .grade-table tr.highlight td {
       background: transparent; }
       /* line 198, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
       .instructor-dashboard-wrapper-2 .customBrowseBtn .file-browse .browse {
-        border: 1px solid #071834;
+        border: 1px solid #6a9125;
         border-radius: 3px;
-        box-shadow: inset 0 1px 0 0 #2a59a5;
-        color: white;
+        box-shadow: inset 0 1px 0 0 #b0cb7f;
+        color: #333333;
         display: inline-block;
         font-size: inherit;
         font-weight: bold;
-        background-color: #15376D;
-        background-image: -webkit-linear-gradient(#15376D, #091f41);
-        background-image: linear-gradient(#15376D, #091f41);
+        background-color: #91be3f;
+        background-image: -webkit-linear-gradient(#91be3f, #739d28);
+        background-image: linear-gradient(#91be3f, #739d28);
         padding: 7px 18px;
         text-decoration: none;
-        text-shadow: 0 1px 0 #031023;
+        text-shadow: 0 1px 0 #9dd041;
         background-clip: padding-box;
         box-sizing: border-box;
         height: 30px;
@@ -11390,15 +11390,15 @@ div.gradebook-wrapper .grade-table tr.highlight td {
         font-size: 12px; }
         /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
         .instructor-dashboard-wrapper-2 .customBrowseBtn .file-browse .browse:hover:not(:disabled) {
-          box-shadow: inset 0 1px 0 0 #1f437d;
+          box-shadow: inset 0 1px 0 0 #9abd59;
           cursor: pointer;
-          background-color: #132d56;
-          background-image: -webkit-linear-gradient(#132d56, #071833);
-          background-image: linear-gradient(#132d56, #071833); }
+          background-color: #81a63d;
+          background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+          background-image: linear-gradient(#81a63d, #6a9026); }
         /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
         .instructor-dashboard-wrapper-2 .customBrowseBtn .file-browse .browse:active:not(:disabled), .instructor-dashboard-wrapper-2 .customBrowseBtn .file-browse .browse:focus:not(:disabled) {
-          border: 1px solid #071834;
-          box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+          border: 1px solid #6a9125;
+          box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
         /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
         .instructor-dashboard-wrapper-2 .customBrowseBtn .file-browse .browse:disabled {
           opacity: 0.5;
@@ -11520,10 +11520,10 @@ div.gradebook-wrapper .grade-table tr.highlight td {
         text-shadow: none; }
         /* line 317, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
         .instructor-dashboard-content-2 .instructor-nav .nav-item .btn-link:hover, .instructor-dashboard-content-2 .data-download-nav .nav-item .btn-link:hover, .instructor-dashboard-content-2 .instructor-nav .nav-item .btn-link:focus, .instructor-dashboard-content-2 .data-download-nav .nav-item .btn-link:focus {
-          border-bottom: 3px solid #15376D; }
+          border-bottom: 3px solid #91be3f; }
         /* line 322, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
         .instructor-dashboard-content-2 .instructor-nav .nav-item .btn-link.active-section, .instructor-dashboard-content-2 .data-download-nav .nav-item .btn-link.active-section {
-          border-bottom: 3px solid #15376D;
+          border-bottom: 3px solid #91be3f;
           color: #000; }
   /* line 333, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-content-2 .report-generation-status .msg {
@@ -11974,19 +11974,19 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     box-shadow: inset #bbb 0 1px 1px 0; }
   /* line 851, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget input[type="button"].add, .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management-ccx .auth-list-container .member-list-widget input[type="button"].add {
-    border: 1px solid #071834;
+    border: 1px solid #6a9125;
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #2a59a5;
-    color: white;
+    box-shadow: inset 0 1px 0 0 #b0cb7f;
+    color: #333333;
     display: inline-block;
     font-size: inherit;
     font-weight: bold;
-    background-color: #15376D;
-    background-image: -webkit-linear-gradient(#15376D, #091f41);
-    background-image: linear-gradient(#15376D, #091f41);
+    background-color: #91be3f;
+    background-image: -webkit-linear-gradient(#91be3f, #739d28);
+    background-image: linear-gradient(#91be3f, #739d28);
     padding: 7px 18px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #031023;
+    text-shadow: 0 1px 0 #9dd041;
     background-clip: padding-box;
     margin-bottom: 1em;
     padding: 8px 17px;
@@ -11996,15 +11996,15 @@ div.gradebook-wrapper .grade-table tr.highlight td {
     right: 20px; }
     /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget input[type="button"].add:hover:not(:disabled), .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management-ccx .auth-list-container .member-list-widget input[type="button"].add:hover:not(:disabled) {
-      box-shadow: inset 0 1px 0 0 #1f437d;
+      box-shadow: inset 0 1px 0 0 #9abd59;
       cursor: pointer;
-      background-color: #132d56;
-      background-image: -webkit-linear-gradient(#132d56, #071833);
-      background-image: linear-gradient(#132d56, #071833); }
+      background-color: #81a63d;
+      background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+      background-image: linear-gradient(#81a63d, #6a9026); }
     /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget input[type="button"].add:active:not(:disabled), .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management-ccx .auth-list-container .member-list-widget input[type="button"].add:active:not(:disabled), .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget input[type="button"].add:focus:not(:disabled), .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management-ccx .auth-list-container .member-list-widget input[type="button"].add:focus:not(:disabled) {
-      border: 1px solid #071834;
-      box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+      border: 1px solid #6a9125;
+      box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
     /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management .auth-list-container .member-list-widget input[type="button"].add:disabled, .instructor-dashboard-wrapper-2 section.idash-section#membership .member-lists-management-ccx .auth-list-container .member-list-widget input[type="button"].add:disabled {
       opacity: 0.5;
@@ -12077,19 +12077,19 @@ div.gradebook-wrapper .grade-table tr.highlight td {
 
 /* line 946, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .form-submit {
-  border: 1px solid #071834;
+  border: 1px solid #6a9125;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #2a59a5;
-  color: white;
+  box-shadow: inset 0 1px 0 0 #b0cb7f;
+  color: #333333;
   display: inline-block;
   font-size: inherit;
   font-weight: bold;
-  background-color: #15376D;
-  background-image: -webkit-linear-gradient(#15376D, #091f41);
-  background-image: linear-gradient(#15376D, #091f41);
+  background-color: #91be3f;
+  background-image: -webkit-linear-gradient(#91be3f, #739d28);
+  background-image: linear-gradient(#91be3f, #739d28);
   padding: 7px 18px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #031023;
+  text-shadow: 0 1px 0 #9dd041;
   background-clip: padding-box;
   margin-bottom: 1em;
   padding: 8px 17px;
@@ -12102,15 +12102,15 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   text-shadow: none; }
   /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .form-submit:hover:not(:disabled) {
-    box-shadow: inset 0 1px 0 0 #1f437d;
+    box-shadow: inset 0 1px 0 0 #9abd59;
     cursor: pointer;
-    background-color: #132d56;
-    background-image: -webkit-linear-gradient(#132d56, #071833);
-    background-image: linear-gradient(#132d56, #071833); }
+    background-color: #81a63d;
+    background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+    background-image: linear-gradient(#81a63d, #6a9026); }
   /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .form-submit:active:not(:disabled), .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .form-submit:focus:not(:disabled) {
-    border: 1px solid #071834;
-    box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+    border: 1px solid #6a9125;
+    box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
   /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .form-submit:disabled {
     opacity: 0.5;
@@ -12137,19 +12137,19 @@ div.gradebook-wrapper .grade-table tr.highlight td {
 
 /* line 970, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-nav .action-create {
-  border: 1px solid #071834;
+  border: 1px solid #6a9125;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #2a59a5;
-  color: white;
+  box-shadow: inset 0 1px 0 0 #b0cb7f;
+  color: #333333;
   display: inline-block;
   font-size: inherit;
   font-weight: bold;
-  background-color: #15376D;
-  background-image: -webkit-linear-gradient(#15376D, #091f41);
-  background-image: linear-gradient(#15376D, #091f41);
+  background-color: #91be3f;
+  background-image: -webkit-linear-gradient(#91be3f, #739d28);
+  background-image: linear-gradient(#91be3f, #739d28);
   padding: 7px 18px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #031023;
+  text-shadow: 0 1px 0 #9dd041;
   background-clip: padding-box;
   margin-bottom: 1em;
   padding: 8px 17px;
@@ -12160,15 +12160,15 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   text-shadow: none; }
   /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-nav .action-create:hover:not(:disabled) {
-    box-shadow: inset 0 1px 0 0 #1f437d;
+    box-shadow: inset 0 1px 0 0 #9abd59;
     cursor: pointer;
-    background-color: #132d56;
-    background-image: -webkit-linear-gradient(#132d56, #071833);
-    background-image: linear-gradient(#132d56, #071833); }
+    background-color: #81a63d;
+    background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+    background-image: linear-gradient(#81a63d, #6a9026); }
   /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-nav .action-create:active:not(:disabled), .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-nav .action-create:focus:not(:disabled) {
-    border: 1px solid #071834;
-    box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+    border: 1px solid #6a9125;
+    box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
   /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management-nav .action-create:disabled {
     opacity: 0.5;
@@ -12187,19 +12187,19 @@ div.gradebook-wrapper .grade-table tr.highlight td {
 
 /* line 996, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management .message .action-create {
-  border: 1px solid #071834;
+  border: 1px solid #6a9125;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #2a59a5;
-  color: white;
+  box-shadow: inset 0 1px 0 0 #b0cb7f;
+  color: #333333;
   display: inline-block;
   font-size: inherit;
   font-weight: bold;
-  background-color: #15376D;
-  background-image: -webkit-linear-gradient(#15376D, #091f41);
-  background-image: linear-gradient(#15376D, #091f41);
+  background-color: #91be3f;
+  background-image: -webkit-linear-gradient(#91be3f, #739d28);
+  background-image: linear-gradient(#91be3f, #739d28);
   padding: 7px 18px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #031023;
+  text-shadow: 0 1px 0 #9dd041;
   background-clip: padding-box;
   margin-bottom: 1em;
   padding: 8px 17px;
@@ -12207,15 +12207,15 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   line-height: 1.3em; }
   /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management .message .action-create:hover:not(:disabled) {
-    box-shadow: inset 0 1px 0 0 #1f437d;
+    box-shadow: inset 0 1px 0 0 #9abd59;
     cursor: pointer;
-    background-color: #132d56;
-    background-image: -webkit-linear-gradient(#132d56, #071833);
-    background-image: linear-gradient(#132d56, #071833); }
+    background-color: #81a63d;
+    background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+    background-image: linear-gradient(#81a63d, #6a9026); }
   /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management .message .action-create:active:not(:disabled), .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management .message .action-create:focus:not(:disabled) {
-    border: 1px solid #071834;
-    box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+    border: 1px solid #6a9125;
+    box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
   /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .cohort-management .message .action-create:disabled {
     opacity: 0.5;
@@ -12372,7 +12372,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   box-shadow: none;
   text-shadow: none;
   padding: 0;
-  color: #15376D; }
+  color: #91be3f; }
   /* line 1170, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .toggle-cohort-management-secondary:hover, .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .toggle-cohort-management-secondary:focus,
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .toggle-cohort-management-discussions:hover,
@@ -12392,19 +12392,19 @@ div.gradebook-wrapper .grade-table tr.highlight td {
 
 /* line 1199, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .file-upload-form .action-submit {
-  border: 1px solid #071834;
+  border: 1px solid #6a9125;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #2a59a5;
-  color: white;
+  box-shadow: inset 0 1px 0 0 #b0cb7f;
+  color: #333333;
   display: inline-block;
   font-size: inherit;
   font-weight: bold;
-  background-color: #15376D;
-  background-image: -webkit-linear-gradient(#15376D, #091f41);
-  background-image: linear-gradient(#15376D, #091f41);
+  background-color: #91be3f;
+  background-image: -webkit-linear-gradient(#91be3f, #739d28);
+  background-image: linear-gradient(#91be3f, #739d28);
   padding: 7px 18px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #031023;
+  text-shadow: 0 1px 0 #9dd041;
   background-clip: padding-box;
   margin-bottom: 1em;
   padding: 8px 17px;
@@ -12416,15 +12416,15 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   text-shadow: none; }
   /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .file-upload-form .action-submit:hover:not(:disabled) {
-    box-shadow: inset 0 1px 0 0 #1f437d;
+    box-shadow: inset 0 1px 0 0 #9abd59;
     cursor: pointer;
-    background-color: #132d56;
-    background-image: -webkit-linear-gradient(#132d56, #071833);
-    background-image: linear-gradient(#132d56, #071833); }
+    background-color: #81a63d;
+    background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+    background-image: linear-gradient(#81a63d, #6a9026); }
   /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .file-upload-form .action-submit:active:not(:disabled), .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .file-upload-form .action-submit:focus:not(:disabled) {
-    border: 1px solid #071834;
-    box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+    border: 1px solid #6a9125;
+    box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
   /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#cohort_management .file-upload-form .action-submit:disabled {
     opacity: 0.5;
@@ -12549,7 +12549,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
       border-radius: 0;
       border: 0;
       box-shadow: none;
-      color: #15376D;
+      color: #91be3f;
       -webkit-transition: none;
       -moz-transition: none;
       -ms-transition: none;
@@ -12601,19 +12601,19 @@ div.gradebook-wrapper .grade-table tr.highlight td {
 
 /* line 1418, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#discussions_management .form-submit {
-  border: 1px solid #071834;
+  border: 1px solid #6a9125;
   border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 #2a59a5;
-  color: white;
+  box-shadow: inset 0 1px 0 0 #b0cb7f;
+  color: #333333;
   display: inline-block;
   font-size: inherit;
   font-weight: bold;
-  background-color: #15376D;
-  background-image: -webkit-linear-gradient(#15376D, #091f41);
-  background-image: linear-gradient(#15376D, #091f41);
+  background-color: #91be3f;
+  background-image: -webkit-linear-gradient(#91be3f, #739d28);
+  background-image: linear-gradient(#91be3f, #739d28);
   padding: 7px 18px;
   text-decoration: none;
-  text-shadow: 0 1px 0 #031023;
+  text-shadow: 0 1px 0 #9dd041;
   background-clip: padding-box;
   margin-bottom: 1em;
   padding: 8px 17px;
@@ -12626,15 +12626,15 @@ div.gradebook-wrapper .grade-table tr.highlight td {
   text-shadow: none; }
   /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#discussions_management .form-submit:hover:not(:disabled) {
-    box-shadow: inset 0 1px 0 0 #1f437d;
+    box-shadow: inset 0 1px 0 0 #9abd59;
     cursor: pointer;
-    background-color: #132d56;
-    background-image: -webkit-linear-gradient(#132d56, #071833);
-    background-image: linear-gradient(#132d56, #071833); }
+    background-color: #81a63d;
+    background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+    background-image: linear-gradient(#81a63d, #6a9026); }
   /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#discussions_management .form-submit:active:not(:disabled), .instructor-dashboard-wrapper-2 section.idash-section#discussions_management .form-submit:focus:not(:disabled) {
-    border: 1px solid #071834;
-    box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+    border: 1px solid #6a9125;
+    box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
   /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
   .instructor-dashboard-wrapper-2 section.idash-section#discussions_management .form-submit:disabled {
     opacity: 0.5;
@@ -12674,7 +12674,7 @@ div.gradebook-wrapper .grade-table tr.highlight td {
 
 /* line 1463, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#discussions_management .discussions-nav .divided-discussion-text {
-  color: #15376D; }
+  color: #91be3f; }
 
 /* line 1467, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
 .instructor-dashboard-wrapper-2 section.idash-section#discussions_management .discussions-nav .discussions-wrapper {
@@ -13058,33 +13058,33 @@ input[name="subject"] {
   line-height: 30px; }
   /* line 1917, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper span.tip .add {
-    border: 1px solid #071834;
+    border: 1px solid #6a9125;
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #2a59a5;
-    color: white;
+    box-shadow: inset 0 1px 0 0 #b0cb7f;
+    color: #333333;
     display: inline-block;
     font-size: inherit;
     font-weight: bold;
-    background-color: #15376D;
-    background-image: -webkit-linear-gradient(#15376D, #091f41);
-    background-image: linear-gradient(#15376D, #091f41);
+    background-color: #91be3f;
+    background-image: -webkit-linear-gradient(#91be3f, #739d28);
+    background-image: linear-gradient(#91be3f, #739d28);
     padding: 7px 18px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #031023;
+    text-shadow: 0 1px 0 #9dd041;
     background-clip: padding-box;
     font-size: 0.8125em;
     float: right; }
     /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.tip .add:hover:not(:disabled) {
-      box-shadow: inset 0 1px 0 0 #1f437d;
+      box-shadow: inset 0 1px 0 0 #9abd59;
       cursor: pointer;
-      background-color: #132d56;
-      background-image: -webkit-linear-gradient(#132d56, #071833);
-      background-image: linear-gradient(#132d56, #071833); }
+      background-color: #81a63d;
+      background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+      background-image: linear-gradient(#81a63d, #6a9026); }
     /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.tip .add:active:not(:disabled), .ecommerce-wrapper span.tip .add:focus:not(:disabled) {
-      border: 1px solid #071834;
-      box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+      border: 1px solid #6a9125;
+      box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
     /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.tip .add:disabled {
       opacity: 0.5;
@@ -13307,19 +13307,19 @@ input[name="subject"] {
   #e-commerce #registration_code_generation_modal input[type="button"]#add_coupon_button,
   #e-commerce #registration_code_generation_modal input[type="button"]#set_course_button,
   #e-commerce #registration_code_generation_modal input[type="button"]#lookup_regcode {
-    border: 1px solid #071834;
+    border: 1px solid #6a9125;
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #2a59a5;
-    color: white;
+    box-shadow: inset 0 1px 0 0 #b0cb7f;
+    color: #333333;
     display: inline-block;
     font-size: inherit;
     font-weight: bold;
-    background-color: #15376D;
-    background-image: -webkit-linear-gradient(#15376D, #091f41);
-    background-image: linear-gradient(#15376D, #091f41);
+    background-color: #91be3f;
+    background-image: -webkit-linear-gradient(#91be3f, #739d28);
+    background-image: linear-gradient(#91be3f, #739d28);
     padding: 7px 18px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #031023;
+    text-shadow: 0 1px 0 #9dd041;
     background-clip: padding-box;
     display: block;
     height: auto;
@@ -13347,11 +13347,11 @@ input[name="subject"] {
     #e-commerce #registration_code_generation_modal input[type="button"]#add_coupon_button:hover:not(:disabled),
     #e-commerce #registration_code_generation_modal input[type="button"]#set_course_button:hover:not(:disabled),
     #e-commerce #registration_code_generation_modal input[type="button"]#lookup_regcode:hover:not(:disabled) {
-      box-shadow: inset 0 1px 0 0 #1f437d;
+      box-shadow: inset 0 1px 0 0 #9abd59;
       cursor: pointer;
-      background-color: #132d56;
-      background-image: -webkit-linear-gradient(#132d56, #071833);
-      background-image: linear-gradient(#132d56, #071833); }
+      background-color: #81a63d;
+      background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+      background-image: linear-gradient(#81a63d, #6a9026); }
     /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     #e-commerce #add-coupon-modal input[type="button"]#update_coupon_button:active:not(:disabled), #e-commerce #add-coupon-modal input[type="button"]#update_coupon_button:focus:not(:disabled),
     #e-commerce #add-coupon-modal input[type="button"]#add_coupon_button:active:not(:disabled),
@@ -13392,8 +13392,8 @@ input[name="subject"] {
     #e-commerce #registration_code_generation_modal input[type="button"]#set_course_button:focus:not(:disabled),
     #e-commerce #registration_code_generation_modal input[type="button"]#lookup_regcode:active:not(:disabled),
     #e-commerce #registration_code_generation_modal input[type="button"]#lookup_regcode:focus:not(:disabled) {
-      border: 1px solid #071834;
-      box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+      border: 1px solid #6a9125;
+      box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
     /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     #e-commerce #add-coupon-modal input[type="button"]#update_coupon_button:disabled,
     #e-commerce #add-coupon-modal input[type="button"]#add_coupon_button:disabled,
@@ -13423,19 +13423,19 @@ input[name="subject"] {
   #e-commerce #edit-coupon-modal input[name="generate-registration-codes-csv"],
   #e-commerce #set-course-mode-price-modal input[name="generate-registration-codes-csv"],
   #e-commerce #registration_code_generation_modal input[name="generate-registration-codes-csv"] {
-    border: 1px solid #071834;
+    border: 1px solid #6a9125;
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #2a59a5;
-    color: white;
+    box-shadow: inset 0 1px 0 0 #b0cb7f;
+    color: #333333;
     display: inline-block;
     font-size: inherit;
     font-weight: bold;
-    background-color: #15376D;
-    background-image: -webkit-linear-gradient(#15376D, #091f41);
-    background-image: linear-gradient(#15376D, #091f41);
+    background-color: #91be3f;
+    background-image: -webkit-linear-gradient(#91be3f, #739d28);
+    background-image: linear-gradient(#91be3f, #739d28);
     padding: 7px 18px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #031023;
+    text-shadow: 0 1px 0 #9dd041;
     background-clip: padding-box; }
     /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     #e-commerce #add-coupon-modal input[name="generate-registration-codes-csv"]:hover:not(:disabled),
@@ -13443,11 +13443,11 @@ input[name="subject"] {
     #e-commerce #edit-coupon-modal input[name="generate-registration-codes-csv"]:hover:not(:disabled),
     #e-commerce #set-course-mode-price-modal input[name="generate-registration-codes-csv"]:hover:not(:disabled),
     #e-commerce #registration_code_generation_modal input[name="generate-registration-codes-csv"]:hover:not(:disabled) {
-      box-shadow: inset 0 1px 0 0 #1f437d;
+      box-shadow: inset 0 1px 0 0 #9abd59;
       cursor: pointer;
-      background-color: #132d56;
-      background-image: -webkit-linear-gradient(#132d56, #071833);
-      background-image: linear-gradient(#132d56, #071833); }
+      background-color: #81a63d;
+      background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+      background-image: linear-gradient(#81a63d, #6a9026); }
     /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     #e-commerce #add-coupon-modal input[name="generate-registration-codes-csv"]:active:not(:disabled), #e-commerce #add-coupon-modal input[name="generate-registration-codes-csv"]:focus:not(:disabled),
     #e-commerce #invalidate_registration_code_modal input[name="generate-registration-codes-csv"]:active:not(:disabled),
@@ -13458,8 +13458,8 @@ input[name="subject"] {
     #e-commerce #set-course-mode-price-modal input[name="generate-registration-codes-csv"]:focus:not(:disabled),
     #e-commerce #registration_code_generation_modal input[name="generate-registration-codes-csv"]:active:not(:disabled),
     #e-commerce #registration_code_generation_modal input[name="generate-registration-codes-csv"]:focus:not(:disabled) {
-      border: 1px solid #071834;
-      box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+      border: 1px solid #6a9125;
+      box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
     /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     #e-commerce #add-coupon-modal input[name="generate-registration-codes-csv"]:disabled,
     #e-commerce #invalidate_registration_code_modal input[name="generate-registration-codes-csv"]:disabled,
@@ -13839,7 +13839,7 @@ input[name="subject"] {
       #e-commerce #registration_code_generation_modal #regcode-content header h2 {
         font-size: 24px;
         font-weight: 100;
-        color: #15376D;
+        color: #91be3f;
         text-align: left; }
     /* line 2382, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
     #e-commerce #add-coupon-modal #coupon-content .instructions p,
@@ -14215,19 +14215,19 @@ input[name="subject"] {
   /* line 2532, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper span.tip .add,
   .proctoring-wrapper span.tip .add {
-    border: 1px solid #071834;
+    border: 1px solid #6a9125;
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #2a59a5;
-    color: white;
+    box-shadow: inset 0 1px 0 0 #b0cb7f;
+    color: #333333;
     display: inline-block;
     font-size: inherit;
     font-weight: bold;
-    background-color: #15376D;
-    background-image: -webkit-linear-gradient(#15376D, #091f41);
-    background-image: linear-gradient(#15376D, #091f41);
+    background-color: #91be3f;
+    background-image: -webkit-linear-gradient(#91be3f, #739d28);
+    background-image: linear-gradient(#91be3f, #739d28);
     padding: 7px 18px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #031023;
+    text-shadow: 0 1px 0 #9dd041;
     background-clip: padding-box;
     font-size: 0.8125em;
     float: right;
@@ -14237,17 +14237,17 @@ input[name="subject"] {
     /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.tip .add:hover:not(:disabled),
     .proctoring-wrapper span.tip .add:hover:not(:disabled) {
-      box-shadow: inset 0 1px 0 0 #1f437d;
+      box-shadow: inset 0 1px 0 0 #9abd59;
       cursor: pointer;
-      background-color: #132d56;
-      background-image: -webkit-linear-gradient(#132d56, #071833);
-      background-image: linear-gradient(#132d56, #071833); }
+      background-color: #81a63d;
+      background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+      background-image: linear-gradient(#81a63d, #6a9026); }
     /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.tip .add:active:not(:disabled), .ecommerce-wrapper span.tip .add:focus:not(:disabled),
     .proctoring-wrapper span.tip .add:active:not(:disabled),
     .proctoring-wrapper span.tip .add:focus:not(:disabled) {
-      border: 1px solid #071834;
-      box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+      border: 1px solid #6a9125;
+      box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
     /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.tip .add:disabled,
     .proctoring-wrapper span.tip .add:disabled {
@@ -14289,35 +14289,35 @@ input[name="subject"] {
   /* line 2560, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper span.code_tip .add,
   .proctoring-wrapper span.code_tip .add {
-    border: 1px solid #071834;
+    border: 1px solid #6a9125;
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #2a59a5;
-    color: white;
+    box-shadow: inset 0 1px 0 0 #b0cb7f;
+    color: #333333;
     display: inline-block;
     font-size: inherit;
     font-weight: bold;
-    background-color: #15376D;
-    background-image: -webkit-linear-gradient(#15376D, #091f41);
-    background-image: linear-gradient(#15376D, #091f41);
+    background-color: #91be3f;
+    background-image: -webkit-linear-gradient(#91be3f, #739d28);
+    background-image: linear-gradient(#91be3f, #739d28);
     padding: 7px 18px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #031023;
+    text-shadow: 0 1px 0 #9dd041;
     background-clip: padding-box;
     font-size: 0.8125em; }
     /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.code_tip .add:hover:not(:disabled),
     .proctoring-wrapper span.code_tip .add:hover:not(:disabled) {
-      box-shadow: inset 0 1px 0 0 #1f437d;
+      box-shadow: inset 0 1px 0 0 #9abd59;
       cursor: pointer;
-      background-color: #132d56;
-      background-image: -webkit-linear-gradient(#132d56, #071833);
-      background-image: linear-gradient(#132d56, #071833); }
+      background-color: #81a63d;
+      background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+      background-image: linear-gradient(#81a63d, #6a9026); }
     /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.code_tip .add:active:not(:disabled), .ecommerce-wrapper span.code_tip .add:focus:not(:disabled),
     .proctoring-wrapper span.code_tip .add:active:not(:disabled),
     .proctoring-wrapper span.code_tip .add:focus:not(:disabled) {
-      border: 1px solid #071834;
-      box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+      border: 1px solid #6a9125;
+      box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
     /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.code_tip .add:disabled,
     .proctoring-wrapper span.code_tip .add:disabled {
@@ -14349,35 +14349,35 @@ input[name="subject"] {
   /* line 2592, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .ecommerce-wrapper span.invalid_sale .add,
   .proctoring-wrapper span.invalid_sale .add {
-    border: 1px solid #071834;
+    border: 1px solid #6a9125;
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 0 #2a59a5;
-    color: white;
+    box-shadow: inset 0 1px 0 0 #b0cb7f;
+    color: #333333;
     display: inline-block;
     font-size: inherit;
     font-weight: bold;
-    background-color: #15376D;
-    background-image: -webkit-linear-gradient(#15376D, #091f41);
-    background-image: linear-gradient(#15376D, #091f41);
+    background-color: #91be3f;
+    background-image: -webkit-linear-gradient(#91be3f, #739d28);
+    background-image: linear-gradient(#91be3f, #739d28);
     padding: 7px 18px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #031023;
+    text-shadow: 0 1px 0 #9dd041;
     background-clip: padding-box;
     font-size: 0.8125em; }
     /* line 131, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.invalid_sale .add:hover:not(:disabled),
     .proctoring-wrapper span.invalid_sale .add:hover:not(:disabled) {
-      box-shadow: inset 0 1px 0 0 #1f437d;
+      box-shadow: inset 0 1px 0 0 #9abd59;
       cursor: pointer;
-      background-color: #132d56;
-      background-image: -webkit-linear-gradient(#132d56, #071833);
-      background-image: linear-gradient(#132d56, #071833); }
+      background-color: #81a63d;
+      background-image: -webkit-linear-gradient(#81a63d, #6a9026);
+      background-image: linear-gradient(#81a63d, #6a9026); }
     /* line 147, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.invalid_sale .add:active:not(:disabled), .ecommerce-wrapper span.invalid_sale .add:focus:not(:disabled),
     .proctoring-wrapper span.invalid_sale .add:active:not(:disabled),
     .proctoring-wrapper span.invalid_sale .add:focus:not(:disabled) {
-      border: 1px solid #071834;
-      box-shadow: inset 0 0 8px 4px #051226, inset 0 0 8px 4px #051226; }
+      border: 1px solid #6a9125;
+      box-shadow: inset 0 0 8px 4px #618324, inset 0 0 8px 4px #618324; }
     /* line 51, /openedx/edx-platform/common/static/sass/bourbon/addons/_button.scss */
     .ecommerce-wrapper span.invalid_sale .add:disabled,
     .proctoring-wrapper span.invalid_sale .add:disabled {
@@ -15404,8 +15404,8 @@ input[name="subject"] {
   .student-proctored-exam-container .pagination > .active > span:focus {
     z-index: 2;
     color: #fff;
-    background-color: #15376D;
-    border-color: #15376D;
+    background-color: #91be3f;
+    border-color: #91be3f;
     cursor: default; }
   /* line 2864, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
   .special-allowance-container .pagination > .disabled > span,
@@ -15585,7 +15585,7 @@ input[name="subject"] {
     border: none;
     background: transparent;
     box-shadow: none;
-    color: #15376D;
+    color: #91be3f;
     font-weight: bold; }
 
 /* line 3079, /openedx/edx-platform/lms/static/sass/course/instructor/_instructor_2.scss */
@@ -15904,7 +15904,7 @@ button.ccx-button-link {
     -webkit-border-bottom-right-radius: 3px;
     -moz-border-bottomright-radius: 3px;
     border-bottom-right-radius: 3px;
-    background: #15376D;
+    background: #91be3f;
     padding: 0 10px;
     height: 35px;
     color: #fff;
@@ -16123,7 +16123,7 @@ body.view-in-course {
   position: relative;
   overflow: hidden;
   padding-bottom: 10px;
-  border-bottom: 1px solid #15376D;
+  border-bottom: 1px solid #91be3f;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
   line-height: 1.5;
@@ -16214,11 +16214,11 @@ body.view-in-course {
           /* line 120, /openedx/edx-platform/lms/static/sass/_header.scss */
           .global-header .nav-links .main .nav-tab a.active, .global-header .nav-links .main .nav-tab a:hover {
             border-bottom-style: solid;
-            border-bottom-color: #15376D; }
+            border-bottom-color: #91be3f; }
           /* line 126, /openedx/edx-platform/lms/static/sass/_header.scss */
           .global-header .nav-links .main .nav-tab a:hover {
             cursor: pointer;
-            border-bottom-color: #15376D; }
+            border-bottom-color: #91be3f; }
     /* line 134, /openedx/edx-platform/lms/static/sass/_header.scss */
     .global-header .nav-links .secondary {
       float: right;
@@ -16239,7 +16239,7 @@ body.view-in-course {
           font-weight: 400; }
       /* line 158, /openedx/edx-platform/lms/static/sass/_header.scss */
       .global-header .nav-links .secondary .btn {
-        border: 1px solid #15376D;
+        border: 1px solid #91be3f;
         padding: 5px 20px;
         border-radius: 5px;
         cursor: pointer;
@@ -16247,7 +16247,7 @@ body.view-in-course {
       /* line 166, /openedx/edx-platform/lms/static/sass/_header.scss */
       .global-header .nav-links .secondary a.sign-in-btn,
       .global-header .nav-links .secondary .nav-item a.shopping-cart {
-        background-color: #15376D;
+        background-color: #91be3f;
         color: #fff;
         border: 1px solid #fff;
         font-weight: 400;
@@ -16256,16 +16256,16 @@ body.view-in-course {
         .global-header .nav-links .secondary a.sign-in-btn:hover,
         .global-header .nav-links .secondary .nav-item a.shopping-cart:hover {
           background-color: #fff;
-          color: #15376D;
-          border-color: #15376D; }
+          color: #91be3f;
+          border-color: #91be3f; }
       /* line 181, /openedx/edx-platform/lms/static/sass/_header.scss */
       .global-header .nav-links .secondary a.register-btn {
         background: #fff;
-        color: #15376D;
+        color: #91be3f;
         font-weight: 400; }
         /* line 186, /openedx/edx-platform/lms/static/sass/_header.scss */
         .global-header .nav-links .secondary a.register-btn:hover {
-          background-color: #15376D;
+          background-color: #91be3f;
           color: #fff; }
       /* line 193, /openedx/edx-platform/lms/static/sass/_header.scss */
       .global-header .nav-links .secondary .user-image-frame {
@@ -16384,7 +16384,7 @@ body.view-in-course {
 */
 /* line 342, /openedx/edx-platform/lms/static/sass/_header.scss */
 .mobile-menu {
-  border-top: 1px solid #15376D;
+  border-top: 1px solid #91be3f;
   margin: 25px 0 -10px; }
   @media (min-width: 992px) {
     /* line 342, /openedx/edx-platform/lms/static/sass/_header.scss */

@@ -1,4 +1,12 @@
 // Define color variables
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Your custom styles here
+.rtl {
+    direction: rtl;
+}
 $primary: #3498db; // Blue
 $primary-light: #ecf5fa; // Light Blue
 $primary-d: #2c3e50; // Dark Blue

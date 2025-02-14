@@ -3,20 +3,188 @@
 <%! from django.utils.translation import gettext as _ %>
 <%inherit file="../main.html" />
 
-<%block name="pagetitle">${_("About")}</%block>
+<%block name="pagetitle">${_("من نحن")}</%block>
 
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
         <h1>
-            <%block name="pageheader">${page_header or _("About")}</%block>
+            <%block name="pageheader">${page_header or _("من نحن")}</%block>
         </h1>
-        <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
-        </p>
+
+        <!-- Mission Section -->
+        <div class="about-section">
+            <h2>${_("مهمتنا")}</h2>
+            <div class="section-content">
+                <div class="section-side">
+                    <img src="${static.url('images/mission1.jpg')}" alt="مهمتنا 1" />
+                    <p>${_("نحن ملتزمون بتوفير تعليم عالي الجودة عبر الإنترنت لتمكين الأفراد والمؤسسات من تحقيق أهدافهم التعليمية والمهنية.")}</p>
+                </div>
+                <div class="section-side">
+                    <img src="${static.url('images/mission2.jpg')}" alt="مهمتنا 2" />
+                    <p>${_("نسعى جاهدين لتقديم محتوى تعليمي متكامل يلبي احتياجات جميع المتعلمين.")}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vision Section -->
+        <div class="about-section">
+            <h2>${_("رؤيتنا")}</h2>
+            <div class="section-content">
+                <div class="section-side">
+                    <img src="${static.url('images/vision1.jpg')}" alt="رؤيتنا 1" />
+                    <p>${_("أن نكون الرواد في تقديم حلول تعليمية مبتكرة تلبي احتياجات المتعلمين في العالم العربي.")}</p>
+                </div>
+                <div class="section-side">
+                    <img src="${static.url('images/vision2.jpg')}" alt="رؤيتنا 2" />
+                    <p>${_("نسعى لتحقيق رؤيتنا من خلال الابتكار والتعاون مع المؤسسات التعليمية.")}</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Values Section -->
+        <div class="about-section">
+            <h2>${_("قيمنا")}</h2>
+            <div class="section-content">
+                <div class="section-side">
+                    <img src="${static.url('images/values1.jpg')}" alt="قيمنا 1" />
+                    <ul>
+                        <li>${_("الجودة: نحرص على تقديم محتوى تعليمي عالي الجودة.")}</li>
+                        <li>${_("الابتكار: نستخدم أحدث التقنيات لتقديم تجربة تعليمية فريدة.")}</li>
+                    </ul>
+                </div>
+                <div class="section-side">
+                    <img src="${static.url('images/values2.jpg')}" alt="قيمنا 2" />
+                    <ul>
+                        <li>${_("التعاون: نعمل مع المؤسسات والأفراد لتحقيق أهداف مشتركة.")}</li>
+                        <li>${_("التمكين: نسعى لتمكين المتعلمين من تحقيق إمكاناتهم الكاملة.")}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
         <!-- NEW IN INDIGO: add graphic image -->
         <div class="graphic-img">
-            <img src="${static.url('images/about.svg')}" alt="Runs on Tutor" />
-            <img class="dark" src="${static.url('images/about-dark.svg')}" alt="Runs on Tutor" />
+            <img src="${static.url('images/about.svg')}" alt="من نحن" />
+            <img class="dark" src="${static.url('images/about-dark.svg')}" alt="من نحن" />
         </div>
     </section>
 </main>
+
+<style>
+  /* Modern Arabic Style with Expo Arabic Bold */
+  @import url('https://fonts.googleapis.com/css2?family=Expo+Arabic:wght@700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Expo Arabic', sans-serif;
+  }
+
+  :root {
+    --primary-blue: #253b74;
+    --primary-green: #91be3f;
+    --secondary-blue: #1b75bc;
+    --background-light: #f9fafb;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+  }
+
+  body {
+    background-color: var(--background-light);
+    overflow-x: hidden;
+  }
+
+  .container.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: right;
+  }
+
+  .container.about h1 {
+    font-size: 2.5rem;
+    color: var(--primary-blue);
+    margin-bottom: 2rem;
+  }
+
+  .about-section {
+    margin-bottom: 3rem;
+  }
+
+  .about-section h2 {
+    font-size: 2rem;
+    color: var(--primary-blue);
+    margin-bottom: 1rem;
+  }
+
+  .section-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .section-side {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .section-side img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .section-side p {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    line-height: 1.8;
+  }
+
+  .section-side ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .section-side ul li {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    padding-right: 1.5rem;
+    position: relative;
+  }
+
+  .section-side ul li::before {
+    content: "•";
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    top: -0.2rem;
+  }
+
+  .graphic-img {
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .graphic-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .graphic-img .dark {
+    display: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .graphic-img img {
+      display: none;
+    }
+    .graphic-img .dark {
+      display: inline-block;
+    }
+  }
+</style>

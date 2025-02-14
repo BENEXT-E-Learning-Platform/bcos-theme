@@ -1,5 +1,14 @@
 /////////////////// General
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Your custom styles here
+.rtl {
+    direction: rtl;
+}
+
 $content_padding_top: 24px;
 $content-padding-bottom: 10px;
 $header-height: 75px;

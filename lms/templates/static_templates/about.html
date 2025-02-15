@@ -12,6 +12,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
 <style>
 /* Remove original bullet points */
+
+:root {
+    --primary-blue: #253b74;
+    --primary-green: #91be3f;
+    --secondary-blue: #1b75bc;
+    --background-light: #f9fafb;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+  }
+  
 .section-side ul li {
     padding-right: 3.5rem;
     position: relative;
@@ -55,11 +65,12 @@
 
 .about-header h1 {
     font-family: 'Cairo', serif;
-    font-size: 3.5rem;
-    color: #2d483e;
+    font-size: 2.5rem;
+    color: var(--primary-blue);
     margin-bottom: 1rem;
-    position: relative;
-    display: inline-block;
+    margin-top: 3rem;
+    direction: rtl;
+    text-align: center;
 }
 
 .about-header h1::after {

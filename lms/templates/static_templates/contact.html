@@ -78,6 +78,7 @@
     font-size: 2.5rem;
     color: var(--primary-blue);
     margin-bottom: 1rem;
+    margin-top: 3rem;
     direction: rtl;
     text-align: center;
   }
@@ -157,12 +158,15 @@
     display: none;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .graphic-img img {
-      display: none;
-    }
-    .graphic-img .dark {
-      display: inline-block;
-    }
+  body.indigo-dark-theme {
+    --primary-blue: #91be3f;
+    --background-light: #1a1a1a;
+    --text-dark: #f8f9fa;
+    --text-light: #adb5bd;
+  }
+
+  body.indigo-dark-theme .contact-form {
+    background: #081c33;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
   }
 </style>
